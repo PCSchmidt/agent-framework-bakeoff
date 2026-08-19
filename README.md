@@ -2,7 +2,7 @@
 
 Implements the **same** agent team four ways on one public, defense-shaped task and scores them with one eval harness.
 
-**Status:** Scaffolding – Phase 0
+**Status:** Scaffolding – Phase 0 (family paused 2026-08-19; next implementation when work resumes)
 
 Built on Meridian’s gate + independent Evaluator contracts. The point is trade-off literacy, not a framework tutorial.
 
