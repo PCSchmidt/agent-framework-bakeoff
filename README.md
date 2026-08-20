@@ -2,9 +2,9 @@
 
 Implements the **same** agent team four ways on one public, defense-shaped task and scores them with one eval harness.
 
-**Status:** Phase 2 — LangGraph baseline
+**Status:** Phase 3 — four-runtime ports on shared fixture tools
 
-Built on Meridian’s gate + independent Evaluator contracts. The point is trade-off literacy, not a framework tutorial. Phase 1 froze the task; Phase 2 emits that brief JSON from a LangGraph of fixture tools (no LLM).
+Built on Meridian’s gate + independent Evaluator contracts. The point is trade-off literacy, not a framework tutorial. Phase 1 froze the task; Phase 2–3 emit that brief JSON from LangGraph, CrewAI-shaped, AG2-shaped, and Meridian-gated orchestrations (no LLM).
 
 ## Relation to Meridian
 
@@ -40,10 +40,10 @@ flowchart TB
 npm install
 npm test
 npm run eval
-npm run eval:langgraph
+npm run eval:runtimes
 ```
 
-Requires Node.js 20+. LangGraph uses checked-in fixtures only — no network, no API keys.
+Requires Node.js 20+. All runtimes use checked-in fixtures only — no network, no API keys.
 
 ## Golden set
 
@@ -51,13 +51,13 @@ Requires Node.js 20+. LangGraph uses checked-in fixtures only — no network, no
 
 Reports portfolio-kit **D3 gate-catch** on known-bad authored briefs and verdict agreement against [src/judge.js](src/judge.js). Target: catch ≥ 85% and 100% labeled agreement.
 
-LangGraph (`npm run eval:langgraph`) runs unique `{airport, date}` queries from that catalog through [src/runtimes/langgraph.js](src/runtimes/langgraph.js). Last run: 3/3 judge `pass`.
+`npm run eval:runtimes` runs unique `{airport, date}` queries through all four ports. Last run: 3/3 judge `pass` each (langgraph, crewai, ag2, meridian).
 
 ## Planned phases
 
 1. CONTRACT.md, SPEC.md, golden set of 30–50 cases
-2. LangGraph baseline *(this increment)*
-3. CrewAI, AG2/MAF, Meridian-gated ports
+2. LangGraph baseline
+3. CrewAI, AG2/MAF, Meridian-gated ports *(this increment)*
 4. Unified runner + score tables
 5. Failure-mode write-up + AutoGen → Microsoft Agent Framework postmortem
 
@@ -72,12 +72,13 @@ CONTRACT.md
 SPEC.md
 gates.yaml
 fixtures/
-eval/run-langgraph.js
-src/judge.js
-src/world.js
+eval/cases.json
+eval/run.js
+eval/run-runtime.js
 src/tools.js
-src/runtimes/langgraphjs
-src/judge.js
-src/world.js
+src/runtimes/langgraph.js
+src/runtimes/crewai.js
+src/runtimes/ag2.js
+src/runtimes/meridian.js
 tests/
 ```

@@ -20,7 +20,7 @@ How coding agents should work in this repository.
 
 - Invent a second gate or memory schema.
 - Add JPO / F-35 / employer inventory as claimed facts (those strings exist only as **known-bad** fixtures).
-- Start CrewAI / AG2 / redteam-blue-gate unless the user asked for Phase 3+.
-- Add an LLM node to LangGraph unless the user asked for it. Phase 2 is fixture tools only.
+- Start redteam-blue-gate or add LLM nodes unless the user asked.
+- Install Python CrewAI / AutoGen just to claim a port. Phase 3 is the shared `src/tools.js` contract.
 - Rewrite the golden set to match a generator. Change the generator.
 - Commit `.env`, live feed dumps, or non-public data.

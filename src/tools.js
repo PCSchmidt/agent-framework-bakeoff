@@ -103,7 +103,19 @@ export function emitBrief(query, { notams, tracks, passes, pairs }) {
   return {
     airport: query.airport,
     date: query.date,
-    runtime: 'langgraph',
+    runtime: query.runtime ?? 'langgraph',
     findings,
   }
+}
+
+/**
+ * One retrieve+join pass. Runtimes should still call the retrieve_* helpers
+ * as named steps; this is for tests and the Meridian post-gate path.
+ */
+export function gatherEvidence(world, query) {
+  const tracks = retrieveAdsb(world, query)
+  const notams = retrieveNotams(world, query)
+  const passes = retrieveTle(world, query)
+  const pairs = joinOverlaps(notams, [...tracks, ...passes])
+  return { tracks, notams, passes, pairs }
 }

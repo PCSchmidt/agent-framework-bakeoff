@@ -16,4 +16,4 @@ jobs:
       - run: npm ci
       - run: npm test
       - run: npm run eval
-      - run: npm run eval:langgraph
+      - run: npm run eval:runtimes

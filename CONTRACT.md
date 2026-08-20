@@ -23,8 +23,7 @@ Produce a **daily airspace-risk brief** for one public airport and UTC date from
 
 - JPO / F-35 / employer program data or live operational feeds
 - Replacing Claude Code / Cursor / Copilot
-- CrewAI / AG2 / Meridian agent loops *(Phase 3)*
-- LLM calls inside LangGraph *(Phase 2 is fixture tools only)*
+- Installing Python CrewAI / AutoGen SDKs or calling LLMs *(Phase 3 ports are orchestration-shaped, fixture tools only)*
 - Live FAA / ADS-B exchange / Space-Track downloads in CI
 - Inventory-reconciliation task (airspace-risk is the frozen task)
 - LLM judge *(optional later; mechanical judge is the Phase 1 source of truth)*
@@ -35,7 +34,7 @@ Produce a **daily airspace-risk brief** for one public airport and UTC date from
 
 | Layer | Technology |
 |-------|------------|
-| Runtime | Phase 2: LangGraph (`@langchain/langgraph`) with fixture tools. Later: CrewAI, AG2/MAF, Meridian-gated |
+| Runtime | LangGraph (`@langchain/langgraph`); CrewAI-shaped crew; AG2-shaped handoff; Meridian-gated |
 | Reliability | Meridian gate + independent Evaluator contracts (portfolio-kit 0.1.0) |
 | Models | None. Mechanical brief judge + deterministic retrieve/join/emit |
 | Deploy | Local Node 20+; `npm test` / `npm run eval` / `npm run eval:langgraph` |

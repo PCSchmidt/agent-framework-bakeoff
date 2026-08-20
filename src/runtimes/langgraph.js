@@ -34,7 +34,7 @@ export function buildLangGraph(world) {
 
   const emit = (state) => ({
     brief: emitBrief(
-      { airport: state.airport, date: state.date },
+      { airport: state.airport, date: state.date, runtime: 'langgraph' },
       {
         notams: state.notams,
         tracks: state.tracks,

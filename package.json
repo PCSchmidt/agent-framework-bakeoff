@@ -7,7 +7,8 @@
   "scripts": {
     "test": "node --test tests/*.test.js",
     "eval": "node eval/run.js",
-    "eval:langgraph": "node eval/run-langgraph.js"
+    "eval:langgraph": "node eval/run-langgraph.js",
+    "eval:runtimes": "node eval/run-runtime.js"
   },
   "dependencies": {
     "@langchain/langgraph": "^0.4.10"

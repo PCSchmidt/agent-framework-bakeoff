@@ -1,25 +1,23 @@
 # Status
 
-**Phase:** 2 — LangGraph baseline
+**Phase:** 3 — four-runtime ports
 **Date:** 2026-08-20
 **Family handoff:** [portfolio-kit docs/STATUS.md](https://github.com/PCSchmidt/portfolio-kit/blob/main/docs/STATUS.md)
 
 ## Done
 
-- Frozen airspace-risk task in [CONTRACT.md](CONTRACT.md) / [SPEC.md](SPEC.md)
-- Synthetic public fixtures + mechanical judge + 36-case golden set
-- Shared retrieve/join/emit tools in [src/tools.js](src/tools.js)
-- LangGraph runtime: retrieve → join → emit ([src/runtimes/langgraph.js](src/runtimes/langgraph.js))
-- `npm run eval:langgraph` — 3 unique queries, all judge `pass`
+- Frozen airspace-risk task, fixtures, mechanical judge, 36-case golden set
+- Shared retrieve/join/emit in [src/tools.js](src/tools.js)
+- LangGraph, CrewAI-shaped crew, AG2-shaped handoff, Meridian-gated port
+- `npm run eval:runtimes` — 3 unique queries × 4 runtimes, all judge `pass`
 
 ## Last measured
 
-2026-08-20: `npm test` 9/9; `npm run eval` D3 catch 1.0 / agreement 1.0; `eval:langgraph` query_pass_rate 1.0 (n=3).
+2026-08-20: `npm test` 15/15; D3 catch 1.0; langgraph/crewai/ag2/meridian 3/3.
 
 ## Not done
 
-- CrewAI, AG2/MAF, Meridian-gated ports (Phase 3)
-- Unified score table across runtimes (Phase 4)
-- LLM nodes inside LangGraph
+- Unified score table / failure-mode write-up (Phase 4)
+- Real CrewAI / AG2 Python SDKs or LLM nodes
 
-**Next:** Phase 3 ports using the same `src/tools.js`. Do not start red/blue.
+**Next:** Phase 4 unified runner + score table. Do not start red/blue.
