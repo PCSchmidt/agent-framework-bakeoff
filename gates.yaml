@@ -1,0 +1,52 @@
+# Bake-off gate DAG — portfolio-kit contract 0.1.0
+
+version: "1.0"
+
+project:
+  name: "agent-framework-bakeoff"
+  recipe: "custom"
+  description: "Public airspace-risk brief; Phase 1 freezes CONTRACT/SPEC/golden set"
+
+gates:
+  - id: confirmed
+    label: "Scope Confirmed"
+    type: human_approval
+    required: true
+    approval_token: "CONFIRMED"
+    requires: []
+    requires_artifacts:
+      - CONTRACT.md
+      - SPEC.md
+      - fixtures/SOURCES.md
+    hooks:
+      pre:
+        - artifacts_exist
+    emits: CONFIRMED_GATE.json
+    on_fail: block_all_writes
+
+  - id: tests_passing
+    label: "Tests Passing"
+    type: automated
+    required: true
+    requires:
+      - confirmed
+    hooks:
+      pre:
+        - tests_exist
+    requires_artifacts:
+      - tests
+    emits: TEST_GATE.json
+    on_fail: block_gate_writes
+
+  - id: evaluated
+    label: "Golden set eval"
+    type: automated
+    required: true
+    requires:
+      - tests_passing
+    requires_artifacts:
+      - eval/cases.json
+    hooks:
+      pre: []
+    emits: EVALUATOR_GATE.json
+    on_fail: block_all_writes

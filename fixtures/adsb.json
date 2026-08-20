@@ -1,0 +1,126 @@
+{
+  "source": "synthetic public-style ADS-B. Not a live exchange feed.",
+  "retrieved": "2026-08-19",
+  "tracks": [
+    {
+      "id": "ADSB-001",
+      "hex": "A1B2C3",
+      "callsign": "UAL123",
+      "airport": "KDEN",
+      "lat": 39.848,
+      "lon": -104.674,
+      "alt_ft": 7200,
+      "time": "2026-08-19T19:10:00Z"
+    },
+    {
+      "id": "ADSB-002",
+      "hex": "A4D5E6",
+      "callsign": "SWA456",
+      "airport": "KDEN",
+      "lat": 39.861,
+      "lon": -104.66,
+      "alt_ft": 8100,
+      "time": "2026-08-19T19:25:00Z"
+    },
+    {
+      "id": "ADSB-003",
+      "hex": "A7F801",
+      "callsign": "N17AB",
+      "airport": "KDEN",
+      "lat": 39.87,
+      "lon": -104.69,
+      "alt_ft": 6500,
+      "time": "2026-08-19T18:40:00Z"
+    },
+    {
+      "id": "ADSB-004",
+      "hex": "AB10C2",
+      "callsign": "DAL789",
+      "airport": "KDEN",
+      "lat": 39.84,
+      "lon": -104.7,
+      "alt_ft": 9000,
+      "time": "2026-08-19T21:05:00Z"
+    },
+    {
+      "id": "ADSB-005",
+      "hex": "AC33D4",
+      "callsign": "FFT321",
+      "airport": "KDEN",
+      "lat": 39.855,
+      "lon": -104.668,
+      "alt_ft": 7400,
+      "time": "2026-08-19T19:32:00Z"
+    },
+    {
+      "id": "ADSB-006",
+      "hex": "A0AA11",
+      "callsign": "JBU88",
+      "airport": "KJFK",
+      "lat": 40.641,
+      "lon": -73.778,
+      "alt_ft": 3000,
+      "time": "2026-08-19T14:20:00Z"
+    },
+    {
+      "id": "ADSB-007",
+      "hex": "A0BB22",
+      "callsign": "AAL100",
+      "airport": "KJFK",
+      "lat": 40.645,
+      "lon": -73.79,
+      "alt_ft": 4200,
+      "time": "2026-08-19T14:45:00Z"
+    },
+    {
+      "id": "ADSB-008",
+      "hex": "N900KS",
+      "callsign": "N900KS",
+      "airport": "KJFK",
+      "lat": 40.65,
+      "lon": -73.76,
+      "alt_ft": 2500,
+      "time": "2026-08-19T15:10:00Z"
+    },
+    {
+      "id": "ADSB-009",
+      "hex": "A11111",
+      "callsign": "UAL200",
+      "airport": "KDEN",
+      "lat": 39.85,
+      "lon": -104.67,
+      "alt_ft": 10000,
+      "time": "2026-08-20T16:00:00Z"
+    },
+    {
+      "id": "ADSB-010",
+      "hex": "A22222",
+      "callsign": "SWA12",
+      "airport": "KDEN",
+      "lat": 39.86,
+      "lon": -104.68,
+      "alt_ft": 11000,
+      "time": "2026-08-20T16:30:00Z"
+    },
+    {
+      "id": "ADSB-011",
+      "hex": "A33333",
+      "callsign": "N44QX",
+      "airport": "KDEN",
+      "lat": 40.2,
+      "lon": -104.1,
+      "alt_ft": 17500,
+      "time": "2026-08-21T17:00:00Z"
+    },
+    {
+      "id": "ADSB-012",
+      "hex": "A44444",
+      "callsign": "UAL9",
+      "airport": "KDEN",
+      "lat": 39.849,
+      "lon": -104.673,
+      "alt_ft": 6000,
+      "time": "2026-08-19T10:05:00Z"
+    }
+  ]
+}

@@ -1,0 +1,646 @@
+{
+  "project": "agent-framework-bakeoff",
+  "runtime": "mechanical-brief",
+  "rubric": "https://github.com/PCSchmidt/portfolio-kit/blob/main/docs/EVAL_RUBRIC_TEMPLATE.md",
+  "target_gate_catch": 0.85,
+  "split": "held-out-fixtures",
+  "cases": [
+    {
+      "case_id": "AIR-001",
+      "kind": "good",
+      "failure_mode": null,
+      "query": { "airport": "KDEN", "date": "2026-08-19" },
+      "expect_verdict": "pass",
+      "brief": {
+        "airport": "KDEN",
+        "date": "2026-08-19",
+        "findings": [
+          {
+            "id": "F1",
+            "summary": "UAL123 airborne during RWY 16L/34R closure",
+            "confidence": 0.86,
+            "citations": ["ADSB-001", "NOTAM-001"]
+          }
+        ]
+      }
+    },
+    {
+      "case_id": "AIR-002",
+      "kind": "good",
+      "failure_mode": null,
+      "query": { "airport": "KDEN", "date": "2026-08-19" },
+      "expect_verdict": "pass",
+      "brief": {
+        "airport": "KDEN",
+        "date": "2026-08-19",
+        "findings": [
+          {
+            "id": "F1",
+            "summary": "SWA456 during the same runway closure window",
+            "confidence": 0.84,
+            "citations": ["ADSB-002", "NOTAM-001"]
+          }
+        ]
+      }
+    },
+    {
+      "case_id": "AIR-003",
+      "kind": "good",
+      "failure_mode": null,
+      "query": { "airport": "KDEN", "date": "2026-08-19" },
+      "expect_verdict": "pass",
+      "brief": {
+        "airport": "KDEN",
+        "date": "2026-08-19",
+        "findings": [
+          {
+            "id": "F1",
+            "summary": "FFT321 during RWY 16L/34R closure",
+            "confidence": 0.81,
+            "citations": ["ADSB-005", "NOTAM-001"]
+          }
+        ]
+      }
+    },
+    {
+      "case_id": "AIR-004",
+      "kind": "good",
+      "failure_mode": null,
+      "query": { "airport": "KDEN", "date": "2026-08-19" },
+      "expect_verdict": "pass",
+      "brief": {
+        "airport": "KDEN",
+        "date": "2026-08-19",
+        "findings": [
+          {
+            "id": "F1",
+            "summary": "DAL789 still inside the closure window",
+            "confidence": 0.8,
+            "citations": ["ADSB-004", "NOTAM-001"]
+          }
+        ]
+      }
+    },
+    {
+      "case_id": "AIR-005",
+      "kind": "good",
+      "failure_mode": null,
+      "query": { "airport": "KDEN", "date": "2026-08-19" },
+      "expect_verdict": "pass",
+      "brief": {
+        "airport": "KDEN",
+        "date": "2026-08-19",
+        "findings": [
+          {
+            "id": "F1",
+            "summary": "N17AB near a published crane NOTAM",
+            "confidence": 0.78,
+            "citations": ["ADSB-003", "NOTAM-002"]
+          }
+        ]
+      }
+    },
+    {
+      "case_id": "AIR-006",
+      "kind": "good",
+      "failure_mode": null,
+      "query": { "airport": "KJFK", "date": "2026-08-19" },
+      "expect_verdict": "pass",
+      "brief": {
+        "airport": "KJFK",
+        "date": "2026-08-19",
+        "findings": [
+          {
+            "id": "F1",
+            "summary": "JBU88 during RWY 04L/22R closure",
+            "confidence": 0.83,
+            "citations": ["ADSB-006", "NOTAM-004"]
+          }
+        ]
+      }
+    },
+    {
+      "case_id": "AIR-007",
+      "kind": "good",
+      "failure_mode": null,
+      "query": { "airport": "KJFK", "date": "2026-08-19" },
+      "expect_verdict": "pass",
+      "brief": {
+        "airport": "KJFK",
+        "date": "2026-08-19",
+        "findings": [
+          {
+            "id": "F1",
+            "summary": "AAL100 inside the VIP TFR window",
+            "confidence": 0.88,
+            "citations": ["ADSB-007", "NOTAM-005"]
+          }
+        ]
+      }
+    },
+    {
+      "case_id": "AIR-008",
+      "kind": "good",
+      "failure_mode": null,
+      "query": { "airport": "KJFK", "date": "2026-08-19" },
+      "expect_verdict": "pass",
+      "brief": {
+        "airport": "KJFK",
+        "date": "2026-08-19",
+        "findings": [
+          {
+            "id": "F1",
+            "summary": "N900KS while ILS RWY 04L is unserviceable",
+            "confidence": 0.74,
+            "citations": ["ADSB-008", "NOTAM-008"]
+          }
+        ]
+      }
+    },
+    {
+      "case_id": "AIR-009",
+      "kind": "good",
+      "failure_mode": null,
+      "query": { "airport": "KDEN", "date": "2026-08-20" },
+      "expect_verdict": "pass",
+      "brief": {
+        "airport": "KDEN",
+        "date": "2026-08-20",
+        "findings": [
+          {
+            "id": "F1",
+            "summary": "UAL200 during grass-mowing NOTAM",
+            "confidence": 0.72,
+            "citations": ["ADSB-009", "NOTAM-006"]
+          }
+        ]
+      }
+    },
+    {
+      "case_id": "AIR-010",
+      "kind": "good",
+      "failure_mode": null,
+      "query": { "airport": "KDEN", "date": "2026-08-20" },
+      "expect_verdict": "pass",
+      "brief": {
+        "airport": "KDEN",
+        "date": "2026-08-20",
+        "findings": [
+          {
+            "id": "F1",
+            "summary": "SWA12 with bird-activity NOTAM",
+            "confidence": 0.7,
+            "citations": ["ADSB-010", "NOTAM-007"]
+          }
+        ]
+      }
+    },
+    {
+      "case_id": "AIR-011",
+      "kind": "good",
+      "failure_mode": null,
+      "query": { "airport": "KDEN", "date": "2026-08-19" },
+      "expect_verdict": "pass",
+      "brief": {
+        "airport": "KDEN",
+        "date": "2026-08-19",
+        "findings": [
+          {
+            "id": "F1",
+            "summary": "Synthetic ISS pass during runway closure",
+            "confidence": 0.69,
+            "citations": ["TLE-ISS-001", "NOTAM-001"]
+          }
+        ]
+      }
+    },
+    {
+      "case_id": "AIR-012",
+      "kind": "good",
+      "failure_mode": null,
+      "query": { "airport": "KDEN", "date": "2026-08-19" },
+      "expect_verdict": "pass",
+      "brief": {
+        "airport": "KDEN",
+        "date": "2026-08-19",
+        "findings": [
+          {
+            "id": "F1",
+            "summary": "Morning UAL9 with all-day crane NOTAM",
+            "confidence": 0.77,
+            "citations": ["ADSB-012", "NOTAM-002"]
+          }
+        ]
+      }
+    },
+    {
+      "case_id": "AIR-013",
+      "kind": "bad",
+      "failure_mode": "empty_brief",
+      "query": { "airport": "KDEN", "date": "2026-08-19" },
+      "expect_verdict": "fail",
+      "brief": { "airport": "KDEN", "date": "2026-08-19", "findings": [] }
+    },
+    {
+      "case_id": "AIR-014",
+      "kind": "bad",
+      "failure_mode": "missing_section",
+      "query": { "airport": "KDEN", "date": "2026-08-19" },
+      "expect_verdict": "fail",
+      "brief": { "airport": "KDEN", "date": "2026-08-19", "notes": "looks complete" }
+    },
+    {
+      "case_id": "AIR-015",
+      "kind": "bad",
+      "failure_mode": "heading_only",
+      "query": { "airport": "KDEN", "date": "2026-08-19" },
+      "expect_verdict": "fail",
+      "brief": "# Daily airspace brief\n\n## Findings\n"
+    },
+    {
+      "case_id": "AIR-016",
+      "kind": "bad",
+      "failure_mode": "stub_as_done",
+      "query": { "airport": "KDEN", "date": "2026-08-19" },
+      "expect_verdict": "fail",
+      "brief": {
+        "airport": "KDEN",
+        "date": "2026-08-19",
+        "findings": [
+          {
+            "id": "F1",
+            "summary": "TODO fill citations later. Placeholder only.",
+            "confidence": 0.9,
+            "citations": ["ADSB-001", "NOTAM-001"]
+          }
+        ]
+      }
+    },
+    {
+      "case_id": "AIR-017",
+      "kind": "bad",
+      "failure_mode": "missing_citation",
+      "query": { "airport": "KDEN", "date": "2026-08-19" },
+      "expect_verdict": "fail",
+      "brief": {
+        "airport": "KDEN",
+        "date": "2026-08-19",
+        "findings": [
+          {
+            "id": "F1",
+            "summary": "Runway closed with traffic",
+            "confidence": 0.9
+          }
+        ]
+      }
+    },
+    {
+      "case_id": "AIR-018",
+      "kind": "bad",
+      "failure_mode": "fabricated_citation",
+      "query": { "airport": "KDEN", "date": "2026-08-19" },
+      "expect_verdict": "fail",
+      "brief": {
+        "airport": "KDEN",
+        "date": "2026-08-19",
+        "findings": [
+          {
+            "id": "F1",
+            "summary": "Conflict with unpublished notice",
+            "confidence": 0.91,
+            "citations": ["NOTAM-999"]
+          }
+        ]
+      }
+    },
+    {
+      "case_id": "AIR-019",
+      "kind": "bad",
+      "failure_mode": "extra_entity",
+      "query": { "airport": "KDEN", "date": "2026-08-19" },
+      "expect_verdict": "fail",
+      "brief": {
+        "airport": "KDEN",
+        "date": "2026-08-19",
+        "findings": [
+          {
+            "id": "F1",
+            "summary": "F-35 sortie conflicts with the runway closure",
+            "confidence": 0.95,
+            "citations": ["ADSB-001", "NOTAM-001"]
+          }
+        ]
+      }
+    },
+    {
+      "case_id": "AIR-020",
+      "kind": "bad",
+      "failure_mode": "extra_entity",
+      "query": { "airport": "KDEN", "date": "2026-08-19" },
+      "expect_verdict": "fail",
+      "brief": {
+        "airport": "KDEN",
+        "date": "2026-08-19",
+        "findings": [
+          {
+            "id": "F1",
+            "summary": "JPO inventory feed implied a conflict",
+            "confidence": 0.93,
+            "citations": ["ADSB-001", "NOTAM-001"]
+          }
+        ]
+      }
+    },
+    {
+      "case_id": "AIR-021",
+      "kind": "bad",
+      "failure_mode": "date_mismatch",
+      "query": { "airport": "KDEN", "date": "2026-08-19" },
+      "expect_verdict": "fail",
+      "brief": {
+        "airport": "KDEN",
+        "date": "2026-08-19",
+        "findings": [
+          {
+            "id": "F1",
+            "summary": "Uses a next-day track",
+            "confidence": 0.8,
+            "citations": ["ADSB-009", "NOTAM-001"]
+          }
+        ]
+      }
+    },
+    {
+      "case_id": "AIR-022",
+      "kind": "bad",
+      "failure_mode": "airport_mismatch",
+      "query": { "airport": "KDEN", "date": "2026-08-19" },
+      "expect_verdict": "fail",
+      "brief": {
+        "airport": "KDEN",
+        "date": "2026-08-19",
+        "findings": [
+          {
+            "id": "F1",
+            "summary": "Cites a KJFK track for a KDEN query",
+            "confidence": 0.8,
+            "citations": ["ADSB-006", "NOTAM-001"]
+          }
+        ]
+      }
+    },
+    {
+      "case_id": "AIR-023",
+      "kind": "bad",
+      "failure_mode": "no_overlap",
+      "query": { "airport": "KDEN", "date": "2026-08-19" },
+      "expect_verdict": "fail",
+      "brief": {
+        "airport": "KDEN",
+        "date": "2026-08-19",
+        "findings": [
+          {
+            "id": "F1",
+            "summary": "Morning track paired with evening runway closure",
+            "confidence": 0.82,
+            "citations": ["ADSB-012", "NOTAM-001"]
+          }
+        ]
+      }
+    },
+    {
+      "case_id": "AIR-024",
+      "kind": "bad",
+      "failure_mode": "missing_confidence",
+      "query": { "airport": "KJFK", "date": "2026-08-19" },
+      "expect_verdict": "fail",
+      "brief": {
+        "airport": "KJFK",
+        "date": "2026-08-19",
+        "findings": [
+          {
+            "id": "F1",
+            "summary": "TFR overlap without a score",
+            "citations": ["ADSB-007", "NOTAM-005"]
+          }
+        ]
+      }
+    },
+    {
+      "case_id": "AIR-025",
+      "kind": "bad",
+      "failure_mode": "confidence_out_of_range",
+      "query": { "airport": "KJFK", "date": "2026-08-19" },
+      "expect_verdict": "fail",
+      "brief": {
+        "airport": "KJFK",
+        "date": "2026-08-19",
+        "findings": [
+          {
+            "id": "F1",
+            "summary": "Impossible confidence",
+            "confidence": 1.5,
+            "citations": ["ADSB-007", "NOTAM-005"]
+          }
+        ]
+      }
+    },
+    {
+      "case_id": "AIR-026",
+      "kind": "bad",
+      "failure_mode": "missing_citation",
+      "query": { "airport": "KDEN", "date": "2026-08-19" },
+      "expect_verdict": "fail",
+      "brief": {
+        "airport": "KDEN",
+        "date": "2026-08-19",
+        "findings": [
+          {
+            "id": "F1",
+            "summary": "Empty citation list",
+            "confidence": 0.8,
+            "citations": []
+          }
+        ]
+      }
+    },
+    {
+      "case_id": "AIR-027",
+      "kind": "bad",
+      "failure_mode": "date_mismatch",
+      "query": { "airport": "KDEN", "date": "2026-08-19" },
+      "expect_verdict": "fail",
+      "brief": {
+        "airport": "KDEN",
+        "date": "2026-08-19",
+        "findings": [
+          {
+            "id": "F1",
+            "summary": "Next-day ISS pass cited on the 19th",
+            "confidence": 0.7,
+            "citations": ["TLE-ISS-003", "NOTAM-001"]
+          }
+        ]
+      }
+    },
+    {
+      "case_id": "AIR-028",
+      "kind": "bad",
+      "failure_mode": "airport_mismatch",
+      "query": { "airport": "KDEN", "date": "2026-08-19" },
+      "expect_verdict": "fail",
+      "brief": {
+        "airport": "KDEN",
+        "date": "2026-08-19",
+        "findings": [
+          {
+            "id": "F1",
+            "summary": "KJFK runway closure cited for Denver",
+            "confidence": 0.8,
+            "citations": ["ADSB-001", "NOTAM-004"]
+          }
+        ]
+      }
+    },
+    {
+      "case_id": "AIR-029",
+      "kind": "bad",
+      "failure_mode": "fabricated_citation",
+      "query": { "airport": "KJFK", "date": "2026-08-19" },
+      "expect_verdict": "fail",
+      "brief": {
+        "airport": "KJFK",
+        "date": "2026-08-19",
+        "findings": [
+          {
+            "id": "F1",
+            "summary": "Invented ADS-B id",
+            "confidence": 0.9,
+            "citations": ["ADSB-999", "NOTAM-004"]
+          }
+        ]
+      }
+    },
+    {
+      "case_id": "AIR-030",
+      "kind": "bad",
+      "failure_mode": "extra_entity",
+      "query": { "airport": "KDEN", "date": "2026-08-19" },
+      "expect_verdict": "fail",
+      "brief": {
+        "airport": "KDEN",
+        "date": "2026-08-19",
+        "findings": [
+          {
+            "id": "F1",
+            "summary": "classified overlay mentioned in the narrative",
+            "confidence": 0.8,
+            "citations": ["ADSB-001", "NOTAM-001"]
+          }
+        ]
+      }
+    },
+    {
+      "case_id": "AIR-031",
+      "kind": "bad",
+      "failure_mode": "missing_finding_id",
+      "query": { "airport": "KDEN", "date": "2026-08-20" },
+      "expect_verdict": "fail",
+      "brief": {
+        "airport": "KDEN",
+        "date": "2026-08-20",
+        "findings": [
+          {
+            "summary": "Bird activity with a track",
+            "confidence": 0.7,
+            "citations": ["ADSB-010", "NOTAM-007"]
+          }
+        ]
+      }
+    },
+    {
+      "case_id": "AIR-032",
+      "kind": "bad",
+      "failure_mode": "date_mismatch",
+      "query": { "airport": "KDEN", "date": "2026-08-19" },
+      "expect_verdict": "fail",
+      "brief": {
+        "airport": "KDEN",
+        "date": "2026-08-19",
+        "findings": [
+          {
+            "id": "F1",
+            "summary": "Track from the 21st",
+            "confidence": 0.75,
+            "citations": ["ADSB-011", "NOTAM-002"]
+          }
+        ]
+      }
+    },
+    {
+      "case_id": "AIR-033",
+      "kind": "bad",
+      "failure_mode": "no_overlap",
+      "query": { "airport": "KDEN", "date": "2026-08-19" },
+      "expect_verdict": "fail",
+      "brief": {
+        "airport": "KDEN",
+        "date": "2026-08-19",
+        "findings": [
+          {
+            "id": "F1",
+            "summary": "Starlink pass after the runway NOTAM ends",
+            "confidence": 0.66,
+            "citations": ["TLE-STARLINK-001", "NOTAM-001"]
+          }
+        ]
+      }
+    },
+    {
+      "case_id": "AIR-034",
+      "kind": "bad",
+      "failure_mode": "stub_as_done",
+      "query": { "airport": "KJFK", "date": "2026-08-19" },
+      "expect_verdict": "fail",
+      "brief": {
+        "airport": "KJFK",
+        "date": "2026-08-19",
+        "findings": [
+          {
+            "id": "F1",
+            "summary": "TBD: coming soon once retrieval works",
+            "confidence": 0.5,
+            "citations": ["ADSB-006", "NOTAM-004"]
+          }
+        ]
+      }
+    },
+    {
+      "case_id": "AIR-035",
+      "kind": "bad",
+      "failure_mode": "heading_only",
+      "query": { "airport": "KDEN", "date": "2026-08-20" },
+      "expect_verdict": "fail",
+      "brief": null
+    },
+    {
+      "case_id": "AIR-036",
+      "kind": "bad",
+      "failure_mode": "extra_entity",
+      "query": { "airport": "KDEN", "date": "2026-08-19" },
+      "expect_verdict": "fail",
+      "brief": {
+        "airport": "KDEN",
+        "date": "2026-08-19",
+        "findings": [
+          {
+            "id": "F1",
+            "summary": "employer inventory overlay used as a source",
+            "confidence": 0.8,
+            "citations": ["ADSB-001", "NOTAM-001"]
+          }
+        ]
+      }
+    }
+  ]
+}

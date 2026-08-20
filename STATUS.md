@@ -1,10 +1,22 @@
 # Status
 
-**Phase:** 0 — Scaffolding
-**Date:** 2026-08-19 (family paused)
-**HEAD:** `58460ef`
+**Phase:** 1 — CONTRACT / SPEC / golden set
+**Date:** 2026-08-20
 **Family handoff:** [portfolio-kit docs/STATUS.md](https://github.com/PCSchmidt/portfolio-kit/blob/main/docs/STATUS.md)
 
-Documentation only. Shared contracts are published on portfolio-kit `main` (0.1.0). Honesty-gate Phases 1–4 are the first consumer.
+## Done
 
-**Next (recommended when work resumes):** Phase 1 — CONTRACT.md, SPEC.md, and a 30–50 case public golden set. Reuse honesty-gate `eval/` shape and portfolio-kit D3. Do not start red/blue.
+- Frozen airspace-risk task in [CONTRACT.md](CONTRACT.md) / [SPEC.md](SPEC.md)
+- Synthetic public fixtures + [fixtures/SOURCES.md](fixtures/SOURCES.md)
+- Mechanical brief judge (`src/judge.js`)
+- 36-case golden set `AIR-001`–`AIR-036` (12 good / 24 bad)
+- `npm test` / `npm run eval` + CI
+
+## Not done
+
+- LangGraph baseline (Phase 2)
+- CrewAI, AG2/MAF, Meridian-gated ports
+- Unified score table across runtimes
+- LLM judge
+
+**Next:** Phase 2 LangGraph baseline that emits the same brief JSON. Do not start red/blue.

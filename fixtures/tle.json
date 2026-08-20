@@ -1,0 +1,34 @@
+{
+  "source": "synthetic public-style satellite pass summaries. Not a Space-Track dump. Geometry is invented for eval.",
+  "retrieved": "2026-08-19",
+  "passes": [
+    {
+      "id": "TLE-ISS-001",
+      "object": "ISS (synthetic)",
+      "over": "KDEN",
+      "time": "2026-08-19T19:30:00Z",
+      "max_elev_deg": 62
+    },
+    {
+      "id": "TLE-ISS-002",
+      "object": "ISS (synthetic)",
+      "over": "KJFK",
+      "time": "2026-08-19T14:10:00Z",
+      "max_elev_deg": 41
+    },
+    {
+      "id": "TLE-STARLINK-001",
+      "object": "Starlink train (synthetic)",
+      "over": "KDEN",
+      "time": "2026-08-19T22:30:00Z",
+      "max_elev_deg": 55
+    },
+    {
+      "id": "TLE-ISS-003",
+      "object": "ISS (synthetic)",
+      "over": "KDEN",
+      "time": "2026-08-20T18:00:00Z",
+      "max_elev_deg": 28
+    }
+  ]
+}

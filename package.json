@@ -1,0 +1,27 @@
+{
+  "name": "agent-framework-bakeoff",
+  "version": "0.1.0",
+  "private": true,
+  "description": "Same public airspace-risk task on four agent runtimes, scored with portfolio-kit rubrics.",
+  "type": "module",
+  "scripts": {
+    "test": "node --test tests/*.test.js",
+    "eval": "node eval/run.js"
+  },
+  "engines": {
+    "node": ">=20"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/PCSchmidt/agent-framework-bakeoff.git"
+  },
+  "homepage": "https://github.com/PCSchmidt/agent-framework-bakeoff",
+  "license": "MIT",
+  "keywords": [
+    "eval",
+    "langgraph",
+    "crewai",
+    "meridian",
+    "portfolio-kit"
+  ]
+}

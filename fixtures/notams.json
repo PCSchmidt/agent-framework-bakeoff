@@ -1,0 +1,62 @@
+{
+  "source": "synthetic public-style NOTAM / TFR text. Not a live FAA feed.",
+  "retrieved": "2026-08-19",
+  "items": [
+    {
+      "id": "NOTAM-001",
+      "location": "KDEN",
+      "valid_from": "2026-08-19T18:00:00Z",
+      "valid_to": "2026-08-19T22:00:00Z",
+      "text": "RWY 16L/34R CLSD"
+    },
+    {
+      "id": "NOTAM-002",
+      "location": "KDEN",
+      "valid_from": "2026-08-19T00:00:00Z",
+      "valid_to": "2026-08-19T23:59:00Z",
+      "text": "CRANE 500FT AGL 1NM NE OF ARPT"
+    },
+    {
+      "id": "NOTAM-003",
+      "location": "KDEN",
+      "valid_from": "2026-08-19T12:00:00Z",
+      "valid_to": "2026-08-19T23:59:00Z",
+      "text": "TWY A BTN A3 AND A7 CLSD"
+    },
+    {
+      "id": "NOTAM-004",
+      "location": "KJFK",
+      "valid_from": "2026-08-19T13:00:00Z",
+      "valid_to": "2026-08-19T17:00:00Z",
+      "text": "RWY 04L/22R CLSD"
+    },
+    {
+      "id": "NOTAM-005",
+      "location": "KJFK",
+      "valid_from": "2026-08-19T14:00:00Z",
+      "valid_to": "2026-08-19T16:00:00Z",
+      "text": "TFR VIP MOVEMENT SFC-3000FT"
+    },
+    {
+      "id": "NOTAM-006",
+      "location": "KDEN",
+      "valid_from": "2026-08-20T14:00:00Z",
+      "valid_to": "2026-08-20T20:00:00Z",
+      "text": "GRASS MOWING ADJ RWY 17R"
+    },
+    {
+      "id": "NOTAM-007",
+      "location": "KDEN",
+      "valid_from": "2026-08-20T00:00:00Z",
+      "valid_to": "2026-08-20T23:59:00Z",
+      "text": "BIRD ACT ON AND IN VICINITY OF ARPT"
+    },
+    {
+      "id": "NOTAM-008",
+      "location": "KJFK",
+      "valid_from": "2026-08-19T00:00:00Z",
+      "valid_to": "2026-08-19T23:59:00Z",
+      "text": "ILS RWY 04L U/S"
+    }
+  ]
+}
