@@ -6,7 +6,11 @@
   "type": "module",
   "scripts": {
     "test": "node --test tests/*.test.js",
-    "eval": "node eval/run.js"
+    "eval": "node eval/run.js",
+    "eval:langgraph": "node eval/run-langgraph.js"
+  },
+  "dependencies": {
+    "@langchain/langgraph": "^0.4.10"
   },
   "engines": {
     "node": ">=20"

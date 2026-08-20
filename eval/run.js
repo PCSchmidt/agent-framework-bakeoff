@@ -76,7 +76,7 @@ export function runEval(catalog, opts = {}) {
     },
     target_gate_catch: catalog.target_gate_catch ?? 0.85,
     cases: rows,
-    next: 'Phase 2: LangGraph baseline that emits the same brief JSON against fixtures/.',
+    next: 'Phase 2 LangGraph is `npm run eval:langgraph`. Phase 3 ports CrewAI / AG2 / Meridian onto src/tools.js.',
   }
   report.ok = (report.metrics.D3_gate_catch_rate ?? 0) >= report.target_gate_catch
     && report.metrics.verdict_agreement === 1

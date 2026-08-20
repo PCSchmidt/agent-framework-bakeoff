@@ -7,9 +7,14 @@ npm test
 npm run eval
 ```
 
-- No network, no LangGraph / CrewAI / dsh, no API keys
+```sh
+npm run eval:langgraph
+```
+
+- Phase 1 `npm run eval`: authored briefs vs judge (D3). No network.
+- Phase 2 `npm run eval:langgraph`: LangGraph emits briefs for unique `{airport,date}` queries; judge must `pass` all.
 - Cases: [cases.json](cases.json) (`AIR-001`–`AIR-036`)
 - Judge: [src/judge.js](../src/judge.js) against [fixtures/](../fixtures/)
 - Target: 30–50 cases, gate-catch ≥ 85% on known-bad, 100% labeled agreement
 
-Last Phase 1 design: 12 good / 24 bad. Runtimes in later phases must emit the same brief JSON; they do not rewrite this catalog.
+Do not rewrite this catalog to match the generator.

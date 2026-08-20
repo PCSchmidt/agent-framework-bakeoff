@@ -7,9 +7,10 @@ This repository compares agent **runtimes** on one frozen public task. Contracts
 ```sh
 npm test
 npm run eval
+npm run eval:langgraph
 ```
 
-Both must stay green. `eval` is the published D3 table for Phase 1.
+All three must stay green. `eval` is the published D3 table; `eval:langgraph` is the Phase 2 runtime table.
 
 ## Catalog rules
 

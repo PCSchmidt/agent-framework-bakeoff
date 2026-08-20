@@ -2,9 +2,9 @@
 
 Implements the **same** agent team four ways on one public, defense-shaped task and scores them with one eval harness.
 
-**Status:** Phase 1 — CONTRACT / SPEC / golden set
+**Status:** Phase 2 — LangGraph baseline
 
-Built on Meridian’s gate + independent Evaluator contracts. The point is trade-off literacy, not a framework tutorial. Phase 1 freezes the task so later ports cannot change the problem.
+Built on Meridian’s gate + independent Evaluator contracts. The point is trade-off literacy, not a framework tutorial. Phase 1 froze the task; Phase 2 emits that brief JSON from a LangGraph of fixture tools (no LLM).
 
 ## Relation to Meridian
 
@@ -37,11 +37,13 @@ flowchart TB
 ## Develop
 
 ```sh
+npm install
 npm test
 npm run eval
+npm run eval:langgraph
 ```
 
-Requires Node.js 20+. No dependencies, no network, no API keys.
+Requires Node.js 20+. LangGraph uses checked-in fixtures only — no network, no API keys.
 
 ## Golden set
 
@@ -49,10 +51,12 @@ Requires Node.js 20+. No dependencies, no network, no API keys.
 
 Reports portfolio-kit **D3 gate-catch** on known-bad authored briefs and verdict agreement against [src/judge.js](src/judge.js). Target: catch ≥ 85% and 100% labeled agreement.
 
+LangGraph (`npm run eval:langgraph`) runs unique `{airport, date}` queries from that catalog through [src/runtimes/langgraph.js](src/runtimes/langgraph.js). Last run: 3/3 judge `pass`.
+
 ## Planned phases
 
-1. CONTRACT.md, SPEC.md, golden set of 30–50 cases *(this increment)*
-2. LangGraph baseline
+1. CONTRACT.md, SPEC.md, golden set of 30–50 cases
+2. LangGraph baseline *(this increment)*
 3. CrewAI, AG2/MAF, Meridian-gated ports
 4. Unified runner + score tables
 5. Failure-mode write-up + AutoGen → Microsoft Agent Framework postmortem
@@ -68,8 +72,11 @@ CONTRACT.md
 SPEC.md
 gates.yaml
 fixtures/
-eval/cases.json
-eval/run.js
+eval/run-langgraph.js
+src/judge.js
+src/world.js
+src/tools.js
+src/runtimes/langgraphjs
 src/judge.js
 src/world.js
 tests/
