@@ -1,23 +1,23 @@
 # Status
 
-**Phase:** 3 — four-runtime ports
-**Date:** 2026-08-20
+**Phase:** 4 — unified score table
+**Date:** 2026-08-21
 **Family handoff:** [portfolio-kit docs/STATUS.md](https://github.com/PCSchmidt/portfolio-kit/blob/main/docs/STATUS.md)
 
 ## Done
 
 - Frozen airspace-risk task, fixtures, mechanical judge, 36-case golden set
-- Shared retrieve/join/emit in [src/tools.js](src/tools.js)
-- LangGraph, CrewAI-shaped crew, AG2-shaped handoff, Meridian-gated port
-- `npm run eval:runtimes` — 3 unique queries × 4 runtimes, all judge `pass`
+- Four runtimes on [src/tools.js](src/tools.js)
+- Published table: [eval/SCORE_TABLE.md](eval/SCORE_TABLE.md) (`npm run eval:table`)
 
 ## Last measured
 
-2026-08-20: `npm test` 15/15; D3 catch 1.0; langgraph/crewai/ag2/meridian 3/3.
+2026-08-21: `npm test` 18/18; D3 catch 1.0 (n=24); D5 3/3 × 4; Meridian D6=10 (others 0).
 
 ## Not done
 
-- Unified score table / failure-mode write-up (Phase 4)
-- Real CrewAI / AG2 Python SDKs or LLM nodes
+- LLM nodes / Python CrewAI or AutoGen SDKs
+- D9 interpretability (meridian-jspace)
+- AutoGen → MAF postmortem write-up (optional)
 
-**Next:** Phase 4 unified runner + score table. Do not start red/blue.
+**Next:** stop bake-off implementation. Do **not** start red/blue. Later family: living-docs-architect.

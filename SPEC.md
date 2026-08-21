@@ -63,6 +63,6 @@ Features as `##` headings, in priority order. Each heading is a candidate FEATUR
 
 - [x] LangGraph baseline emits the same brief JSON *(Phase 2)*
 - [x] CrewAI, AG2/MAF, Meridian-gated ports *(Phase 3)*
-- [ ] Unified score table *(Phase 4)*
+- [x] Unified score table *(Phase 4)*
 
 **Out of scope for this feature:** LLM nodes; installing the Python CrewAI / AutoGen SDKs.

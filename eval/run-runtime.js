@@ -67,7 +67,7 @@ export async function runRuntimeEval(catalog, runtimeId, opts = {}) {
       query_pass_n: passN,
     },
     cases: rows,
-    next: 'Phase 4: unified score table across runtimes.',
+    next: 'Phase 4 unified table is `npm run eval:table`.',
   }
   report.ok = n > 0 && passN === n
   return report

@@ -8,9 +8,10 @@ This repository compares agent **runtimes** on one frozen public task. Contracts
 npm test
 npm run eval
 npm run eval:runtimes
+npm run eval:table
 ```
 
-All three must stay green. `eval` is the published D3 table; `eval:runtimes` is the four-runtime table.
+All four must stay green. `eval:table` regenerates [eval/SCORE_TABLE.md](eval/SCORE_TABLE.md).
 
 ## Catalog rules
 

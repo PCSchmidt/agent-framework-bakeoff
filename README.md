@@ -2,9 +2,9 @@
 
 Implements the **same** agent team four ways on one public, defense-shaped task and scores them with one eval harness.
 
-**Status:** Phase 3 — four-runtime ports on shared fixture tools
+**Status:** Phase 4 — unified score table
 
-Built on Meridian’s gate + independent Evaluator contracts. The point is trade-off literacy, not a framework tutorial. Phase 1 froze the task; Phase 2–3 emit that brief JSON from LangGraph, CrewAI-shaped, AG2-shaped, and Meridian-gated orchestrations (no LLM).
+Built on Meridian’s gate + independent Evaluator contracts. The point is trade-off literacy, not a framework tutorial. Four fixture-tool ports emit the same brief JSON; [eval/SCORE_TABLE.md](eval/SCORE_TABLE.md) is the published comparison (no LLM).
 
 ## Relation to Meridian
 
@@ -41,6 +41,7 @@ npm install
 npm test
 npm run eval
 npm run eval:runtimes
+npm run eval:table
 ```
 
 Requires Node.js 20+. All runtimes use checked-in fixtures only — no network, no API keys.
@@ -50,15 +51,17 @@ Requires Node.js 20+. All runtimes use checked-in fixtures only — no network, 
 [eval/cases.json](eval/cases.json) — 36 cases (`AIR-001`–`AIR-036`), 12 good / 24 known-bad.
 
 Reports portfolio-kit **D3 gate-catch** on known-bad authored briefs and verdict agreement against [src/judge.js](src/judge.js). Target: catch ≥ 85% and 100% labeled agreement.
+ (3/3 each). `npm run eval:table` writes [eval/SCORE_TABLE.md](eval/SCORE_TABLE.md).
 
-`npm run eval:runtimes` runs unique `{airport, date}` queries through all four ports. Last run: 3/3 judge `pass` each (langgraph, crewai, ag2, meridian).
+Honest result: D1/D2/D4/D5 match because all ports share [src/tools.js](src/tools.js). Meridian is the only fail-closed query gate (D6). AG2 is the only port that ships a speaker handoff on the brief (D8).
 
 ## Planned phases
 
 1. CONTRACT.md, SPEC.md, golden set of 30–50 cases
 2. LangGraph baseline
-3. CrewAI, AG2/MAF, Meridian-gated ports *(this increment)*
-4. Unified runner + score tables
+3. CrewAI, AG2/MAF, Meridian-gated ports
+4. Unified runner + score tables *(this increment)*
+5. Optional AutoGen → Microsoft Agent Framework postmortem as a **write-up**, not a fifth runtime
 5. Failure-mode write-up + AutoGen → Microsoft Agent Framework postmortem
 
 ## Public / unclassified data only
@@ -73,6 +76,8 @@ SPEC.md
 gates.yaml
 fixtures/
 eval/cases.json
+eval/score-table.js
+eval/SCORE_TABLE.md
 eval/run.js
 eval/run-runtime.js
 src/tools.js
