@@ -20,4 +20,4 @@
 - D9 interpretability (meridian-jspace)
 - AutoGen → MAF postmortem write-up (optional)
 
-**Next:** stop bake-off implementation. Do **not** start red/blue. Later family: living-docs-architect.
+**Next:** stop bake-off implementation. Do **not** start red/blue. Later family: meridian-jspace Phase 2 or gate-enforced-rag Phase 6.
