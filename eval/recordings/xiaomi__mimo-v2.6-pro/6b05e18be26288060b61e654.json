@@ -1,0 +1,45 @@
+{
+  "key": "6b05e18be26288060b61e654",
+  "prompt_version": "brief-writer-v1",
+  "model": "xiaomi/mimo-v2.6-pro",
+  "params": {
+    "temperature": 0.7,
+    "sample": 0
+  },
+  "meta": {
+    "airport": "KATL",
+    "date": "2026-08-23",
+    "attempt": 1
+  },
+  "recorded_at": "2026-09-28T19:08:42.815Z",
+  "response": {
+    "content": "{\"airport\":\"KATL\",\"date\":\"2026-08-23\",\"findings\":[{\"id\":\"F1\",\"summary\":\"DAL1 (ADSB-024) was tracked at 6000 ft at 06:15Z during NOTAM-014 closure of RWY 8L/26R (06:00Z-08:00Z).\",\"confidence\":0.95,\"citations\":[\"ADSB-024\",\"NOTAM-014\"]},{\"id\":\"F2\",\"summary\":\"DAL22 (ADSB-025) was tracked at 5400 ft at 07:45Z during NOTAM-014 closure of RWY 8L/26R (06:00Z-08:00Z).\",\"confidence\":0.95,\"citations\":[\"ADSB-025\",\"NOTAM-014\"]},{\"id\":\"F3\",\"summary\":\"TLE-ISS-005 over KATL at 07:50Z (max elevation 53 deg) fell within NOTAM-014 validity (06:00Z-08:00Z) for the RWY 8L/26R closure.\",\"confidence\":0.9,\"citations\":[\"TLE-ISS-005\",\"NOTAM-014\"]},{\"id\":\"F4\",\"summary\":\"DAL22 (ADSB-025) was tracked at 5400 ft at 07:45Z during NOTAM-015 period when ILS RWY 9R was unserviceable (07:30Z-09:00Z).\",\"confidence\":0.95,\"citations\":[\"ADSB-025\",\"NOTAM-015\"]},{\"id\":\"F5\",\"summary\":\"TLE-ISS-005 over KATL at 07:50Z (max elevation 53 deg) fell within NOTAM-015 validity (07:30Z-09:00Z) when ILS RWY 9R was unserviceable.\",\"confidence\":0.9,\"citations\":[\"TLE-ISS-005\",\"NOTAM-015\"]},{\"id\":\"F6\",\"summary\":\"SWA3050 (ADSB-026) was tracked at 4700 ft at 08:59Z, within NOTAM-015 validity (07:30Z-09:00Z) when ILS RWY 9R was unserviceable.\",\"confidence\":0.95,\"citations\":[\"ADSB-026\",\"NOTAM-015\"]},{\"id\":\"F7\",\"summary\":\"DAL404 (ADSB-028) was tracked at 8000 ft at 12:30Z, at the closing endpoint of NOTAM-016 laser activity 2NM W of the airport (12:00Z-12:30Z, SFC-5000FT).\",\"confidence\":0.9,\"citations\":[\"ADSB-028\",\"NOTAM-016\"]},{\"id\":\"F8\",\"summary\":\"DAL2600 (ADSB-031) was tracked at 5100 ft at 22:10Z during NOTAM-017 closure of TWY L (22:00Z-23:59Z).\",\"confidence\":0.95,\"citations\":[\"ADSB-031\",\"NOTAM-017\"]}]}",
+    "finish_reason": "stop",
+    "served_model": "xiaomi/mimo-v2.6-pro",
+    "provider": "Xiaomi",
+    "usage": {
+      "prompt_tokens": 1350,
+      "completion_tokens": 1257,
+      "total_tokens": 2607,
+      "cost": 0.0016256208,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 128,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.0016256208,
+        "upstream_inference_prompt_cost": 0.0005320308,
+        "upstream_inference_completions_cost": 0.00109359
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 456,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    },
+    "latency_ms": 18036
+  }
+}

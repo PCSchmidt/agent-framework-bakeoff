@@ -66,3 +66,18 @@ Features as `##` headings, in priority order. Each heading is a candidate FEATUR
 - [x] Unified score table *(Phase 4)*
 
 **Out of scope for this feature:** LLM nodes; installing the Python CrewAI / AutoGen SDKs.
+
+## Feature: LLM brief writer with recorded replay
+
+**Gate:** evaluated
+**Acceptance:**
+
+- [x] `src/llm-writer.js` calls an OpenRouter model to write the brief from retrieved records; the precomputed overlap pairs are **not** in the prompt
+- [x] Every runtime accepts `opts.writer`; the deterministic template stays the default so Phases 1–4 are unchanged
+- [x] Paired design: the three ungated runtimes ship the shared first draft; Meridian judges it, returns the issues for up to 2 revisions, and fail-closes
+- [x] Responses are recorded under `eval/recordings/`; `npm run eval:llm` replays them offline with no key
+- [x] Five harder `{airport, date}` queries (KORD, KSEA, KATL, KBOS, KLAX) with window-boundary and near-miss traps
+- [x] Judge also flags `unsupported_claim` (summary names an uncited aircraft or record) and checks every cited NOTAM × track pair
+- [x] [eval/LLM_SCORE_TABLE.md](eval/LLM_SCORE_TABLE.md) reports draft pass, shipped clean / bad / blocked with 95% CIs, coverage, calls, and cost per run
+
+**Out of scope for this feature:** an LLM judge; installing the Python CrewAI / AutoGen SDKs; editing the golden set.

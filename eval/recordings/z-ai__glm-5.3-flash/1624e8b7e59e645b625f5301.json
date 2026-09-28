@@ -1,0 +1,45 @@
+{
+  "key": "1624e8b7e59e645b625f5301",
+  "prompt_version": "brief-writer-v1",
+  "model": "z-ai/glm-5.3-flash",
+  "params": {
+    "temperature": 0.7,
+    "sample": 3
+  },
+  "meta": {
+    "airport": "KSEA",
+    "date": "2026-08-22",
+    "attempt": 1
+  },
+  "recorded_at": "2026-09-28T19:07:07.650Z",
+  "response": {
+    "content": "{\n  \"airport\": \"KSEA\",\n  \"date\": \"2026-08-22\",\n  \"findings\": [\n    {\n      \"id\": \"F1\",\n      \"summary\": \"Track ASA402 at 2026-08-22T17:55:00Z (4100 ft) falls within the validity window of NOTAM-012 (crane 320 ft AGL 0.8 NM south of airport).\",\n      \"confidence\": 0.95,\n      \"citations\": [\"ADSB-020\", \"NOTAM-012\"]\n    },\n    {\n      \"id\": \"F2\",\n      \"summary\": \"Track QXE2104 at 2026-08-22T18:30:00Z (3600 ft) falls within the validity window of NOTAM-012 (crane 320 ft AGL 0.8 NM south of airport).\",\n      \"confidence\": 0.95,\n      \"citations\": [\"ADSB-021\", \"NOTAM-012\"]\n    },\n    {\n      \"id\": \"F3\",\n      \"summary\": \"Track DAL2231 at 2026-08-22T19:31:00Z (5200 ft) falls within the validity window of NOTAM-012 (crane 320 ft AGL 0.8 NM south of airport).\",\n      \"confidence\": 0.95,\n      \"citations\": [\"ADSB-022\", \"NOTAM-012\"]\n    },\n    {\n      \"id\": \"F4\",\n      \"summary\": \"Track N88SW at 2026-08-22T19:30:00Z (2200 ft) falls within the validity window of NOTAM-012 (crane 320 ft AGL 0.8 NM south of airport).\",\n      \"confidence\": 0.95,\n      \"citations\": [\"ADSB-023\", \"NOTAM-012\"]\n    },\n    {\n      \"id\": \"F5\",\n      \"summary\": \"Satellite pass TLE-STARLINK-002 (Starlink train (synthetic)) over KSEA at 2026-08-22T04:12:00Z, max elevation 38 deg, falls within the validity window of NOTAM-012.\",\n      \"confidence\": 0.95,\n      \"citations\": [\"TLE-STARLINK-002\", \"NOTAM-012\"]\n    },\n    {\n      \"id\": \"F6\",\n      \"summary\": \"Track QXE2104 at 2026-08-22T18:30:00Z (3600 ft) falls within the validity window of NOTAM-013 (RWY 16R/34L closed).\",\n      \"confidence\": 0.95,\n      \"citations\": [\"ADSB-021\", \"NOTAM-013\"]\n    },\n    {\n      \"id\": \"F7\",\n      \"summary\": \"Track N88SW at 2026-08-22T19:30:00Z (2200 ft) falls within the validity window of NOTAM-013 (RWY 16R/34L closed) at the inclusive end time.\",\n      \"confidence\": 0.9,\n      \"citations\": [\"ADSB-023\", \"NOTAM-013\"]\n    }\n  ]\n}",
+    "finish_reason": "stop",
+    "served_model": "z-ai/glm-5.3-flash",
+    "provider": "Modal",
+    "usage": {
+      "prompt_tokens": 782,
+      "completion_tokens": 2344,
+      "total_tokens": 3126,
+      "cost": 0.00126626,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 192,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.00126626,
+        "upstream_inference_prompt_cost": 0.00009426,
+        "upstream_inference_completions_cost": 0.001172
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 1157,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    },
+    "latency_ms": 19742
+  }
+}

@@ -1,0 +1,45 @@
+{
+  "key": "963226080ddf5ad90728e400",
+  "prompt_version": "brief-writer-v1",
+  "model": "deepseek/deepseek-v4-flash",
+  "params": {
+    "temperature": 0.7,
+    "sample": 2
+  },
+  "meta": {
+    "airport": "KBOS",
+    "date": "2026-08-23",
+    "attempt": 1
+  },
+  "recorded_at": "2026-09-28T19:04:58.753Z",
+  "response": {
+    "content": "{\n  \"airport\": \"KBOS\",\n  \"date\": \"2026-08-23\",\n  \"findings\": [\n    {\n      \"id\": \"F1\",\n      \"summary\": \"NOTAM-018: RWY 4R/22L CLSD from 2026-08-23T10:00:00Z to 2026-08-23T11:00:00Z.\",\n      \"confidence\": 1.0,\n      \"citations\": [\"NOTAM-018\"]\n    },\n    {\n      \"id\": \"F2\",\n      \"summary\": \"ADSB-032: JBU1101 at 3300 ft over KBOS at 2026-08-23T11:05:00Z.\",\n      \"confidence\": 1.0,\n      \"citations\": [\"ADSB-032\"]\n    },\n    {\n      \"id\": \"F3\",\n      \"summary\": \"TLE-ISS-006: ISS (synthetic) over KBOS at 2026-08-23T09:58:00Z, max elevation 31°.\",\n      \"confidence\": 1.0,\n      \"citations\": [\"TLE-ISS-006\"]\n    }\n  ]\n}",
+    "finish_reason": "stop",
+    "served_model": "deepseek/deepseek-v4-flash",
+    "provider": "Parasail",
+    "usage": {
+      "prompt_tokens": 507,
+      "completion_tokens": 581,
+      "total_tokens": 1088,
+      "cost": 0.00021574,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 256,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.00021574,
+        "upstream_inference_prompt_cost": 0.00005306,
+        "upstream_inference_completions_cost": 0.00016268
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 253,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    },
+    "latency_ms": 7440
+  }
+}

@@ -1,0 +1,45 @@
+{
+  "key": "62bf9eee8fd9da221c0a4878",
+  "prompt_version": "brief-writer-v1",
+  "model": "z-ai/glm-5.3-flash",
+  "params": {
+    "temperature": 0.7,
+    "sample": 0
+  },
+  "meta": {
+    "airport": "KBOS",
+    "date": "2026-08-23",
+    "attempt": 1
+  },
+  "recorded_at": "2026-09-28T19:07:14.075Z",
+  "response": {
+    "content": "{\n  \"airport\": \"KBOS\",\n  \"date\": \"2026-08-23\",\n  \"findings\": [\n    {\n      \"id\": \"F1\",\n      \"summary\": \"NOTAM-018: RWY 4R/22L closed at KBOS from 2026-08-23T10:00:00Z to 2026-08-23T11:00:00Z.\",\n      \"confidence\": 1.0,\n      \"citations\": [\"NOTAM-018\"]\n    },\n    {\n      \"id\": \"F2\",\n      \"summary\": \"ADSB-032: track for JBU1101 near KBOS at 2026-08-23T11:05:00Z at 3300 ft; outside the NOTAM-018 validity window.\",\n      \"confidence\": 1.0,\n      \"citations\": [\"ADSB-032\"]\n    },\n    {\n      \"id\": \"F3\",\n      \"summary\": \"TLE-ISS-006: ISS (synthetic) pass over KBOS at 2026-08-23T09:58:00Z with max elevation 31 degrees; outside the NOTAM-018 validity window.\",\n      \"confidence\": 1.0,\n      \"citations\": [\"TLE-ISS-006\"]\n    }\n  ]\n}\n",
+    "finish_reason": "stop",
+    "served_model": "z-ai/glm-5.3-flash",
+    "provider": "Novita",
+    "usage": {
+      "prompt_tokens": 563,
+      "completion_tokens": 820,
+      "total_tokens": 1383,
+      "cost": 0.0003708375,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.0003708375,
+        "upstream_inference_prompt_cost": 0.0000633375,
+        "upstream_inference_completions_cost": 0.0003075
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 524,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    },
+    "latency_ms": 13223
+  }
+}

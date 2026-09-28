@@ -1,0 +1,45 @@
+{
+  "key": "776a1a3bf41f9424aeb85472",
+  "prompt_version": "brief-writer-v1",
+  "model": "deepseek/deepseek-v4-flash",
+  "params": {
+    "temperature": 0.7,
+    "sample": 1
+  },
+  "meta": {
+    "airport": "KJFK",
+    "date": "2026-08-19",
+    "attempt": 1
+  },
+  "recorded_at": "2026-09-28T19:04:32.474Z",
+  "response": {
+    "content": "{\"airport\":\"KJFK\",\"date\":\"2026-08-19\",\"findings\":[{\"id\":\"F1\",\"summary\":\"ADSB-006 time falls within NOTAM-004 validity window.\",\"confidence\":1.0,\"citations\":[\"ADSB-006\",\"NOTAM-004\"]},{\"id\":\"F2\",\"summary\":\"ADSB-006 time falls within NOTAM-005 validity window.\",\"confidence\":1.0,\"citations\":[\"ADSB-006\",\"NOTAM-005\"]},{\"id\":\"F3\",\"summary\":\"ADSB-006 time falls within NOTAM-008 validity window.\",\"confidence\":1.0,\"citations\":[\"ADSB-006\",\"NOTAM-008\"]},{\"id\":\"F4\",\"summary\":\"ADSB-007 time falls within NOTAM-004 validity window.\",\"confidence\":1.0,\"citations\":[\"ADSB-007\",\"NOTAM-004\"]},{\"id\":\"F5\",\"summary\":\"ADSB-007 time falls within NOTAM-005 validity window.\",\"confidence\":1.0,\"citations\":[\"ADSB-007\",\"NOTAM-005\"]},{\"id\":\"F6\",\"summary\":\"ADSB-007 time falls within NOTAM-008 validity window.\",\"confidence\":1.0,\"citations\":[\"ADSB-007\",\"NOTAM-008\"]},{\"id\":\"F7\",\"summary\":\"ADSB-008 time falls within NOTAM-004 validity window.\",\"confidence\":1.0,\"citations\":[\"ADSB-008\",\"NOTAM-004\"]},{\"id\":\"F8\",\"summary\":\"ADSB-008 time falls within NOTAM-005 validity window.\",\"confidence\":1.0,\"citations\":[\"ADSB-008\",\"NOTAM-005\"]},{\"id\":\"F9\",\"summary\":\"ADSB-008 time falls within NOTAM-008 validity window.\",\"confidence\":1.0,\"citations\":[\"ADSB-008\",\"NOTAM-008\"]},{\"id\":\"F10\",\"summary\":\"TLE-ISS-002 time falls within NOTAM-004 validity window.\",\"confidence\":1.0,\"citations\":[\"TLE-ISS-002\",\"NOTAM-004\"]},{\"id\":\"F11\",\"summary\":\"TLE-ISS-002 time falls within NOTAM-005 validity window.\",\"confidence\":1.0,\"citations\":[\"TLE-ISS-002\",\"NOTAM-005\"]},{\"id\":\"F12\",\"summary\":\"TLE-ISS-002 time falls within NOTAM-008 validity window.\",\"confidence\":1.0,\"citations\":[\"TLE-ISS-002\",\"NOTAM-008\"]}]}",
+    "finish_reason": "stop",
+    "served_model": "deepseek/deepseek-v4-flash",
+    "provider": "OpenInference",
+    "usage": {
+      "prompt_tokens": 874,
+      "completion_tokens": 2161,
+      "total_tokens": 3035,
+      "cost": 0.001093178,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 857,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.001093178,
+        "upstream_inference_prompt_cost": 0.000012678,
+        "upstream_inference_completions_cost": 0.0010805
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 1609,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    },
+    "latency_ms": 82293
+  }
+}

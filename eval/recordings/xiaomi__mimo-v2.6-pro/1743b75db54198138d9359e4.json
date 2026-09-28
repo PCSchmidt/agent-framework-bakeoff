@@ -1,0 +1,45 @@
+{
+  "key": "1743b75db54198138d9359e4",
+  "prompt_version": "brief-writer-v1",
+  "model": "xiaomi/mimo-v2.6-pro",
+  "params": {
+    "temperature": 0.7,
+    "sample": 3
+  },
+  "meta": {
+    "airport": "KORD",
+    "date": "2026-08-22",
+    "attempt": 1
+  },
+  "recorded_at": "2026-09-28T19:08:29.058Z",
+  "response": {
+    "content": "{\"airport\":\"KORD\",\"date\":\"2026-08-22\",\"findings\":[{\"id\":\"F1\",\"summary\":\"UAL1502 (ADSB-014) was tracked at 4800 ft at 14:00Z, coinciding with the RWY 10L/28R closure (NOTAM-009) valid 14:00–16:00Z.\",\"confidence\":0.95,\"citations\":[\"ADSB-014\",\"NOTAM-009\"]},{\"id\":\"F2\",\"summary\":\"SKW5521 (ADSB-015) was tracked at 6100 ft at 15:40Z, during the RWY 10L/28R closure (NOTAM-009) valid 14:00–16:00Z.\",\"confidence\":0.95,\"citations\":[\"ADSB-015\",\"NOTAM-009\"]},{\"id\":\"F3\",\"summary\":\"N512CR (ADSB-017) was tracked at 2600 ft at 16:00Z, the inclusive end of the RWY 10L/28R closure (NOTAM-009).\",\"confidence\":0.95,\"citations\":[\"ADSB-017\",\"NOTAM-009\"]},{\"id\":\"F4\",\"summary\":\"SKW5521 (ADSB-015) was tracked at 6100 ft at 15:40Z, within the VIP movement TFR SFC–3000FT (NOTAM-010) valid 15:30–15:45Z; the aircraft's altitude was above the restricted ceiling.\",\"confidence\":0.9,\"citations\":[\"ADSB-015\",\"NOTAM-010\"]},{\"id\":\"F5\",\"summary\":\"Satellite pass TLE-ISS-004 over KORD at 15:44Z (max elevation 47 deg) falls within the VIP movement TFR SFC–3000FT (NOTAM-010) valid 15:30–15:45Z.\",\"confidence\":0.9,\"citations\":[\"TLE-ISS-004\",\"NOTAM-010\"]},{\"id\":\"F6\",\"summary\":\"UAL77 (ADSB-019) was tracked at 5500 ft at 21:15Z, during the TWY B closure between B4 and B9 (NOTAM-011) valid 20:00–23:59Z.\",\"confidence\":0.95,\"citations\":[\"ADSB-019\",\"NOTAM-011\"]}]}",
+    "finish_reason": "stop",
+    "served_model": "xiaomi/mimo-v2.6-pro",
+    "provider": "GMICloud",
+    "usage": {
+      "prompt_tokens": 1179,
+      "completion_tokens": 998,
+      "total_tokens": 2177,
+      "cost": 0.000884613,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 1152,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.000884613,
+        "upstream_inference_prompt_cost": 0.000016353,
+        "upstream_inference_completions_cost": 0.00086826
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 378,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    },
+    "latency_ms": 17498
+  }
+}

@@ -109,6 +109,18 @@ export function emitBrief(query, { notams, tracks, passes, pairs }) {
 }
 
 /**
+ * Default brief writer: deterministic template over the joined evidence.
+ * Every runtime accepts `opts.writer` with this signature; see src/llm-writer.js.
+ *
+ * @param {{ airport: string, date: string }} query
+ * @param {{ notams: object[], tracks: object[], passes: object[], pairs: object[] }} evidence
+ * @param {{ runtime: string, attempt?: number, feedback?: object }} ctx
+ */
+export async function templateWriter(query, evidence, ctx) {
+  return emitBrief({ airport: query.airport, date: query.date, runtime: ctx.runtime }, evidence)
+}
+
+/**
  * One retrieve+join pass. Runtimes should still call the retrieve_* helpers
  * as named steps; this is for tests and the Meridian post-gate path.
  */

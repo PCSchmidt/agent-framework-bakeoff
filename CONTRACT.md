@@ -23,7 +23,8 @@ Produce a **daily airspace-risk brief** for one public airport and UTC date from
 
 - JPO / F-35 / employer program data or live operational feeds
 - Replacing Claude Code / Cursor / Copilot
-- Installing Python CrewAI / AutoGen SDKs or calling LLMs *(Phase 3 ports are orchestration-shaped, fixture tools only)*
+- Installing Python CrewAI / AutoGen SDKs *(ports are orchestration-shaped in Node)*
+- Live LLM calls in CI *(Phase 5 records OpenRouter responses once; CI replays them)*
 - Live FAA / ADS-B exchange / Space-Track downloads in CI
 - Inventory-reconciliation task (airspace-risk is the frozen task)
 - LLM judge *(optional later; mechanical judge is the Phase 1 source of truth)*
@@ -36,7 +37,7 @@ Produce a **daily airspace-risk brief** for one public airport and UTC date from
 |-------|------------|
 | Runtime | LangGraph (`@langchain/langgraph`); CrewAI-shaped crew; AG2-shaped handoff; Meridian-gated |
 | Reliability | Meridian gate + independent Evaluator contracts (portfolio-kit 0.1.0) |
-| Models | None. Mechanical brief judge + deterministic retrieve/join/emit |
+| Models | Phases 1–4: none (deterministic template writer). Phase 5: OpenRouter models write the brief ([eval/llm.config.json](eval/llm.config.json)); judge stays mechanical |
 | Deploy | Local Node 20+; `npm test` / `npm run eval` / `npm run eval:langgraph` |
 
 ---

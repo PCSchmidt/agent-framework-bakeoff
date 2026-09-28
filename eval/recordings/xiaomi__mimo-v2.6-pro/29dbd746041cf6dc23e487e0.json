@@ -1,0 +1,45 @@
+{
+  "key": "29dbd746041cf6dc23e487e0",
+  "prompt_version": "brief-writer-v1",
+  "model": "xiaomi/mimo-v2.6-pro",
+  "params": {
+    "temperature": 0.7,
+    "sample": 2
+  },
+  "meta": {
+    "airport": "KLAX",
+    "date": "2026-08-24",
+    "attempt": 1
+  },
+  "recorded_at": "2026-09-28T19:09:02.846Z",
+  "response": {
+    "content": "{\"airport\": \"KLAX\", \"date\": \"2026-08-24\", \"findings\": [{\"id\": \"F1\", \"summary\": \"Satellite pass TLE-STARLINK-003 at 2026-08-24T04:59:00Z over KLAX falls inside the validity window of NOTAM-019 (TWY C CLSD, 03:00:00Z–05:00:00Z).\", \"confidence\": 0.95, \"citations\": [\"TLE-STARLINK-003\", \"NOTAM-019\"]}, {\"id\": \"F2\", \"summary\": \"Satellite pass TLE-ISS-007 at 2026-08-24T16:10:00Z over KLAX falls inside the validity window of NOTAM-020 (TFR VIP MOVEMENT SFC-3000FT, 16:00:00Z–16:20:00Z).\", \"confidence\": 0.95, \"citations\": [\"TLE-ISS-007\", \"NOTAM-020\"]}]}",
+    "finish_reason": "stop",
+    "served_model": "xiaomi/mimo-v2.6-pro",
+    "provider": "GMICloud",
+    "usage": {
+      "prompt_tokens": 789,
+      "completion_tokens": 835,
+      "total_tokens": 1624,
+      "cost": 0.001014497,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 128,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.001014497,
+        "upstream_inference_prompt_cost": 0.000288047,
+        "upstream_inference_completions_cost": 0.00072645
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 557,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    },
+    "latency_ms": 14552
+  }
+}

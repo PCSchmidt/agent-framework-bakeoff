@@ -87,17 +87,38 @@ export function judgeBrief(query, brief, world) {
         issues.push(issue('high', 'date_mismatch', `${cite} date ${String(t).slice(0, 10)} != ${query.date}`))
       }
     }
-    const notam = resolved.find((r) => r.kind === 'notam')
-    const timed = resolved.find((r) => r.kind === 'adsb' || r.kind === 'tle')
-    if (notam && timed) {
-      const t = timed.time
-      if (!(t >= notam.valid_from && t <= notam.valid_to)) {
-        issues.push(issue('high', 'no_overlap', `${timed.id} is outside ${notam.id} window`))
+    const notams = resolved.filter((r) => r.kind === 'notam')
+    const timedRows = resolved.filter((r) => r.kind === 'adsb' || r.kind === 'tle')
+    for (const notam of notams) {
+      for (const timed of timedRows) {
+        const t = timed.time
+        if (!(t >= notam.valid_from && t <= notam.valid_to)) {
+          issues.push(issue('high', 'no_overlap', `${timed.id} is outside ${notam.id} window`))
+        }
+      }
+    }
+    for (const named of mentionedRecords(finding.summary, world)) {
+      if (!citations.includes(named)) {
+        issues.push(issue('high', 'unsupported_claim', `${finding.id || '?'} names ${named} without citing it`))
       }
     }
   }
 
   return finalize(issues)
+}
+
+const RECORD_ID = /\b(?:ADSB-\d+|NOTAM-\d+|TLE-[A-Z]+-\d+)\b/g
+
+/**
+ * Fixture ids a summary names, either literally or by ADS-B callsign.
+ */
+function mentionedRecords(summary, world) {
+  const text = typeof summary === 'string' ? summary : ''
+  const named = new Set(text.match(RECORD_ID) ?? [])
+  for (const [id, rec] of world.byId) {
+    if (rec.callsign && new RegExp(`\\b${rec.callsign}\\b`).test(text)) named.add(id)
+  }
+  return [...named].filter((id) => world.byId.has(id))
 }
 
 function finalize(issues) {

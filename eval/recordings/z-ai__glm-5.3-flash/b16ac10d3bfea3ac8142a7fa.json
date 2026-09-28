@@ -1,0 +1,45 @@
+{
+  "key": "b16ac10d3bfea3ac8142a7fa",
+  "prompt_version": "brief-writer-v1",
+  "model": "z-ai/glm-5.3-flash",
+  "params": {
+    "temperature": 0.7,
+    "sample": 2
+  },
+  "meta": {
+    "airport": "KORD",
+    "date": "2026-08-22",
+    "attempt": 1
+  },
+  "recorded_at": "2026-09-28T19:06:48.730Z",
+  "response": {
+    "content": "{\"airport\":\"KORD\",\"date\":\"2026-08-22\",\"findings\":[{\"id\":\"F1\",\"summary\":\"UAL1502 track at 2026-08-22T14:00:00Z falls within the validity window of NOTAM-009 (RWY 10L/28R CLSD).\",\"confidence\":0.9,\"citations\":[\"ADSB-014\",\"NOTAM-009\"]},{\"id\":\"F2\",\"summary\":\"N512CR track at 2026-08-22T16:00:00Z falls within the validity window of NOTAM-009 (RWY 10L/28R CLSD).\",\"confidence\":0.9,\"citations\":[\"ADSB-017\",\"NOTAM-009\"]},{\"id\":\"F3\",\"summary\":\"SKW5521 track at 2026-08-22T15:40:00Z falls within the validity window of NOTAM-010 (TFR VIP MOVEMENT SFC-3000FT).\",\"confidence\":0.9,\"citations\":[\"ADSB-015\",\"NOTAM-010\"]},{\"id\":\"F4\",\"summary\":\"ISS (synthetic) pass at 2026-08-22T15:44:00Z falls within the validity window of NOTAM-010 (TFR VIP MOVEMENT SFC-3000FT).\",\"confidence\":0.9,\"citations\":[\"TLE-ISS-004\",\"NOTAM-010\"]},{\"id\":\"F5\",\"summary\":\"UAL77 track at 2026-08-22T21:15:00Z falls within the validity window of NOTAM-011 (TWY B BTN B4 AND B9 CLSD).\",\"confidence\":0.9,\"citations\":[\"ADSB-019\",\"NOTAM-011\"]}]}",
+    "finish_reason": "stop",
+    "served_model": "z-ai/glm-5.3-flash",
+    "provider": "Wafer",
+    "usage": {
+      "prompt_tokens": 1040,
+      "completion_tokens": 504,
+      "total_tokens": 1544,
+      "cost": 0.00029472,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 1024,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.00029472,
+        "upstream_inference_prompt_cost": 0.00004272,
+        "upstream_inference_completions_cost": 0.000252
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 121,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    },
+    "latency_ms": 21873
+  }
+}

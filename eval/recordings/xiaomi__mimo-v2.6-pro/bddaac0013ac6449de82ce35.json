@@ -1,0 +1,45 @@
+{
+  "key": "bddaac0013ac6449de82ce35",
+  "prompt_version": "brief-writer-v1",
+  "model": "xiaomi/mimo-v2.6-pro",
+  "params": {
+    "temperature": 0.7,
+    "sample": 4
+  },
+  "meta": {
+    "airport": "KATL",
+    "date": "2026-08-23",
+    "attempt": 1
+  },
+  "recorded_at": "2026-09-28T19:08:51.533Z",
+  "response": {
+    "content": "{\"airport\": \"KATL\", \"date\": \"2026-08-23\", \"findings\": [{\"id\": \"F1\", \"summary\": \"ADSB-024 (DAL1, 6000 ft at 06:15Z) was active during NOTAM-014, which closed RWY 8L/26R from 06:00Z to 08:00Z.\", \"confidence\": 0.95, \"citations\": [\"ADSB-024\", \"NOTAM-014\"]}, {\"id\": \"F2\", \"summary\": \"ADSB-025 (DAL22, 5400 ft at 07:45Z) was active during NOTAM-014, which closed RWY 8L/26R from 06:00Z to 08:00Z.\", \"confidence\": 0.95, \"citations\": [\"ADSB-025\", \"NOTAM-014\"]}, {\"id\": \"F3\", \"summary\": \"TLE-ISS-005 (max elevation 53 deg at 07:50Z) passed during NOTAM-014, which closed RWY 8L/26R from 06:00Z to 08:00Z.\", \"confidence\": 0.9, \"citations\": [\"TLE-ISS-005\", \"NOTAM-014\"]}, {\"id\": \"F4\", \"summary\": \"ADSB-025 (DAL22, 5400 ft at 07:45Z) was active during NOTAM-015, under which ILS RWY 9R was unserviceable from 07:30Z to 09:00Z.\", \"confidence\": 0.95, \"citations\": [\"ADSB-025\", \"NOTAM-015\"]}, {\"id\": \"F5\", \"summary\": \"ADSB-026 (SWA3050, 4700 ft at 08:59Z) was active during NOTAM-015, under which ILS RWY 9R was unserviceable from 07:30Z to 09:00Z.\", \"confidence\": 0.95, \"citations\": [\"ADSB-026\", \"NOTAM-015\"]}, {\"id\": \"F6\", \"summary\": \"TLE-ISS-005 (max elevation 53 deg at 07:50Z) passed during NOTAM-015, under which ILS RWY 9R was unserviceable from 07:30Z to 09:00Z.\", \"confidence\": 0.9, \"citations\": [\"TLE-ISS-005\", \"NOTAM-015\"]}, {\"id\": \"F7\", \"summary\": \"ADSB-028 (DAL404, 8000 ft at 12:30Z) coincided with NOTAM-016, a laser activity advisory 2NM west of the field from surface to 5000 ft, valid 12:00Z to 12:30Z.\", \"confidence\": 0.95, \"citations\": [\"ADSB-028\", \"NOTAM-016\"]}, {\"id\": \"F8\", \"summary\": \"ADSB-031 (DAL2600, 5100 ft at 22:10Z) was active during NOTAM-017, which closed TWY L from 22:00Z to 23:59Z.\", \"confidence\": 0.95, \"citations\": [\"ADSB-031\", \"NOTAM-017\"]}, {\"id\": \"F9\", \"summary\": \"ADSB-027 (EDV5122, 3900 ft at 09:01Z) fell outside all NOTAM validity windows; no associated restriction.\", \"confidence\": 0.9, \"citations\": [\"ADSB-027\"]}, {\"id\": \"F10\", \"summary\": \"ADSB-029 (FFT88, 7200 ft at 12:31Z) fell outside all NOTAM validity windows; no associated restriction.\", \"confidence\": 0.9, \"citations\": [\"ADSB-029\"]}, {\"id\": \"F11\", \"summary\": \"ADSB-030 (N7ATL, 2800 ft at 11:59Z) fell outside all NOTAM validity windows; no associated restriction.\", \"confidence\": 0.9, \"citations\": [\"ADSB-030\"]}]}",
+    "finish_reason": "stop",
+    "served_model": "xiaomi/mimo-v2.6-pro",
+    "provider": "GMICloud",
+    "usage": {
+      "prompt_tokens": 1350,
+      "completion_tokens": 1650,
+      "total_tokens": 3000,
+      "cost": 0.00147107,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 1280,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.00147107,
+        "upstream_inference_prompt_cost": 0.00003557,
+        "upstream_inference_completions_cost": 0.0014355
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 554,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    },
+    "latency_ms": 22234
+  }
+}

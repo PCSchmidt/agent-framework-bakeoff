@@ -1,9 +1,10 @@
 /**
  * Phase 3 CrewAI-shaped port.
- * Sequential crew of named roles. Same src/tools.js. No Python SDK, no LLM.
+ * Sequential crew of named roles. Same src/tools.js. No Python SDK.
+ * The brief_writer role calls `ctx.writer` (template by default). No gate: the draft ships.
  */
 
-import { emitBrief, joinOverlaps, retrieveAdsb, retrieveNotams, retrieveTle } from '../tools.js'
+import { joinOverlaps, retrieveAdsb, retrieveNotams, retrieveTle, templateWriter } from '../tools.js'
 import { loadWorld } from '../world.js'
 
 const CREW = [
@@ -38,15 +39,16 @@ const CREW = [
   {
     role: 'brief_writer',
     task: 'Emit frozen brief JSON citing fixture ids only',
-    run(ctx) {
-      ctx.brief = emitBrief(
-        { ...ctx.query, runtime: 'crewai' },
+    async run(ctx) {
+      ctx.brief = await ctx.writer(
+        ctx.query,
         {
           notams: ctx.notams,
           tracks: ctx.tracks,
           passes: ctx.passes,
           pairs: ctx.pairs,
         },
+        { runtime: 'crewai', attempt: 1 },
       )
     },
   },
@@ -56,9 +58,10 @@ export function buildCrew() {
   return CREW.map(({ role, task }) => ({ role, task }))
 }
 
-export async function runCrewAiBrief(query, world = loadWorld()) {
+export async function runCrewAiBrief(query, world = loadWorld(), opts = {}) {
   const ctx = {
     world,
+    writer: opts.writer ?? templateWriter,
     query: { airport: query.airport, date: query.date },
     tracks: [],
     notams: [],
@@ -67,7 +70,7 @@ export async function runCrewAiBrief(query, world = loadWorld()) {
     brief: null,
   }
   for (const agent of CREW) {
-    agent.run(ctx)
+    await agent.run(ctx)
   }
   return ctx.brief
 }

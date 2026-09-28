@@ -1,0 +1,45 @@
+{
+  "key": "77b0cc77ff157dd7f888342a",
+  "prompt_version": "brief-writer-v1",
+  "model": "z-ai/glm-5.3-flash",
+  "params": {
+    "temperature": 0.7,
+    "sample": 3
+  },
+  "meta": {
+    "airport": "KATL",
+    "date": "2026-08-23",
+    "attempt": 1
+  },
+  "recorded_at": "2026-09-28T19:07:34.157Z",
+  "response": {
+    "content": "{\n  \"airport\": \"KATL\",\n  \"date\": \"2026-08-23\",\n  \"findings\": [\n    {\"id\": \"F1\", \"summary\": \"DAL1 track at 2026-08-23T06:15:00Z falls inside NOTAM-014 validity window (RWY 8L/26R CLSD, 06:00-08:00Z).\", \"confidence\": 0.95, \"citations\": [\"ADSB-024\", \"NOTAM-014\"]},\n    {\"id\": \"F2\", \"summary\": \"DAL22 track at 2026-08-23T07:45:00Z falls inside NOTAM-014 validity window (RWY 8L/26R CLSD, 06:00-08:00Z).\", \"confidence\": 0.95, \"citations\": [\"ADSB-025\", \"NOTAM-014\"]},\n    {\"id\": \"F3\", \"summary\": \"ISS (synthetic) pass at 2026-08-23T07:50:00Z falls inside NOTAM-014 validity window (RWY 8L/26R CLSD, 06:00-08:00Z).\", \"confidence\": 0.9, \"citations\": [\"TLE-ISS-005\", \"NOTAM-014\"]},\n    {\"id\": \"F4\", \"summary\": \"DAL22 track at 2026-08-23T07:45:00Z falls inside NOTAM-015 validity window (ILS RWY 9R U/S, 07:30-09:00Z).\", \"confidence\": 0.95, \"citations\": [\"ADSB-025\", \"NOTAM-015\"]},\n    {\"id\": \"F5\", \"summary\": \"ISS (synthetic) pass at 2026-08-23T07:50:00Z falls inside NOTAM-015 validity window (ILS RWY 9R U/S, 07:30-09:00Z).\", \"confidence\": 0.9, \"citations\": [\"TLE-ISS-005\", \"NOTAM-015\"]},\n    {\"id\": \"F6\", \"summary\": \"SWA3050 track at 2026-08-23T08:59:00Z falls inside NOTAM-015 validity window (ILS RWY 9R U/S, 07:30-09:00Z).\", \"confidence\": 0.95, \"citations\": [\"ADSB-026\", \"NOTAM-015\"]},\n    {\"id\": \"F7\", \"summary\": \"DAL404 track at 2026-08-23T12:30:00Z falls at the inclusive end of NOTAM-016 validity window (LASER ACT 2NM W OF ARPT SFC-5000FT, 12:00-12:30Z).\", \"confidence\": 0.9, \"citations\": [\"ADSB-028\", \"NOTAM-016\"]},\n    {\"id\": \"F8\", \"summary\": \"DAL2600 track at 2026-08-23T22:10:00Z falls inside NOTAM-017 validity window (TWY L CLSD, 22:00-23:59Z).\", \"confidence\": 0.95, \"citations\": [\"ADSB-031\", \"NOTAM-017\"]}\n  ]\n}",
+    "finish_reason": "stop",
+    "served_model": "z-ai/glm-5.3-flash",
+    "provider": "Wafer",
+    "usage": {
+      "prompt_tokens": 1191,
+      "completion_tokens": 928,
+      "total_tokens": 2119,
+      "cost": 0.00052781,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 1152,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.00052781,
+        "upstream_inference_prompt_cost": 0.00006381,
+        "upstream_inference_completions_cost": 0.000464
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 169,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    },
+    "latency_ms": 36587
+  }
+}

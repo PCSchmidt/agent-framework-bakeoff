@@ -1,0 +1,45 @@
+{
+  "key": "2431ec951bef82f2c1d54cd7",
+  "prompt_version": "brief-writer-v1",
+  "model": "z-ai/glm-5.3-flash",
+  "params": {
+    "temperature": 0.7,
+    "sample": 1
+  },
+  "meta": {
+    "airport": "KDEN",
+    "date": "2026-08-20",
+    "attempt": 1
+  },
+  "recorded_at": "2026-09-28T19:06:23.783Z",
+  "response": {
+    "content": "{\n  \"airport\": \"KDEN\",\n  \"date\": \"2026-08-20\",\n  \"findings\": [\n    {\n      \"id\": \"F1\",\n      \"summary\": \"UAL200 track at 2026-08-20T16:00:00Z falls inside the validity window of NOTAM-006 (GRASS MOWING ADJ RWY 17R).\",\n      \"confidence\": 0.9,\n      \"citations\": [\"ADSB-009\", \"NOTAM-006\"]\n    },\n    {\n      \"id\": \"F2\",\n      \"summary\": \"SWA12 track at 2026-08-20T16:30:00Z falls inside the validity window of NOTAM-006 (GRASS MOWING ADJ RWY 17R).\",\n      \"confidence\": 0.9,\n      \"citations\": [\"ADSB-010\", \"NOTAM-006\"]\n    },\n    {\n      \"id\": \"F3\",\n      \"summary\": \"ISS (synthetic) pass over KDEN at 2026-08-20T18:00:00Z falls inside the validity window of NOTAM-006 (GRASS MOWING ADJ RWY 17R).\",\n      \"confidence\": 0.9,\n      \"citations\": [\"TLE-ISS-003\", \"NOTAM-006\"]\n    },\n    {\n      \"id\": \"F4\",\n      \"summary\": \"UAL200 track at 2026-08-20T16:00:00Z falls inside the validity window of NOTAM-007 (BIRD ACT ON AND IN VICINITY OF ARPT).\",\n      \"confidence\": 0.9,\n      \"citations\": [\"ADSB-009\", \"NOTAM-007\"]\n    },\n    {\n      \"id\": \"F5\",\n      \"summary\": \"SWA12 track at 2026-08-20T16:30:00Z falls inside the validity window of NOTAM-007 (BIRD ACT ON AND IN VICINITY OF ARPT).\",\n      \"confidence\": 0.9,\n      \"citations\": [\"ADSB-010\", \"NOTAM-007\"]\n    },\n    {\n      \"id\": \"F6\",\n      \"summary\": \"ISS (synthetic) pass over KDEN at 2026-08-20T18:00:00Z falls inside the validity window of NOTAM-007 (BIRD ACT ON AND IN VICINITY OF ARPT).\",\n      \"confidence\": 0.9,\n      \"citations\": [\"TLE-ISS-003\", \"NOTAM-007\"]\n    }\n  ]\n}",
+    "finish_reason": "stop",
+    "served_model": "z-ai/glm-5.3-flash",
+    "provider": "Wafer",
+    "usage": {
+      "prompt_tokens": 650,
+      "completion_tokens": 586,
+      "total_tokens": 1236,
+      "cost": 0.00059618,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 256,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.00059618,
+        "upstream_inference_prompt_cost": 0.00030318,
+        "upstream_inference_completions_cost": 0.000293
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 11,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    },
+    "latency_ms": 23738
+  }
+}

@@ -1,0 +1,45 @@
+{
+  "key": "028e5afac548ed0475f0cd47",
+  "prompt_version": "brief-writer-v1",
+  "model": "xiaomi/mimo-v2.6-pro",
+  "params": {
+    "temperature": 0.7,
+    "sample": 1
+  },
+  "meta": {
+    "airport": "KORD",
+    "date": "2026-08-22",
+    "attempt": 1
+  },
+  "recorded_at": "2026-09-28T19:08:33.310Z",
+  "response": {
+    "content": "{\"airport\": \"KORD\", \"date\": \"2026-08-22\", \"findings\": [{\"id\": \"F1\", \"summary\": \"ADSB-014 (UAL1502) at 4800 ft was observed at 14:00Z, coinciding with the start of NOTAM-009 (RWY 10L/28R CLSD, 14:00Z-16:00Z).\", \"confidence\": 0.95, \"citations\": [\"ADSB-014\", \"NOTAM-009\"]}, {\"id\": \"F2\", \"summary\": \"ADSB-015 (SKW5521) at 6100 ft was observed at 15:40Z within the NOTAM-009 closure window for RWY 10L/28R.\", \"confidence\": 0.95, \"citations\": [\"ADSB-015\", \"NOTAM-009\"]}, {\"id\": \"F3\", \"summary\": \"ADSB-017 (N512CR) at 2600 ft was observed at 16:00Z, coinciding with the end of the NOTAM-009 RWY 10L/28R closure window.\", \"confidence\": 0.95, \"citations\": [\"ADSB-017\", \"NOTAM-009\"]}, {\"id\": \"F4\", \"summary\": \"TLE-ISS-004 passed over KORD at 15:44Z with maximum elevation 47 deg during the NOTAM-009 window (RWY 10L/28R CLSD, 14:00Z-16:00Z).\", \"confidence\": 0.95, \"citations\": [\"TLE-ISS-004\", \"NOTAM-009\"]}, {\"id\": \"F5\", \"summary\": \"ADSB-015 (SKW5521) at 6100 ft was observed at 15:40Z inside the NOTAM-010 VIP movement TFR (SFC-3000FT, 15:30Z-15:45Z); the aircraft was reported above the TFR's 3000 ft ceiling.\", \"confidence\": 0.9, \"citations\": [\"ADSB-015\", \"NOTAM-010\"]}, {\"id\": \"F6\", \"summary\": \"TLE-ISS-004 passed over KORD at 15:44Z during the NOTAM-010 VIP movement TFR window (15:30Z-15:45Z).\", \"confidence\": 0.95, \"citations\": [\"TLE-ISS-004\", \"NOTAM-010\"]}, {\"id\": \"F7\", \"summary\": \"ADSB-019 (UAL77) at 5500 ft was observed at 21:15Z within the NOTAM-011 window (TWY B BTN B4 AND B9 CLSD, 20:00Z-23:59Z).\", \"confidence\": 0.95, \"citations\": [\"ADSB-019\", \"NOTAM-011\"]}, {\"id\": \"F8\", \"summary\": \"ADSB-013 (AAL311) at 5200 ft was observed at 13:59Z at KORD; its track time falls outside all NOTAM validity windows for the date.\", \"confidence\": 0.9, \"citations\": [\"ADSB-013\"]}, {\"id\": \"F9\", \"summary\": \"ADSB-016 (ENY3310) at 3900 ft was observed at 16:01Z at KORD; its track time falls outside all NOTAM validity windows for the date.\", \"confidence\": 0.9, \"citations\": [\"ADSB-016\"]}, {\"id\": \"F10\", \"summary\": \"ADSB-018 (DAL1990) at 7000 ft was observed at 19:59Z at KORD; its track time falls outside all NOTAM validity windows for the date.\", \"confidence\": 0.9, \"citations\": [\"ADSB-018\"]}]}",
+    "finish_reason": "stop",
+    "served_model": "xiaomi/mimo-v2.6-pro",
+    "provider": "GMICloud",
+    "usage": {
+      "prompt_tokens": 1179,
+      "completion_tokens": 1623,
+      "total_tokens": 2802,
+      "cost": 0.001924875,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.001924875,
+        "upstream_inference_prompt_cost": 0.000512865,
+        "upstream_inference_completions_cost": 0.00141201
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 614,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    },
+    "latency_ms": 25206
+  }
+}

@@ -1,0 +1,45 @@
+{
+  "key": "3ccc42df61256567f3d8eb3e",
+  "prompt_version": "brief-writer-v1",
+  "model": "z-ai/glm-5.3-flash",
+  "params": {
+    "temperature": 0.7,
+    "sample": 4
+  },
+  "meta": {
+    "airport": "KSEA",
+    "date": "2026-08-22",
+    "attempt": 1
+  },
+  "recorded_at": "2026-09-28T19:07:13.791Z",
+  "response": {
+    "content": "{\"airport\":\"KSEA\",\"date\":\"2026-08-22\",\"findings\":[\n{\"id\":\"F1\",\"summary\":\"ASA402 track at 2026-08-22T17:55:00Z falls within NOTAM-012 validity (crane 320FT AGL 0.8NM S of KSEA).\",\"confidence\":0.9,\"citations\":[\"ADSB-020\",\"NOTAM-012\"]},\n{\"id\":\"F2\",\"summary\":\"QXE2104 track at 2026-08-22T18:30:00Z falls within NOTAM-012 validity (crane 320FT AGL 0.8NM S of KSEA).\",\"confidence\":0.9,\"citations\":[\"ADSB-021\",\"NOTAM-012\"]},\n{\"id\":\"F3\",\"summary\":\"DAL2231 track at 2026-08-22T19:31:00Z falls within NOTAM-012 validity (crane 320FT AGL 0.8NM S of KSEA).\",\"confidence\":0.9,\"citations\":[\"ADSB-022\",\"NOTAM-012\"]},\n{\"id\":\"F4\",\"summary\":\"N88SW track at 2026-08-22T19:30:00Z falls within NOTAM-012 validity (crane 320FT AGL 0.8NM S of KSEA).\",\"confidence\":0.9,\"citations\":[\"ADSB-023\",\"NOTAM-012\"]},\n{\"id\":\"F5\",\"summary\":\"Starlink train (synthetic) pass at 2026-08-22T04:12:00Z falls within NOTAM-012 validity (crane 320FT AGL 0.8NM S of KSEA).\",\"confidence\":0.9,\"citations\":[\"TLE-STARLINK-002\",\"NOTAM-012\"]},\n{\"id\":\"F6\",\"summary\":\"QXE2104 track at 2026-08-22T18:30:00Z falls within NOTAM-013 validity (RWY 16R/34L closed).\",\"confidence\":0.9,\"citations\":[\"ADSB-021\",\"NOTAM-013\"]},\n{\"id\":\"F7\",\"summary\":\"N88SW track at 2026-08-22T19:30:00Z falls within NOTAM-013 validity (RWY 16R/34L closed).\",\"confidence\":0.9,\"citations\":[\"ADSB-023\",\"NOTAM-013\"]}\n]}",
+    "finish_reason": "stop",
+    "served_model": "z-ai/glm-5.3-flash",
+    "provider": "Wafer",
+    "usage": {
+      "prompt_tokens": 782,
+      "completion_tokens": 610,
+      "total_tokens": 1392,
+      "cost": 0.00033854,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 768,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.00033854,
+        "upstream_inference_prompt_cost": 0.00003354,
+        "upstream_inference_completions_cost": 0.000305
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 63,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    },
+    "latency_ms": 25039
+  }
+}

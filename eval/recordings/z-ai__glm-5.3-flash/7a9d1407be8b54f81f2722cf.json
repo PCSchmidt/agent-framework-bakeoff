@@ -1,0 +1,45 @@
+{
+  "key": "7a9d1407be8b54f81f2722cf",
+  "prompt_version": "brief-writer-v1",
+  "model": "z-ai/glm-5.3-flash",
+  "params": {
+    "temperature": 0.7,
+    "sample": 2
+  },
+  "meta": {
+    "airport": "KDEN",
+    "date": "2026-08-21",
+    "attempt": 1
+  },
+  "recorded_at": "2026-09-28T19:06:28.455Z",
+  "response": {
+    "content": "{\n  \"airport\": \"KDEN\",\n  \"date\": \"2026-08-21\",\n  \"findings\": [\n    {\n      \"id\": \"F1\",\n      \"summary\": \"Aircraft track ADSB-011: callsign N44QX at 17,500 ft near KDEN at 2026-08-21T17:00:00Z.\",\n      \"confidence\": 0.95,\n      \"citations\": [\"ADSB-011\"]\n    }\n  ]\n}",
+    "finish_reason": "stop",
+    "served_model": "z-ai/glm-5.3-flash",
+    "provider": "Modal",
+    "usage": {
+      "prompt_tokens": 363,
+      "completion_tokens": 819,
+      "total_tokens": 1182,
+      "cost": 0.00046395,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.00046395,
+        "upstream_inference_prompt_cost": 0.00005445,
+        "upstream_inference_completions_cost": 0.0004095
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 620,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    },
+    "latency_ms": 9620
+  }
+}

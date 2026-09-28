@@ -1,0 +1,45 @@
+{
+  "key": "e717b7211aa0f0e105edf770",
+  "prompt_version": "brief-writer-v1",
+  "model": "xiaomi/mimo-v2.6-pro",
+  "params": {
+    "temperature": 0.7,
+    "sample": 4
+  },
+  "meta": {
+    "airport": "KDEN",
+    "date": "2026-08-21",
+    "attempt": 1
+  },
+  "recorded_at": "2026-09-28T19:08:13.361Z",
+  "response": {
+    "content": "{\"airport\":\"KDEN\",\"date\":\"2026-08-21\",\"findings\":[{\"id\":\"F1\",\"summary\":\"Track ADSB-011 (N44QX) was recorded at 17500 ft at 2026-08-21T17:00:00Z over KDEN; no NOTAMs were active on this date.\",\"confidence\":1.0,\"citations\":[\"ADSB-011\"]}]}",
+    "finish_reason": "stop",
+    "served_model": "xiaomi/mimo-v2.6-pro",
+    "provider": "GMICloud",
+    "usage": {
+      "prompt_tokens": 377,
+      "completion_tokens": 189,
+      "total_tokens": 566,
+      "cost": 0.000218089,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 256,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.000218089,
+        "upstream_inference_prompt_cost": 0.000053659,
+        "upstream_inference_completions_cost": 0.00016443
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 80,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    },
+    "latency_ms": 5748
+  }
+}

@@ -1,0 +1,45 @@
+{
+  "key": "1cd846917486473befc5b16e",
+  "prompt_version": "brief-writer-v1",
+  "model": "deepseek/deepseek-v4-flash",
+  "params": {
+    "temperature": 0.7,
+    "sample": 1
+  },
+  "meta": {
+    "airport": "KBOS",
+    "date": "2026-08-23",
+    "attempt": 1
+  },
+  "recorded_at": "2026-09-28T19:04:55.877Z",
+  "response": {
+    "content": "{\"airport\":\"KBOS\",\"date\":\"2026-08-23\",\"findings\":[{\"id\":\"F1\",\"summary\":\"NOTAM-018 closes runway 4R/22L at KBOS from 2026-08-23T10:00:00Z to 2026-08-23T11:00:00Z.\",\"confidence\":1,\"citations\":[\"NOTAM-018\"]},{\"id\":\"F2\",\"summary\":\"ADSB-032 (JBU1101) at KBOS at 3300 ft at 2026-08-23T11:05:00Z is outside the NOTAM-018 validity window.\",\"confidence\":1,\"citations\":[\"ADSB-032\"]},{\"id\":\"F3\",\"summary\":\"TLE-ISS-006 over KBOS at 2026-08-23T09:58:00Z is outside the NOTAM-018 validity window.\",\"confidence\":1,\"citations\":[\"TLE-ISS-006\"]}]}",
+    "finish_reason": "stop",
+    "served_model": "deepseek/deepseek-v4-flash",
+    "provider": "GMICloud",
+    "usage": {
+      "prompt_tokens": 609,
+      "completion_tokens": 345,
+      "total_tokens": 954,
+      "cost": 0.0000783146,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 548,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.0000783146,
+        "upstream_inference_prompt_cost": 0.0000155246,
+        "upstream_inference_completions_cost": 0.00006279
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 131,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    },
+    "latency_ms": 4866
+  }
+}

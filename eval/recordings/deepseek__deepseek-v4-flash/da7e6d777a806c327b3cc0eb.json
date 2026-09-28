@@ -1,0 +1,45 @@
+{
+  "key": "da7e6d777a806c327b3cc0eb",
+  "prompt_version": "brief-writer-v1",
+  "model": "deepseek/deepseek-v4-flash",
+  "params": {
+    "temperature": 0.7,
+    "sample": 3
+  },
+  "meta": {
+    "airport": "KORD",
+    "date": "2026-08-22",
+    "attempt": 1
+  },
+  "recorded_at": "2026-09-28T19:04:58.762Z",
+  "response": {
+    "content": "{\"airport\": \"KORD\", \"date\": \"2026-08-22\", \"findings\": [{\"id\": \"F1\", \"summary\": \"Aircraft UAL1502 at 14:00Z coincided with NOTAM-009 (RWY 10L/28R CLSD).\", \"confidence\": 1.0, \"citations\": [\"ADSB-014\", \"NOTAM-009\"]}, {\"id\": \"F2\", \"summary\": \"Aircraft SKW5521 at 15:40Z coincided with NOTAM-009 (RWY 10L/28R CLSD).\", \"confidence\": 1.0, \"citations\": [\"ADSB-015\", \"NOTAM-009\"]}, {\"id\": \"F3\", \"summary\": \"Aircraft SKW5521 at 15:40Z coincided with NOTAM-010 (TFR VIP MOVEMENT SFC-3000FT).\", \"confidence\": 1.0, \"citations\": [\"ADSB-015\", \"NOTAM-010\"]}, {\"id\": \"F4\", \"summary\": \"Aircraft N512CR at 16:00Z coincided with NOTAM-009 (RWY 10L/28R CLSD).\", \"confidence\": 1.0, \"citations\": [\"ADSB-017\", \"NOTAM-009\"]}, {\"id\": \"F5\", \"summary\": \"Aircraft UAL77 at 21:15Z coincided with NOTAM-011 (TWY B BTN B4 AND B9 CLSD).\", \"confidence\": 1.0, \"citations\": [\"ADSB-019\", \"NOTAM-011\"]}, {\"id\": \"F6\", \"summary\": \"Satellite pass ISS at 15:44Z coincided with NOTAM-009 (RWY 10L/28R CLSD).\", \"confidence\": 1.0, \"citations\": [\"TLE-ISS-004\", \"NOTAM-009\"]}, {\"id\": \"F7\", \"summary\": \"Satellite pass ISS at 15:44Z coincided with NOTAM-010 (TFR VIP MOVEMENT SFC-3000FT).\", \"confidence\": 1.0, \"citations\": [\"TLE-ISS-004\", \"NOTAM-010\"]}]}",
+    "finish_reason": "stop",
+    "served_model": "deepseek/deepseek-v4-flash",
+    "provider": "Venice",
+    "usage": {
+      "prompt_tokens": 1045,
+      "completion_tokens": 1733,
+      "total_tokens": 2778,
+      "cost": 0.0004345495,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.0004345495,
+        "upstream_inference_prompt_cost": 0.000100947,
+        "upstream_inference_completions_cost": 0.0003336025
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 883,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    },
+    "latency_ms": 77402
+  }
+}

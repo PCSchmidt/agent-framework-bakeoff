@@ -1,0 +1,45 @@
+{
+  "key": "9698631a8be57ee5f40b0517",
+  "prompt_version": "brief-writer-v1",
+  "model": "deepseek/deepseek-v4-flash",
+  "params": {
+    "temperature": 0.7,
+    "sample": 2
+  },
+  "meta": {
+    "airport": "KATL",
+    "date": "2026-08-23",
+    "attempt": 1
+  },
+  "recorded_at": "2026-09-28T19:04:59.512Z",
+  "response": {
+    "content": "{\n  \"airport\": \"KATL\",\n  \"date\": \"2026-08-23\",\n  \"findings\": [\n    {\n      \"id\": \"F1\",\n      \"summary\": \"Aircraft DAL1 (ADSB-024) at KATL at 06:15Z during NOTAM-014 (RWY 8L/26R CLSD 06:00-08:00Z).\",\n      \"confidence\": 0.95,\n      \"citations\": [\"ADSB-024\", \"NOTAM-014\"]\n    },\n    {\n      \"id\": \"F2\",\n      \"summary\": \"Aircraft DAL22 (ADSB-025) at KATL at 07:45Z during NOTAM-014.\",\n      \"confidence\": 0.95,\n      \"citations\": [\"ADSB-025\", \"NOTAM-014\"]\n    },\n    {\n      \"id\": \"F3\",\n      \"summary\": \"Aircraft DAL22 (ADSB-025) at KATL at 07:45Z during NOTAM-015 (ILS RWY 9R U/S 07:30-09:00Z).\",\n      \"confidence\": 0.95,\n      \"citations\": [\"ADSB-025\", \"NOTAM-015\"]\n    },\n    {\n      \"id\": \"F4\",\n      \"summary\": \"Aircraft SWA3050 (ADSB-026) at KATL at 08:59Z during NOTAM-015.\",\n      \"confidence\": 0.95,\n      \"citations\": [\"ADSB-026\", \"NOTAM-015\"]\n    },\n    {\n      \"id\": \"F5\",\n      \"summary\": \"Aircraft DAL404 (ADSB-028) at KATL at 12:30Z during NOTAM-016 (LASER ACT 2NM W OF ARPT SFC-5000FT 12:00-12:30Z).\",\n      \"confidence\": 0.95,\n      \"citations\": [\"ADSB-028\", \"NOTAM-016\"]\n    },\n    {\n      \"id\": \"F6\",\n      \"summary\": \"Aircraft DAL2600 (ADSB-031) at KATL at 22:10Z during NOTAM-017 (TWY L CLSD 22:00-23:59Z).\",\n      \"confidence\": 0.95,\n      \"citations\": [\"ADSB-031\", \"NOTAM-017\"]\n    },\n    {\n      \"id\": \"F7\",\n      \"summary\": \"Satellite ISS (TLE-ISS-005) over KATL at 07:50Z during NOTAM-014.\",\n      \"confidence\": 0.95,\n      \"citations\": [\"TLE-ISS-005\", \"NOTAM-014\"]\n    },\n    {\n      \"id\": \"F8\",\n      \"summary\": \"Satellite ISS (TLE-ISS-005) over KATL at 07:50Z during NOTAM-015.\",\n      \"confidence\": 0.95,\n      \"citations\": [\"TLE-ISS-005\", \"NOTAM-015\"]\n    }\n  ]\n}",
+    "finish_reason": "stop",
+    "served_model": "deepseek/deepseek-v4-flash",
+    "provider": "AtlasCloud",
+    "usage": {
+      "prompt_tokens": 1198,
+      "completion_tokens": 2813,
+      "total_tokens": 4011,
+      "cost": 0.0005636624,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.0005636624,
+        "upstream_inference_prompt_cost": 0.0000989548,
+        "upstream_inference_completions_cost": 0.0004647076
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 2136,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    },
+    "latency_ms": 27021
+  }
+}

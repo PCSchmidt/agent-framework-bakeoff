@@ -1,0 +1,45 @@
+{
+  "key": "15ca0922016edc9b562c1fe8",
+  "prompt_version": "brief-writer-v1",
+  "model": "xiaomi/mimo-v2.6-pro",
+  "params": {
+    "temperature": 0.7,
+    "sample": 4
+  },
+  "meta": {
+    "airport": "KSEA",
+    "date": "2026-08-22",
+    "attempt": 1
+  },
+  "recorded_at": "2026-09-28T19:08:37.326Z",
+  "response": {
+    "content": "{\"airport\":\"KSEA\",\"date\":\"2026-08-22\",\"findings\":[{\"id\":\"F1\",\"summary\":\"ADSB-020 (ASA402) track at 17:55Z at 4100 ft falls within the NOTAM-012 crane (320 ft AGL, 0.8NM S of airport) validity window.\",\"confidence\":0.9,\"citations\":[\"ADSB-020\",\"NOTAM-012\"]},{\"id\":\"F2\",\"summary\":\"ADSB-021 (QXE2104) track at 18:30Z at 3600 ft falls within the NOTAM-012 crane (320 ft AGL, 0.8NM S of airport) validity window.\",\"confidence\":0.9,\"citations\":[\"ADSB-021\",\"NOTAM-012\"]},{\"id\":\"F3\",\"summary\":\"ADSB-022 (DAL2231) track at 19:31Z at 5200 ft falls within the NOTAM-012 crane (320 ft AGL, 0.8NM S of airport) validity window.\",\"confidence\":0.9,\"citations\":[\"ADSB-022\",\"NOTAM-012\"]},{\"id\":\"F4\",\"summary\":\"ADSB-023 (N88SW) track at 19:30Z at 2200 ft falls within the NOTAM-012 crane (320 ft AGL, 0.8NM S of airport) validity window.\",\"confidence\":0.9,\"citations\":[\"ADSB-023\",\"NOTAM-012\"]},{\"id\":\"F5\",\"summary\":\"TLE-STARLINK-002 pass over KSEA at 04:12Z falls within the NOTAM-012 crane (320 ft AGL, 0.8NM S of airport) validity window.\",\"confidence\":0.85,\"citations\":[\"TLE-STARLINK-002\",\"NOTAM-012\"]},{\"id\":\"F6\",\"summary\":\"ADSB-021 (QXE2104) track at 18:30Z at 3600 ft falls within the NOTAM-013 RWY 16R/34L closure window.\",\"confidence\":0.9,\"citations\":[\"ADSB-021\",\"NOTAM-013\"]},{\"id\":\"F7\",\"summary\":\"ADSB-023 (N88SW) track at 19:30Z at 2200 ft falls within the NOTAM-013 RWY 16R/34L closure window (inclusive endpoint).\",\"confidence\":0.9,\"citations\":[\"ADSB-023\",\"NOTAM-013\"]}]}",
+    "finish_reason": "stop",
+    "served_model": "xiaomi/mimo-v2.6-pro",
+    "provider": "Xiaomi",
+    "usage": {
+      "prompt_tokens": 872,
+      "completion_tokens": 875,
+      "total_tokens": 1747,
+      "cost": 0.0008092548,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 768,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.0008092548,
+        "upstream_inference_prompt_cost": 0.0000480048,
+        "upstream_inference_completions_cost": 0.00076125
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 236,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    },
+    "latency_ms": 16109
+  }
+}

@@ -1,0 +1,45 @@
+{
+  "key": "f85f0bb3457e3ba942563ac9",
+  "prompt_version": "brief-writer-v1",
+  "model": "z-ai/glm-5.3-flash",
+  "params": {
+    "temperature": 0.7,
+    "sample": 2
+  },
+  "meta": {
+    "airport": "KJFK",
+    "date": "2026-08-19",
+    "attempt": 1
+  },
+  "recorded_at": "2026-09-28T19:06:18.817Z",
+  "response": {
+    "content": "{\"airport\":\"KJFK\",\"date\":\"2026-08-19\",\"findings\":[\n{\"id\":\"F1\",\"summary\":\"JBU88 track at 2026-08-19T14:20:00Z falls inside the validity window of NOTAM-004 (RWY 04L/22R CLSD, 13:00-17:00Z).\",\"confidence\":0.9,\"citations\":[\"ADSB-006\",\"NOTAM-004\"]},\n{\"id\":\"F2\",\"summary\":\"AAL100 track at 2026-08-19T14:45:00Z falls inside the validity window of NOTAM-004 (RWY 04L/22R CLSD, 13:00-17:00Z).\",\"confidence\":0.9,\"citations\":[\"ADSB-007\",\"NOTAM-004\"]},\n{\"id\":\"F3\",\"summary\":\"N900KS track at 2026-08-19T15:10:00Z falls inside the validity window of NOTAM-004 (RWY 04L/22R CLSD, 13:00-17:00Z).\",\"confidence\":0.9,\"citations\":[\"ADSB-008\",\"NOTAM-004\"]},\n{\"id\":\"F4\",\"summary\":\"ISS (synthetic) pass over KJFK at 2026-08-19T14:10:00Z falls inside the validity window of NOTAM-004 (RWY 04L/22R CLSD, 13:00-17:00Z).\",\"confidence\":0.9,\"citations\":[\"TLE-ISS-002\",\"NOTAM-004\"]},\n{\"id\":\"F5\",\"summary\":\"JBU88 track at 2026-08-19T14:20:00Z falls inside the validity window of NOTAM-005 (TFR VIP MOVEMENT SFC-3000FT, 14:00-16:00Z); track altitude 3000 ft.\",\"confidence\":0.9,\"citations\":[\"ADSB-006\",\"NOTAM-005\"]},\n{\"id\":\"F6\",\"summary\":\"AAL100 track at 2026-08-19T14:45:00Z falls inside the validity window of NOTAM-005 (TFR VIP MOVEMENT SFC-3000FT, 14:00-16:00Z).\",\"confidence\":0.9,\"citations\":[\"ADSB-007\",\"NOTAM-005\"]},\n{\"id\":\"F7\",\"summary\":\"N900KS track at 2026-08-19T15:10:00Z falls inside the validity window of NOTAM-005 (TFR VIP MOVEMENT SFC-3000FT, 14:00-16:00Z); track altitude 2500 ft within SFC-3000FT.\",\"confidence\":0.9,\"citations\":[\"ADSB-008\",\"NOTAM-005\"]},\n{\"id\":\"F8\",\"summary\":\"ISS (synthetic) pass over KJFK at 2026-08-19T14:10:00Z falls inside the validity window of NOTAM-005 (TFR VIP MOVEMENT SFC-3000FT, 14:00-16:00Z).\",\"confidence\":0.9,\"citations\":[\"TLE-ISS-002\",\"NOTAM-005\"]},\n{\"id\":\"F9\",\"summary\":\"JBU88 track at 2026-08-19T14:20:00Z falls inside the validity window of NOTAM-008 (ILS RWY 04L U/S, 00:00-23:59Z).\",\"confidence\":0.9,\"citations\":[\"ADSB-006\",\"NOTAM-008\"]},\n{\"id\":\"F10\",\"summary\":\"AAL100 track at 2026-08-19T14:45:00Z falls inside the validity window of NOTAM-008 (ILS RWY 04L U/S, 00:00-23:59Z).\",\"confidence\":0.9,\"citations\":[\"ADSB-007\",\"NOTAM-008\"]},\n{\"id\":\"F11\",\"summary\":\"N900KS track at 2026-08-19T15:10:00Z falls inside the validity window of NOTAM-008 (ILS RWY 04L U/S, 00:00-23:59Z).\",\"confidence\":0.9,\"citations\":[\"ADSB-008\",\"NOTAM-008\"]},\n{\"id\":\"F12\",\"summary\":\"ISS (synthetic) pass over KJFK at 2026-08-19T14:10:00Z falls inside the validity window of NOTAM-008 (ILS RWY 04L U/S, 00:00-23:59Z).\",\"confidence\":0.9,\"citations\":[\"TLE-ISS-002\",\"NOTAM-008\"]}\n]}",
+    "finish_reason": "stop",
+    "served_model": "z-ai/glm-5.3-flash",
+    "provider": "Wafer",
+    "usage": {
+      "prompt_tokens": 795,
+      "completion_tokens": 1145,
+      "total_tokens": 1940,
+      "cost": 0.00061579,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 768,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.00061579,
+        "upstream_inference_prompt_cost": 0.00004329,
+        "upstream_inference_completions_cost": 0.0005725
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 91,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    },
+    "latency_ms": 51876
+  }
+}

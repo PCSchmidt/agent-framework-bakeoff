@@ -1,0 +1,45 @@
+{
+  "key": "9b93fc93ee7c1b54d0f180de",
+  "prompt_version": "brief-writer-v1",
+  "model": "deepseek/deepseek-v4-flash",
+  "params": {
+    "temperature": 0.7,
+    "sample": 1
+  },
+  "meta": {
+    "airport": "KORD",
+    "date": "2026-08-22",
+    "attempt": 1
+  },
+  "recorded_at": "2026-09-28T19:04:10.447Z",
+  "response": {
+    "content": "{\n  \"airport\": \"KORD\",\n  \"date\": \"2026-08-22\",\n  \"findings\": [\n    {\n      \"id\": \"F1\",\n      \"summary\": \"Aircraft UAL1502 at 14:00Z inside NOTAM-009 valid window (14:00-16:00Z) for runway closure.\",\n      \"confidence\": 1.0,\n      \"citations\": [\"NOTAM-009\", \"ADSB-014\"]\n    },\n    {\n      \"id\": \"F2\",\n      \"summary\": \"Aircraft SKW5521 at 15:40Z inside NOTAM-009 valid window for runway closure.\",\n      \"confidence\": 1.0,\n      \"citations\": [\"NOTAM-009\", \"ADSB-015\"]\n    },\n    {\n      \"id\": \"F3\",\n      \"summary\": \"Aircraft SKW5521 at 15:40Z inside NOTAM-010 TFR VIP movement valid window.\",\n      \"confidence\": 1.0,\n      \"citations\": [\"NOTAM-010\", \"ADSB-015\"]\n    },\n    {\n      \"id\": \"F4\",\n      \"summary\": \"Aircraft N512CR at 16:00Z inside NOTAM-009 valid window for runway closure.\",\n      \"confidence\": 1.0,\n      \"citations\": [\"NOTAM-009\", \"ADSB-017\"]\n    },\n    {\n      \"id\": \"F5\",\n      \"summary\": \"Aircraft UAL77 at 21:15Z inside NOTAM-011 valid window for taxiway closure.\",\n      \"confidence\": 1.0,\n      \"citations\": [\"NOTAM-011\", \"ADSB-019\"]\n    },\n    {\n      \"id\": \"F6\",\n      \"summary\": \"Satellite pass ISS at 15:44Z inside NOTAM-009 valid window for runway closure.\",\n      \"confidence\": 1.0,\n      \"citations\": [\"NOTAM-009\", \"TLE-ISS-004\"]\n    },\n    {\n      \"id\": \"F7\",\n      \"summary\": \"Satellite pass ISS at 15:44Z inside NOTAM-010 TFR VIP movement valid window.\",\n      \"confidence\": 1.0,\n      \"citations\": [\"NOTAM-010\", \"TLE-ISS-004\"]\n    }\n  ]\n}",
+    "finish_reason": "stop",
+    "served_model": "deepseek/deepseek-v4-flash",
+    "provider": "Parasail",
+    "usage": {
+      "prompt_tokens": 1045,
+      "completion_tokens": 2956,
+      "total_tokens": 4001,
+      "cost": 0.00097398,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.00097398,
+        "upstream_inference_prompt_cost": 0.0001463,
+        "upstream_inference_completions_cost": 0.00082768
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 1942,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    },
+    "latency_ms": 29622
+  }
+}

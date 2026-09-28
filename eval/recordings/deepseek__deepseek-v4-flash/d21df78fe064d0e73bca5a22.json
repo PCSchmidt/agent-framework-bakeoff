@@ -1,0 +1,45 @@
+{
+  "key": "d21df78fe064d0e73bca5a22",
+  "prompt_version": "brief-writer-v1",
+  "model": "deepseek/deepseek-v4-flash",
+  "params": {
+    "temperature": 0.7,
+    "sample": 0
+  },
+  "meta": {
+    "airport": "KORD",
+    "date": "2026-08-22",
+    "attempt": 1
+  },
+  "recorded_at": "2026-09-28T19:03:52.890Z",
+  "response": {
+    "content": "{\n  \"airport\": \"KORD\",\n  \"date\": \"2026-08-22\",\n  \"findings\": [\n    {\n      \"id\": \"F1\",\n      \"summary\": \"Aircraft track ADSB-014 occurs within NOTAM-009 validity (RWY 10L/28R CLSD).\",\n      \"confidence\": 0.95,\n      \"citations\": [\"ADSB-014\", \"NOTAM-009\"]\n    },\n    {\n      \"id\": \"F2\",\n      \"summary\": \"Aircraft track ADSB-015 occurs within NOTAM-009 validity (RWY 10L/28R CLSD).\",\n      \"confidence\": 0.95,\n      \"citations\": [\"ADSB-015\", \"NOTAM-009\"]\n    },\n    {\n      \"id\": \"F3\",\n      \"summary\": \"Aircraft track ADSB-015 occurs within NOTAM-010 validity (TFR VIP MOVEMENT SFC-3000FT).\",\n      \"confidence\": 0.95,\n      \"citations\": [\"ADSB-015\", \"NOTAM-010\"]\n    },\n    {\n      \"id\": \"F4\",\n      \"summary\": \"Aircraft track ADSB-017 occurs within NOTAM-009 validity (RWY 10L/28R CLSD).\",\n      \"confidence\": 0.95,\n      \"citations\": [\"ADSB-017\", \"NOTAM-009\"]\n    },\n    {\n      \"id\": \"F5\",\n      \"summary\": \"Aircraft track ADSB-019 occurs within NOTAM-011 validity (TWY B BTN B4 AND B9 CLSD).\",\n      \"confidence\": 0.95,\n      \"citations\": [\"ADSB-019\", \"NOTAM-011\"]\n    },\n    {\n      \"id\": \"F6\",\n      \"summary\": \"Satellite pass TLE-ISS-004 occurs within NOTAM-009 validity (RWY 10L/28R CLSD).\",\n      \"confidence\": 0.95,\n      \"citations\": [\"TLE-ISS-004\", \"NOTAM-009\"]\n    },\n    {\n      \"id\": \"F7\",\n      \"summary\": \"Satellite pass TLE-ISS-004 occurs within NOTAM-010 validity (TFR VIP MOVEMENT SFC-3000FT).\",\n      \"confidence\": 0.95,\n      \"citations\": [\"TLE-ISS-004\", \"NOTAM-010\"]\n    }\n  ]\n}",
+    "finish_reason": "stop",
+    "served_model": "deepseek/deepseek-v4-flash",
+    "provider": "SiliconFlow",
+    "usage": {
+      "prompt_tokens": 1045,
+      "completion_tokens": 2196,
+      "total_tokens": 3241,
+      "cost": 0.00075073,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.00075073,
+        "upstream_inference_prompt_cost": 0.00013585,
+        "upstream_inference_completions_cost": 0.00061488
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 1663,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    },
+    "latency_ms": 12896
+  }
+}

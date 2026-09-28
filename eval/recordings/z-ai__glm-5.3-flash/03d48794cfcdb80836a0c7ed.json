@@ -1,0 +1,45 @@
+{
+  "key": "03d48794cfcdb80836a0c7ed",
+  "prompt_version": "brief-writer-v1",
+  "model": "z-ai/glm-5.3-flash",
+  "params": {
+    "temperature": 0.7,
+    "sample": 1
+  },
+  "meta": {
+    "airport": "KSEA",
+    "date": "2026-08-22",
+    "attempt": 2
+  },
+  "recorded_at": "2026-09-28T19:07:30.463Z",
+  "response": {
+    "content": "{\"airport\":\"KSEA\",\"date\":\"2026-08-22\",\"findings\":[{\"id\":\"F1\",\"summary\":\"ADS track ASA402 (ADSB-020) at 2026-08-22T17:55:00Z falls within the validity window of NOTAM-012 (crane 320FT AGL 0.8NM S of airport).\",\"confidence\":0.95,\"citations\":[\"ADSB-020\",\"NOTAM-012\"]},{\"id\":\"F2\",\"summary\":\"ADS track QXE2104 (ADSB-021) at 2026-08-22T18:30:00Z falls within the validity window of NOTAM-012 (crane 320FT AGL).\",\"confidence\":0.95,\"citations\":[\"ADSB-021\",\"NOTAM-012\"]},{\"id\":\"F3\",\"summary\":\"ADS track QXE2104 (ADSB-021) at 2026-08-22T18:30:00Z falls within the validity window of NOTAM-013 (RWY 16R/34L closed).\",\"confidence\":0.95,\"citations\":[\"ADSB-021\",\"NOTAM-013\"]},{\"id\":\"F4\",\"summary\":\"ADS track DAL2231 (ADSB-022) at 2026-08-22T19:31:00Z falls within the validity window of NOTAM-012 (crane 320FT AGL).\",\"confidence\":0.95,\"citations\":[\"ADSB-022\",\"NOTAM-012\"]},{\"id\":\"F5\",\"summary\":\"ADS track N88SW (ADSB-023) at 2026-08-22T19:30:00Z falls within the validity window of NOTAM-012 (crane 320FT AGL).\",\"confidence\":0.95,\"citations\":[\"ADSB-023\",\"NOTAM-012\"]},{\"id\":\"F6\",\"summary\":\"ADS track N88SW (ADSB-023) at 2026-08-22T19:30:00Z falls within the validity window of NOTAM-013 (RWY 16R/34L closed), inclusive of the endpoint.\",\"confidence\":0.95,\"citations\":[\"ADSB-023\",\"NOTAM-013\"]},{\"id\":\"F7\",\"summary\":\"Satellite pass Starlink train (TLE-STARLINK-002) at 2026-08-22T04:12:00Z (max elevation 38 deg) falls within the validity window of NOTAM-012 (crane 320FT AGL).\",\"confidence\":0.95,\"citations\":[\"TLE-STARLINK-002\",\"NOTAM-012\"]}]}",
+    "finish_reason": "stop",
+    "served_model": "z-ai/glm-5.3-flash",
+    "provider": "Wafer",
+    "usage": {
+      "prompt_tokens": 1462,
+      "completion_tokens": 609,
+      "total_tokens": 2071,
+      "cost": 0.00084804,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 768,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.00084804,
+        "upstream_inference_prompt_cost": 0.00054354,
+        "upstream_inference_completions_cost": 0.0003045
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 20,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    },
+    "latency_ms": 26425
+  }
+}

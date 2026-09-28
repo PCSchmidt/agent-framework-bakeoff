@@ -1,11 +1,12 @@
 /**
  * Phase 2 LangGraph baseline.
- * Fixture tools only — no LLM, no network, no API keys.
- * Emits the same brief JSON the mechanical judge scores.
+ * Fixture tools for retrieve/join; the emit node calls `opts.writer`
+ * (deterministic template by default, an LLM writer in Phase 5).
+ * Emits the same brief JSON the mechanical judge scores. No gate: the draft ships.
  */
 
 import { Annotation, END, START, StateGraph } from '@langchain/langgraph'
-import { emitBrief, joinOverlaps, retrieveAdsb, retrieveNotams, retrieveTle } from '../tools.js'
+import { joinOverlaps, retrieveAdsb, retrieveNotams, retrieveTle, templateWriter } from '../tools.js'
 import { loadWorld } from '../world.js'
 
 const BriefState = Annotation.Root({
@@ -18,7 +19,7 @@ const BriefState = Annotation.Root({
   brief: Annotation(),
 })
 
-export function buildLangGraph(world) {
+export function buildLangGraph(world, writer = templateWriter) {
   const retrieve = (state) => {
     const query = { airport: state.airport, date: state.date }
     return {
@@ -32,15 +33,16 @@ export function buildLangGraph(world) {
     pairs: joinOverlaps(state.notams, [...state.tracks, ...state.passes]),
   })
 
-  const emit = (state) => ({
-    brief: emitBrief(
-      { airport: state.airport, date: state.date, runtime: 'langgraph' },
+  const emit = async (state) => ({
+    brief: await writer(
+      { airport: state.airport, date: state.date },
       {
         notams: state.notams,
         tracks: state.tracks,
         passes: state.passes,
         pairs: state.pairs,
       },
+      { runtime: 'langgraph', attempt: 1 },
     ),
   })
 
@@ -55,8 +57,8 @@ export function buildLangGraph(world) {
     .compile()
 }
 
-export async function runLangGraphBrief(query, world = loadWorld()) {
-  const app = buildLangGraph(world)
+export async function runLangGraphBrief(query, world = loadWorld(), opts = {}) {
+  const app = buildLangGraph(world, opts.writer)
   const result = await app.invoke({
     airport: query.airport,
     date: query.date,

@@ -1,0 +1,45 @@
+{
+  "key": "458f4c0f6e21030303d56b21",
+  "prompt_version": "brief-writer-v1",
+  "model": "deepseek/deepseek-v4-flash",
+  "params": {
+    "temperature": 0.7,
+    "sample": 3
+  },
+  "meta": {
+    "airport": "KSEA",
+    "date": "2026-08-22",
+    "attempt": 1
+  },
+  "recorded_at": "2026-09-28T19:05:05.727Z",
+  "response": {
+    "content": "{\n  \"airport\": \"KSEA\",\n  \"date\": \"2026-08-22\",\n  \"findings\": [\n    {\n      \"id\": \"F1\",\n      \"summary\": \"Aircraft track ADSB-020 (callsign ASA402, altitude 4100 ft, time 17:55Z) occurs within the validity window of NOTAM-012 (crane 320ft AGL 0.8NM S of ARPT, valid all day).\",\n      \"confidence\": 1.0,\n      \"citations\": [\"ADSB-020\", \"NOTAM-012\"]\n    },\n    {\n      \"id\": \"F2\",\n      \"summary\": \"Aircraft track ADSB-021 (callsign QXE2104, altitude 3600 ft, time 18:30Z) occurs within the validity window of NOTAM-012.\",\n      \"confidence\": 1.0,\n      \"citations\": [\"ADSB-021\", \"NOTAM-012\"]\n    },\n    {\n      \"id\": \"F3\",\n      \"summary\": \"Aircraft track ADSB-022 (callsign DAL2231, altitude 5200 ft, time 19:31Z) occurs within the validity window of NOTAM-012.\",\n      \"confidence\": 1.0,\n      \"citations\": [\"ADSB-022\", \"NOTAM-012\"]\n    },\n    {\n      \"id\": \"F4\",\n      \"summary\": \"Aircraft track ADSB-023 (callsign N88SW, altitude 2200 ft, time 19:30Z) occurs within the validity window of NOTAM-012.\",\n      \"confidence\": 1.0,\n      \"citations\": [\"ADSB-023\", \"NOTAM-012\"]\n    },\n    {\n      \"id\": \"F5\",\n      \"summary\": \"Satellite pass TLE-STARLINK-002 (Starlink train, over KSEA at 04:12Z, max elevation 38°) occurs within the validity window of NOTAM-012.\",\n      \"confidence\": 1.0,\n      \"citations\": [\"TLE-STARLINK-002\", \"NOTAM-012\"]\n    },\n    {\n      \"id\": \"F6\",\n      \"summary\": \"Aircraft track ADSB-021 (callsign QXE2104, altitude 3600 ft, time 18:30Z) occurs within the validity window of NOTAM-013 (RWY 16R/34L CLSD, 18:00-19:30Z).\",\n      \"confidence\": 1.0,\n      \"citations\": [\"ADSB-021\", \"NOTAM-013\"]\n    },\n    {\n      \"id\": \"F7\",\n      \"summary\": \"Aircraft track ADSB-023 (callsign N88SW, altitude 2200 ft, time 19:30Z) occurs within the validity window of NOTAM-013.\",\n      \"confidence\": 1.0,\n      \"citations\": [\"ADSB-023\", \"NOTAM-013\"]\n    }\n  ]\n}",
+    "finish_reason": "stop",
+    "served_model": "deepseek/deepseek-v4-flash",
+    "provider": "StreamLake",
+    "usage": {
+      "prompt_tokens": 793,
+      "completion_tokens": 2148,
+      "total_tokens": 2941,
+      "cost": 0.00027250314,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 768,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.00027250314,
+        "upstream_inference_prompt_cost": 0.00001087674,
+        "upstream_inference_completions_cost": 0.0002616264
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 1486,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    },
+    "latency_ms": 62718
+  }
+}

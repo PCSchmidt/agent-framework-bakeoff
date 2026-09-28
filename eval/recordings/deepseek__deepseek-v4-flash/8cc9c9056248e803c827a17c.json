@@ -1,0 +1,45 @@
+{
+  "key": "8cc9c9056248e803c827a17c",
+  "prompt_version": "brief-writer-v1",
+  "model": "deepseek/deepseek-v4-flash",
+  "params": {
+    "temperature": 0.7,
+    "sample": 4
+  },
+  "meta": {
+    "airport": "KORD",
+    "date": "2026-08-22",
+    "attempt": 1
+  },
+  "recorded_at": "2026-09-28T19:04:47.030Z",
+  "response": {
+    "content": "{\n  \"airport\": \"KORD\",\n  \"date\": \"2026-08-22\",\n  \"findings\": [\n    {\n      \"id\": \"F1\",\n      \"summary\": \"UAL1502 track at 14:00Z coincides with NOTAM-009 (RWY 10L/28R CLSD).\",\n      \"confidence\": 1.0,\n      \"citations\": [\"ADSB-014\", \"NOTAM-009\"]\n    },\n    {\n      \"id\": \"F2\",\n      \"summary\": \"SKW5521 track at 15:40Z coincides with NOTAM-009 (RWY 10L/28R CLSD).\",\n      \"confidence\": 1.0,\n      \"citations\": [\"ADSB-015\", \"NOTAM-009\"]\n    },\n    {\n      \"id\": \"F3\",\n      \"summary\": \"SKW5521 track at 15:40Z coincides with NOTAM-010 (TFR VIP MOVEMENT SFC-3000FT).\",\n      \"confidence\": 1.0,\n      \"citations\": [\"ADSB-015\", \"NOTAM-010\"]\n    },\n    {\n      \"id\": \"F4\",\n      \"summary\": \"N512CR track at 16:00Z coincides with NOTAM-009 (RWY 10L/28R CLSD).\",\n      \"confidence\": 1.0,\n      \"citations\": [\"ADSB-017\", \"NOTAM-009\"]\n    },\n    {\n      \"id\": \"F5\",\n      \"summary\": \"ISS pass at 15:44Z coincides with NOTAM-009 (RWY 10L/28R CLSD).\",\n      \"confidence\": 1.0,\n      \"citations\": [\"TLE-ISS-004\", \"NOTAM-009\"]\n    },\n    {\n      \"id\": \"F6\",\n      \"summary\": \"ISS pass at 15:44Z coincides with NOTAM-010 (TFR VIP MOVEMENT SFC-3000FT).\",\n      \"confidence\": 1.0,\n      \"citations\": [\"TLE-ISS-004\", \"NOTAM-010\"]\n    },\n    {\n      \"id\": \"F7\",\n      \"summary\": \"UAL77 track at 21:15Z coincides with NOTAM-011 (TWY B BTN B4 AND B9 CLSD).\",\n      \"confidence\": 1.0,\n      \"citations\": [\"ADSB-019\", \"NOTAM-011\"]\n    }\n  ]\n}",
+    "finish_reason": "stop",
+    "served_model": "deepseek/deepseek-v4-flash",
+    "provider": "StreamLake",
+    "usage": {
+      "prompt_tokens": 1045,
+      "completion_tokens": 2264,
+      "total_tokens": 3309,
+      "cost": 0.0003393957,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.0003393957,
+        "upstream_inference_prompt_cost": 0.0000636405,
+        "upstream_inference_completions_cost": 0.0002757552
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 1722,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    },
+    "latency_ms": 61362
+  }
+}

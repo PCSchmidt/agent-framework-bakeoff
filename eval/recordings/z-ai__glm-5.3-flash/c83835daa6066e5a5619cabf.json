@@ -1,0 +1,45 @@
+{
+  "key": "c83835daa6066e5a5619cabf",
+  "prompt_version": "brief-writer-v1",
+  "model": "z-ai/glm-5.3-flash",
+  "params": {
+    "temperature": 0.7,
+    "sample": 2
+  },
+  "meta": {
+    "airport": "KLAX",
+    "date": "2026-08-24",
+    "attempt": 1
+  },
+  "recorded_at": "2026-09-28T19:07:36.250Z",
+  "response": {
+    "content": "{\n  \"airport\": \"KLAX\",\n  \"date\": \"2026-08-24\",\n  \"findings\": [\n    {\n      \"id\": \"F1\",\n      \"summary\": \"Satellite pass TLE-ISS-007 at 2026-08-24T16:10:00Z (max elevation 66 deg over KLAX) falls within the validity window of NOTAM-020 (TFR VIP MOVEMENT SFC-3000FT, 16:00-16:20Z).\",\n      \"confidence\": 1.0,\n      \"citations\": [\"TLE-ISS-007\", \"NOTAM-020\"]\n    },\n    {\n      \"id\": \"F2\",\n      \"summary\": \"Satellite pass TLE-STARLINK-003 at 2026-08-24T04:59:00Z (max elevation 44 deg over KLAX) falls within the validity window of NOTAM-019 (TWY C CLSD, 03:00-05:00Z).\",\n      \"confidence\": 1.0,\n      \"citations\": [\"TLE-STARLINK-003\", \"NOTAM-019\"]\n    }\n  ]\n}",
+    "finish_reason": "stop",
+    "served_model": "z-ai/glm-5.3-flash",
+    "provider": "Modal",
+    "usage": {
+      "prompt_tokens": 713,
+      "completion_tokens": 1236,
+      "total_tokens": 1949,
+      "cost": 0.00070191,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 192,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.00070191,
+        "upstream_inference_prompt_cost": 0.00008391,
+        "upstream_inference_completions_cost": 0.000618
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 733,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    },
+    "latency_ms": 12171
+  }
+}

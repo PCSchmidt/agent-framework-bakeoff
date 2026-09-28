@@ -1,0 +1,45 @@
+{
+  "key": "a27e2b493fe23d2b68d394b0",
+  "prompt_version": "brief-writer-v1",
+  "model": "z-ai/glm-5.3-flash",
+  "params": {
+    "temperature": 0.7,
+    "sample": 2
+  },
+  "meta": {
+    "airport": "KATL",
+    "date": "2026-08-23",
+    "attempt": 1
+  },
+  "recorded_at": "2026-09-28T19:07:24.072Z",
+  "response": {
+    "content": "{\n  \"airport\": \"KATL\",\n  \"date\": \"2026-08-23\",\n  \"findings\": [\n    {\n      \"id\": \"F1\",\n      \"summary\": \"DAL1 track at 6000 ft at 2026-08-23T06:15:00Z falls inside the NOTAM-014 validity window (RWY 8L/26R CLSD, 06:00-08:00Z).\",\n      \"confidence\": 0.9,\n      \"citations\": [\"ADSB-024\", \"NOTAM-014\"]\n    },\n    {\n      \"id\": \"F2\",\n      \"summary\": \"DAL22 track at 5400 ft at 2026-08-23T07:45:00Z falls inside the NOTAM-014 validity window (RWY 8L/26R CLSD, 06:00-08:00Z).\",\n      \"confidence\": 0.9,\n      \"citations\": [\"ADSB-025\", \"NOTAM-014\"]\n    },\n    {\n      \"id\": \"F3\",\n      \"summary\": \"DAL22 track at 5400 ft at 2026-08-23T07:45:00Z falls inside the NOTAM-015 validity window (ILS RWY 9R U/S, 07:30-09:00Z).\",\n      \"confidence\": 0.9,\n      \"citations\": [\"ADSB-025\", \"NOTAM-015\"]\n    },\n    {\n      \"id\": \"F4\",\n      \"summary\": \"ISS (synthetic) pass over KATL at 2026-08-23T07:50:00Z (max elevation 53 deg) falls inside the NOTAM-014 validity window (RWY 8L/26R CLSD, 06:00-08:00Z).\",\n      \"confidence\": 0.85,\n      \"citations\": [\"TLE-ISS-005\", \"NOTAM-014\"]\n    },\n    {\n      \"id\": \"F5\",\n      \"summary\": \"ISS (synthetic) pass over KATL at 2026-08-23T07:50:00Z (max elevation 53 deg) falls inside the NOTAM-015 validity window (ILS RWY 9R U/S, 07:30-09:00Z).\",\n      \"confidence\": 0.85,\n      \"citations\": [\"TLE-ISS-005\", \"NOTAM-015\"]\n    },\n    {\n      \"id\": \"F6\",\n      \"summary\": \"SWA3050 track at 4700 ft at 2026-08-23T08:59:00Z falls inside the NOTAM-015 validity window (ILS RWY 9R U/S, 07:30-09:00Z).\",\n      \"confidence\": 0.9,\n      \"citations\": [\"ADSB-026\", \"NOTAM-015\"]\n    },\n    {\n      \"id\": \"F7\",\n      \"summary\": \"DAL404 track at 8000 ft at 2026-08-23T12:30:00Z falls inside the NOTAM-016 validity window (LASER ACT 2NM W OF ARPT SFC-5000FT, 12:00-12:30Z), inclusive of the end time.\",\n      \"confidence\": 0.9,\n      \"citations\": [\"ADSB-028\", \"NOTAM-016\"]\n    },\n    {\n      \"id\": \"F8\",\n      \"summary\": \"DAL2600 track at 5100 ft at 2026-08-23T22:10:00Z falls inside the NOTAM-017 validity window (TWY L CLSD, 22:00-23:59Z).\",\n      \"confidence\": 0.9,\n      \"citations\": [\"ADSB-031\", \"NOTAM-017\"]\n    }\n  ]\n}",
+    "finish_reason": "stop",
+    "served_model": "z-ai/glm-5.3-flash",
+    "provider": "Modal",
+    "usage": {
+      "prompt_tokens": 1191,
+      "completion_tokens": 2176,
+      "total_tokens": 3367,
+      "cost": 0.00126665,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.00126665,
+        "upstream_inference_prompt_cost": 0.00017865,
+        "upstream_inference_completions_cost": 0.001088
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 900,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    },
+    "latency_ms": 27229
+  }
+}

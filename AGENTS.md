@@ -20,7 +20,9 @@ How coding agents should work in this repository.
 
 - Invent a second gate or memory schema.
 - Add JPO / F-35 / employer inventory as claimed facts (those strings exist only as **known-bad** fixtures).
-- Start redteam-blue-gate or add LLM nodes unless the user asked.
+- Start redteam-blue-gate.
+- Call a live model in tests or CI. Record with `npm run eval:llm -- --mode record` (needs `.env`), then commit `eval/recordings/`.
+- Edit or delete recordings by hand. Changing the prompt means bumping `PROMPT_VERSION` in [src/llm-writer.js](src/llm-writer.js) and re-recording.
 - Install Python CrewAI / AutoGen just to claim a port. Phase 4 is the published score table on shared `src/tools.js`.
 - Rewrite the golden set to match a generator. Change the generator.
 - Commit `.env`, live feed dumps, or non-public data.

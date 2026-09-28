@@ -1,0 +1,45 @@
+{
+  "key": "aeff08752df56e692ed8e5d2",
+  "prompt_version": "brief-writer-v1",
+  "model": "xiaomi/mimo-v2.6-pro",
+  "params": {
+    "temperature": 0.7,
+    "sample": 0
+  },
+  "meta": {
+    "airport": "KORD",
+    "date": "2026-08-22",
+    "attempt": 1
+  },
+  "recorded_at": "2026-09-28T19:08:24.760Z",
+  "response": {
+    "content": "{\"airport\":\"KORD\",\"date\":\"2026-08-22\",\"findings\":[{\"id\":\"F1\",\"summary\":\"Track UAL1502 (ADSB-014) at 4800 ft at 14:00Z falls within the validity window of NOTAM-009 (RWY 10L/28R CLSD, 14:00Z–16:00Z).\",\"confidence\":0.95,\"citations\":[\"ADSB-014\",\"NOTAM-009\"]},{\"id\":\"F2\",\"summary\":\"Track SKW5521 (ADSB-015) at 6100 ft at 15:40Z falls within the validity window of NOTAM-009 (RWY 10L/28R CLSD, 14:00Z–16:00Z).\",\"confidence\":0.95,\"citations\":[\"ADSB-015\",\"NOTAM-009\"]},{\"id\":\"F3\",\"summary\":\"Track N512CR (ADSB-017) at 2600 ft at 16:00Z coincides with the closing endpoint of NOTAM-009 (RWY 10L/28R CLSD, 14:00Z–16:00Z).\",\"confidence\":0.9,\"citations\":[\"ADSB-017\",\"NOTAM-009\"]},{\"id\":\"F4\",\"summary\":\"Satellite pass TLE-ISS-004 over KORD at 15:44Z falls within the validity window of NOTAM-009 (RWY 10L/28R CLSD, 14:00Z–16:00Z).\",\"confidence\":0.9,\"citations\":[\"TLE-ISS-004\",\"NOTAM-009\"]},{\"id\":\"F5\",\"summary\":\"Track SKW5521 (ADSB-015) at 6100 ft at 15:40Z falls within the validity window of NOTAM-010 (TFR VIP MOVEMENT SFC-3000FT, 15:30Z–15:45Z), though the reported altitude is above the stated 3000 ft ceiling.\",\"confidence\":0.9,\"citations\":[\"ADSB-015\",\"NOTAM-010\"]},{\"id\":\"F6\",\"summary\":\"Satellite pass TLE-ISS-004 over KORD at 15:44Z falls within the validity window of NOTAM-010 (TFR VIP MOVEMENT SFC-3000FT, 15:30Z–15:45Z).\",\"confidence\":0.9,\"citations\":[\"TLE-ISS-004\",\"NOTAM-010\"]},{\"id\":\"F7\",\"summary\":\"Track UAL77 (ADSB-019) at 5500 ft at 21:15Z falls within the validity window of NOTAM-011 (TWY B BTN B4 AND B9 CLSD, 20:00Z–23:59Z).\",\"confidence\":0.95,\"citations\":[\"ADSB-019\",\"NOTAM-011\"]}]}",
+    "finish_reason": "stop",
+    "served_model": "xiaomi/mimo-v2.6-pro",
+    "provider": "GMICloud",
+    "usage": {
+      "prompt_tokens": 1179,
+      "completion_tokens": 1208,
+      "total_tokens": 2387,
+      "cost": 0.001563825,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.001563825,
+        "upstream_inference_prompt_cost": 0.000512865,
+        "upstream_inference_completions_cost": 0.00105096
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 457,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    },
+    "latency_ms": 16717
+  }
+}

@@ -1,0 +1,45 @@
+{
+  "key": "68e98283944bc7add1ffe364",
+  "prompt_version": "brief-writer-v1",
+  "model": "z-ai/glm-5.3-flash",
+  "params": {
+    "temperature": 0.7,
+    "sample": 0
+  },
+  "meta": {
+    "airport": "KJFK",
+    "date": "2026-08-19",
+    "attempt": 1
+  },
+  "recorded_at": "2026-09-28T19:06:04.933Z",
+  "response": {
+    "content": "{\"airport\":\"KJFK\",\"date\":\"2026-08-19\",\"findings\":[{\"id\":\"F1\",\"summary\":\"JBU8… wait: JBU88 track at 2026-08-19T14:20:00Z falls within NOTAM-004 validity (RWY 04L/22R CLSD).\",\"confidence\":0.95,\"citations\":[\"ADSB-006\",\"NOTAM-004\"]},{\"id\":\"F2\",\"summary\":\"AAL100 track at 2026-08-19T14:45:00Z falls within NOTAM-004 validity (RWY 04L/22R CLSD).\",\"confidence\":0.95,\"citations\":[\"ADSB-007\",\"NOTAM-004\"]},{\"id\":\"F3\",\"summary\":\"N900KS track at 2026-08-19T15:10:00Z falls within NOTAM-004 validity (RWY 04L/22R CLSD).\",\"confidence\":0.95,\"citations\":[\"ADSB-008\",\"NOTAM-004\"]},{\"id\":\"F4\",\"summary\":\"ISS (synthetic) pass at 2026-08-19T14:10:00Z falls within NOTAM-004 validity (RWY 04L/22R CLSD).\",\"confidence\":0.95,\"citations\":[\"TLE-ISS-002\",\"NOTAM-004\"]},{\"id\":\"F5\",\"summary\":\"JBU88 track at 2026-08-19T14:20:00Z at 3000 ft falls within NOTAM-005 validity (TFR VIP MOVEMENT SFC-3000FT), at the TFR ceiling.\",\"confidence\":0.95,\"citations\":[\"ADSB-006\",\"NOTAM-005\"]},{\"id\":\"F6\",\"summary\":\"AAL100 track at 2026-08-19T14:45:00Z at 4200 ft falls within NOTAM-005 validity (TFR VIP MOVEMENT SFC-3000FT), above the TFR ceiling.\",\"confidence\":0.95,\"citations\":[\"ADSB-007\",\"NOTAM-005\"]},{\"id\":\"F7\",\"summary\":\"N900KS track at 2026-08-19T15:10:00Z at 2500 ft falls within NOTAM-005 validity (TFR VIP MOVEMENT SFC-3000FT), inside the TFR vertical extent.\",\"confidence\":0.95,\"citations\":[\"ADSB-008\",\"NOTAM-005\"]},{\"id\":\"F8\",\"summary\":\"ISS (synthetic) pass at 2026-08-19T14:10:00Z falls within NOTAM-005 validity (TFR VIP MOVEMENT SFC-3000FT).\",\"confidence\":0.95,\"citations\":[\"TLE-ISS-002\",\"NOTAM-005\"]},{\"id\":\"F9\",\"summary\":\"JBU88 track at 2026-08-19T14:20:00Z falls within NOTAM-008 validity (ILS RWY 04L U/S).\",\"confidence\":0.95,\"citations\":[\"ADSB-006\",\"NOTAM-008\"]},{\"id\":\"F10\",\"summary\":\"AAL100 track at 2026-08-19T14:45:00Z falls within NOTAM-008 validity (ILS RWY 04L U/S).\",\"confidence\":0.95,\"citations\":[\"ADSB-007\",\"NOTAM-008\"]},{\"id\":\"F11\",\"summary\":\"N900KS track at 2026-08-19T15:10:00Z falls within NOTAM-008 validity (ILS RWY 04L U/S).\",\"confidence\":0.95,\"citations\":[\"ADSB-008\",\"NOTAM-008\"]},{\"id\":\"F12\",\"summary\":\"ISS (synthetic) pass at 2026-08-19T14:10:00Z falls within NOTAM-008 validity (ILS RWY 04L U/S).\",\"confidence\":0.95,\"citations\":[\"TLE-ISS-002\",\"NOTAM-008\"]}]}",
+    "finish_reason": "stop",
+    "served_model": "z-ai/glm-5.3-flash",
+    "provider": "Wafer",
+    "usage": {
+      "prompt_tokens": 795,
+      "completion_tokens": 995,
+      "total_tokens": 1790,
+      "cost": 0.00109375,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.00109375,
+        "upstream_inference_prompt_cost": 0.00059625,
+        "upstream_inference_completions_cost": 0.0004975
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 104,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    },
+    "latency_ms": 45826
+  }
+}

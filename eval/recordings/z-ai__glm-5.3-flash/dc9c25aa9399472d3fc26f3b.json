@@ -1,0 +1,45 @@
+{
+  "key": "dc9c25aa9399472d3fc26f3b",
+  "prompt_version": "brief-writer-v1",
+  "model": "z-ai/glm-5.3-flash",
+  "params": {
+    "temperature": 0.7,
+    "sample": 4
+  },
+  "meta": {
+    "airport": "KLAX",
+    "date": "2026-08-24",
+    "attempt": 1
+  },
+  "recorded_at": "2026-09-28T19:07:35.147Z",
+  "response": {
+    "content": "{\"airport\":\"KLAX\",\"date\":\"2026-08-24\",\"findings\":[{\"id\":\"F1\",\"summary\":\"ISS (synthetic) pass over KLAX at 2026-08-24T16:10:00Z (66 deg max elevation) fell inside the TFR VIP MOVEMENT SFC-3000FT NOTAM window.\",\"confidence\":0.9,\"citations\":[\"TLE-ISS-007\",\"NOTAM-020\"]},{\"id\":\"F2\",\"summary\":\"Starlink train (synthetic) pass over KLAX at 2026-08-24T04:59:00Z (44 deg max elevation) fell inside the TWY C CLSD NOTAM window.\",\"confidence\":0.9,\"citations\":[\"TLE-STARLINK-003\",\"NOTAM-019\"]}]}",
+    "finish_reason": "stop",
+    "served_model": "z-ai/glm-5.3-flash",
+    "provider": "Wafer",
+    "usage": {
+      "prompt_tokens": 713,
+      "completion_tokens": 256,
+      "total_tokens": 969,
+      "cost": 0.00015587,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 704,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.00015587,
+        "upstream_inference_prompt_cost": 0.00002787,
+        "upstream_inference_completions_cost": 0.000128
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 83,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    },
+    "latency_ms": 10362
+  }
+}

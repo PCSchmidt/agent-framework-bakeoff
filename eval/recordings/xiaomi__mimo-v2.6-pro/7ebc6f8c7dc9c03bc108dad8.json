@@ -1,0 +1,45 @@
+{
+  "key": "7ebc6f8c7dc9c03bc108dad8",
+  "prompt_version": "brief-writer-v1",
+  "model": "xiaomi/mimo-v2.6-pro",
+  "params": {
+    "temperature": 0.7,
+    "sample": 1
+  },
+  "meta": {
+    "airport": "KJFK",
+    "date": "2026-08-19",
+    "attempt": 1
+  },
+  "recorded_at": "2026-09-28T19:07:58.469Z",
+  "response": {
+    "content": "{\n  \"airport\": \"KJFK\",\n  \"date\": \"2026-08-19\",\n  \"findings\": [\n    {\n      \"id\": \"F1\",\n      \"summary\": \"ADSB-006 (JBU88) at 3000 ft at 14:20Z falls within the NOTAM-004 runway 04L/22R closure window (13:00Z–17:00Z).\",\n      \"confidence\": 0.95,\n      \"citations\": [\"ADSB-006\", \"NOTAM-004\"]\n    },\n    {\n      \"id\": \"F2\",\n      \"summary\": \"ADSB-007 (AAL100) at 4200 ft at 14:45Z falls within the NOTAM-004 runway 04L/22R closure window (13:00Z–17:00Z).\",\n      \"confidence\": 0.95,\n      \"citations\": [\"ADSB-007\", \"NOTAM-004\"]\n    },\n    {\n      \"id\": \"F3\",\n      \"summary\": \"ADSB-008 (N900KS) at 2500 ft at 15:10Z falls within the NOTAM-004 runway 04L/22R closure window (13:00Z–17:00Z).\",\n      \"confidence\": 0.95,\n      \"citations\": [\"ADSB-008\", \"NOTAM-004\"]\n    },\n    {\n      \"id\": \"F4\",\n      \"summary\": \"TLE-ISS-002 at 14:10Z falls within the NOTAM-004 runway 04L/22R closure window (13:00Z–17:00Z).\",\n      \"confidence\": 0.9,\n      \"citations\": [\"TLE-ISS-002\", \"NOTAM-004\"]\n    },\n    {\n      \"id\": \"F5\",\n      \"summary\": \"ADSB-006 (JBU88) at 3000 ft at 14:20Z falls within the NOTAM-005 TFR window (14:00Z–16:00Z) covering SFC–3000FT; the reported altitude is at the top of the restricted band.\",\n      \"confidence\": 0.95,\n      \"citations\": [\"ADSB-006\", \"NOTAM-005\"]\n    },\n    {\n      \"id\": \"F6\",\n      \"summary\": \"ADSB-007 (AAL100) at 4200 ft at 14:45Z falls within the NOTAM-005 TFR window (14:00Z–16:00Z), with the reported altitude above the SFC–3000FT restricted band.\",\n      \"confidence\": 0.95,\n      \"citations\": [\"ADSB-007\", \"NOTAM-005\"]\n    },\n    {\n      \"id\": \"F7\",\n      \"summary\": \"ADSB-008 (N900KS) at 2500 ft at 15:10Z falls within the NOTAM-005 TFR window (14:00Z–16:00Z) and is inside the SFC–3000FT restricted band.\",\n      \"confidence\": 0.95,\n      \"citations\": [\"ADSB-008\", \"NOTAM-005\"]\n    },\n    {\n      \"id\": \"F8\",\n      \"summary\": \"TLE-ISS-002 at 14:10Z falls within the NOTAM-005 TFR window (14:00Z–16:00Z).\",\n      \"confidence\": 0.9,\n      \"citations\": [\"TLE-ISS-002\", \"NOTAM-005\"]\n    },\n    {\n      \"id\": \"F9\",\n      \"summary\": \"ADSB-006 (JBU88) at 14:20Z falls within the NOTAM-008 window (00:00Z–23:59Z) during which ILS RWY 04L is unserviceable.\",\n      \"confidence\": 0.95,\n      \"citations\": [\"ADSB-006\", \"NOTAM-008\"]\n    },\n    {\n      \"id\": \"F10\",\n      \"summary\": \"ADSB-007 (AAL100) at 14:45Z falls within the NOTAM-008 window (00:00Z–23:59Z) during which ILS RWY 04L is unserviceable.\",\n      \"confidence\": 0.95,\n      \"citations\": [\"ADSB-007\", \"NOTAM-008\"]\n    },\n    {\n      \"id\": \"F11\",\n      \"summary\": \"ADSB-008 (N900KS) at 15:10Z falls within the NOTAM-008 window (00:00Z–23:59Z) during which ILS RWY 04L is unserviceable.\",\n      \"confidence\": 0.95,\n      \"citations\": [\"ADSB-008\", \"NOTAM-008\"]\n    },\n    {\n      \"id\": \"F12\",\n      \"summary\": \"TLE-ISS-002 at 14:10Z falls within the NOTAM-008 window (00:00Z–23:59Z) during which ILS RWY 04L is unserviceable.\",\n      \"confidence\": 0.9,\n      \"citations\": [\"TLE-ISS-002\", \"NOTAM-008\"]\n    }\n  ]\n}",
+    "finish_reason": "stop",
+    "served_model": "xiaomi/mimo-v2.6-pro",
+    "provider": "GMICloud",
+    "usage": {
+      "prompt_tokens": 893,
+      "completion_tokens": 1680,
+      "total_tokens": 2573,
+      "cost": 0.001850055,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.001850055,
+        "upstream_inference_prompt_cost": 0.000388455,
+        "upstream_inference_completions_cost": 0.0014616
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 317,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    },
+    "latency_ms": 23315
+  }
+}

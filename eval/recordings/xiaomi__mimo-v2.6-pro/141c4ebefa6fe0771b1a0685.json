@@ -1,0 +1,45 @@
+{
+  "key": "141c4ebefa6fe0771b1a0685",
+  "prompt_version": "brief-writer-v1",
+  "model": "xiaomi/mimo-v2.6-pro",
+  "params": {
+    "temperature": 0.7,
+    "sample": 2
+  },
+  "meta": {
+    "airport": "KDEN",
+    "date": "2026-08-21",
+    "attempt": 1
+  },
+  "recorded_at": "2026-09-28T19:08:11.561Z",
+  "response": {
+    "content": "{\"airport\": \"KDEN\", \"date\": \"2026-08-21\", \"findings\": [{\"id\": \"F1\", \"summary\": \"Aircraft N44QX (ADSB-011) was tracked near KDEN at 17,500 ft at 17:00 UTC. No NOTAMs were active for the date, so no track-to-NOTAM interactions were identified.\", \"confidence\": 0.9, \"citations\": [\"ADSB-011\"]}]}",
+    "finish_reason": "stop",
+    "served_model": "xiaomi/mimo-v2.6-pro",
+    "provider": "Xiaomi",
+    "usage": {
+      "prompt_tokens": 377,
+      "completion_tokens": 160,
+      "total_tokens": 537,
+      "cost": 0.0001927566,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 256,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.0001927566,
+        "upstream_inference_prompt_cost": 0.0000535566,
+        "upstream_inference_completions_cost": 0.0001392
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 41,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    },
+    "latency_ms": 4692
+  }
+}

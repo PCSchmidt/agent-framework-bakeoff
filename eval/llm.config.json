@@ -1,0 +1,48 @@
+{
+  "models": [
+    "deepseek/deepseek-v4-flash",
+    "z-ai/glm-5.3-flash",
+    "xiaomi/mimo-v2.6-pro"
+  ],
+  "samples": 5,
+  "temperature": 0.7,
+  "max_retries": 2,
+  "queries": [
+    {
+      "airport": "KDEN",
+      "date": "2026-08-19"
+    },
+    {
+      "airport": "KJFK",
+      "date": "2026-08-19"
+    },
+    {
+      "airport": "KDEN",
+      "date": "2026-08-20"
+    },
+    {
+      "airport": "KDEN",
+      "date": "2026-08-21"
+    },
+    {
+      "airport": "KORD",
+      "date": "2026-08-22"
+    },
+    {
+      "airport": "KSEA",
+      "date": "2026-08-22"
+    },
+    {
+      "airport": "KATL",
+      "date": "2026-08-23"
+    },
+    {
+      "airport": "KBOS",
+      "date": "2026-08-23"
+    },
+    {
+      "airport": "KLAX",
+      "date": "2026-08-24"
+    }
+  ]
+}

@@ -1,0 +1,45 @@
+{
+  "key": "dfabd2bce6079177169314cb",
+  "prompt_version": "brief-writer-v1",
+  "model": "xiaomi/mimo-v2.6-pro",
+  "params": {
+    "temperature": 0.7,
+    "sample": 3
+  },
+  "meta": {
+    "airport": "KJFK",
+    "date": "2026-08-19",
+    "attempt": 1
+  },
+  "recorded_at": "2026-09-28T19:08:08.088Z",
+  "response": {
+    "content": "{\"airport\":\"KJFK\",\"date\":\"2026-08-19\",\"findings\":[\n  {\"id\":\"F1\",\"summary\":\"Track ADSB-006 (JBU88, 3000 ft at 14:20Z) occurs within the NOTAM-004 validity window (13:00Z-17:00Z) covering the RWY 04L/22R closure.\",\"confidence\":0.95,\"citations\":[\"ADSB-006\",\"NOTAM-004\"]},\n  {\"id\":\"F2\",\"summary\":\"Track ADSB-006 (JBU88, 3000 ft at 14:20Z) occurs within the NOTAM-005 validity window (14:00Z-16:00Z) for the TFR VIP movement SFC-3000FT, at the top of the restricted altitude band.\",\"confidence\":0.95,\"citations\":[\"ADSB-006\",\"NOTAM-005\"]},\n  {\"id\":\"F3\",\"summary\":\"Track ADSB-006 (JBU88 at 14:20Z) occurs within the NOTAM-008 validity window (00:00Z-23:59Z) during which ILS RWY 04L is unserviceable.\",\"confidence\":0.95,\"citations\":[\"ADSB-006\",\"NOTAM-008\"]},\n  {\"id\":\"F4\",\"summary\":\"Track ADSB-007 (AAL100, 4200 ft at 14:45Z) occurs within the NOTAM-004 validity window (13:00Z-17:00Z) covering the RWY 04L/22R closure.\",\"confidence\":0.95,\"citations\":[\"ADSB-007\",\"NOTAM-004\"]},\n  {\"id\":\"F5\",\"summary\":\"Track ADSB-007 (AAL100, 4200 ft at 14:45Z) occurs within the NOTAM-005 validity window (14:00Z-16:00Z) for the TFR VIP movement SFC-3000FT, above the restricted altitude band.\",\"confidence\":0.95,\"citations\":[\"ADSB-007\",\"NOTAM-005\"]},\n  {\"id\":\"F6\",\"summary\":\"Track ADSB-007 (AAL100 at 14:45Z) occurs within the NOTAM-008 validity window (00:00Z-23:59Z) during which ILS RWY 04L is unserviceable.\",\"confidence\":0.95,\"citations\":[\"ADSB-007\",\"NOTAM-008\"]},\n  {\"id\":\"F7\",\"summary\":\"Track ADSB-008 (N900KS, 2500 ft at 15:10Z) occurs within the NOTAM-004 validity window (13:00Z-17:00Z) covering the RWY 04L/22R closure.\",\"confidence\":0.95,\"citations\":[\"ADSB-008\",\"NOTAM-004\"]},\n  {\"id\":\"F8\",\"summary\":\"Track ADSB-008 (N900KS, 2500 ft at 15:10Z) occurs within the NOTAM-005 validity window (14:00Z-16:00Z) for the TFR VIP movement SFC-3000FT, inside the restricted altitude band.\",\"confidence\":0.95,\"citations\":[\"ADSB-008\",\"NOTAM-005\"]},\n  {\"id\":\"F9\",\"summary\":\"Track ADSB-008 (N900KS at 15:10Z) occurs within the NOTAM-008 validity window (00:00Z-23:59Z) during which ILS RWY 04L is unserviceable.\",\"confidence\":0.95,\"citations\":[\"ADSB-008\",\"NOTAM-008\"]},\n  {\"id\":\"F10\",\"summary\":\"Satellite pass TLE-ISS-002 over KJFK at 14:10Z occurs within the NOTAM-004 validity window (13:00Z-17:00Z) covering the RWY 04L/22R closure.\",\"confidence\":0.9,\"citations\":[\"TLE-ISS-002\",\"NOTAM-004\"]},\n  {\"id\":\"F11\",\"summary\":\"Satellite pass TLE-ISS-002 over KJFK at 14:10Z occurs within the NOTAM-005 validity window (14:00Z-16:00Z) for the TFR VIP movement SFC-3000FT.\",\"confidence\":0.85,\"citations\":[\"TLE-ISS-002\",\"NOTAM-005\"]},\n  {\"id\":\"F12\",\"summary\":\"Satellite pass TLE-ISS-002 over KJFK at 14:10Z occurs within the NOTAM-008 validity window (00:00Z-23:59Z) during which ILS RWY 04L is unserviceable.\",\"confidence\":0.9,\"citations\":[\"TLE-ISS-002\",\"NOTAM-008\"]}\n]}",
+    "finish_reason": "stop",
+    "served_model": "xiaomi/mimo-v2.6-pro",
+    "provider": "Xiaomi",
+    "usage": {
+      "prompt_tokens": 893,
+      "completion_tokens": 2174,
+      "total_tokens": 3067,
+      "cost": 0.002279835,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.002279835,
+        "upstream_inference_prompt_cost": 0.000388455,
+        "upstream_inference_completions_cost": 0.00189138
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 918,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    },
+    "latency_ms": 31823
+  }
+}

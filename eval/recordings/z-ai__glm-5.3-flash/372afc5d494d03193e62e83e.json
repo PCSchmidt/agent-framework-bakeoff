@@ -1,0 +1,45 @@
+{
+  "key": "372afc5d494d03193e62e83e",
+  "prompt_version": "brief-writer-v1",
+  "model": "z-ai/glm-5.3-flash",
+  "params": {
+    "temperature": 0.7,
+    "sample": 3
+  },
+  "meta": {
+    "airport": "KBOS",
+    "date": "2026-08-23",
+    "attempt": 1
+  },
+  "recorded_at": "2026-09-28T19:07:20.928Z",
+  "response": {
+    "content": "{\"airport\":\"KBOS\",\"date\":\"2026-08-23\",\"findings\":[{\"id\":\"F1\",\"summary\":\"NOTAM-018 (RWY 4R/22L CLSD) and ADSB-032 (JBU1101) each reported separately; track time 11:05Z falls outside the NOTAM window 10:00-11:00Z.\",\"confidence\":0.9,\"citations\":[\"NOTAM-018\",\"ADSB-032\"]},{\"id\":\"F2\",\"summary\":\"NOTAM-018 (RWY 4R/22L CLSD) and TLE-ISS-006 (ISS (synthetic)) each reported separately; pass time 09:58Z falls outside the NOTAM window 10:00-11:00Z.\",\"confidence\":0.9,\"citations\":[\"NOTAM-018\",\"TLE-ISS-006\"]}]}",
+    "finish_reason": "stop",
+    "served_model": "z-ai/glm-5.3-flash",
+    "provider": "Wafer",
+    "usage": {
+      "prompt_tokens": 510,
+      "completion_tokens": 194,
+      "total_tokens": 704,
+      "cost": 0.00015694,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 448,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.00015694,
+        "upstream_inference_prompt_cost": 0.00005994,
+        "upstream_inference_completions_cost": 0.000097
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 1,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    },
+    "latency_ms": 7111
+  }
+}

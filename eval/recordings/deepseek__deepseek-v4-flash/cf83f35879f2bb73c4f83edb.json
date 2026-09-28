@@ -1,0 +1,45 @@
+{
+  "key": "cf83f35879f2bb73c4f83edb",
+  "prompt_version": "brief-writer-v1",
+  "model": "deepseek/deepseek-v4-flash",
+  "params": {
+    "temperature": 0.7,
+    "sample": 1
+  },
+  "meta": {
+    "airport": "KSEA",
+    "date": "2026-08-22",
+    "attempt": 1
+  },
+  "recorded_at": "2026-09-28T19:04:48.133Z",
+  "response": {
+    "content": "{\n  \"airport\": \"KSEA\",\n  \"date\": \"2026-08-22\",\n  \"findings\": [\n    {\n      \"id\": \"F1\",\n      \"summary\": \"QXE2104 operates at KSEA at 2026-08-22T18:30:00Z during RWY 16R/34L CLSD validity (18:00Z-19:30Z).\",\n      \"confidence\": 1.0,\n      \"citations\": [\"NOTAM-013\", \"ADSB-021\"]\n    },\n    {\n      \"id\": \"F2\",\n      \"summary\": \"N88SW operates at KSEA at 2026-08-22T19:30:00Z during RWY 16R/34L CLSD validity (18:00Z-19:30Z).\",\n      \"confidence\": 1.0,\n      \"citations\": [\"NOTAM-013\", \"ADSB-023\"]\n    },\n    {\n      \"id\": \"F3\",\n      \"summary\": \"ASA402 at KSEA at 2026-08-22T17:55:00Z and DAL2231 at KSEA at 2026-08-22T19:31:00Z fall outside both NOTAM windows.\",\n      \"confidence\": 1.0,\n      \"citations\": [\"NOTAM-012\", \"NOTAM-013\", \"ADSB-020\", \"ADSB-022\"]\n    },\n    {\n      \"id\": \"F4\",\n      \"summary\": \"Starlink train synthetic passes over KSEA at 2026-08-22T04:12:00Z during NOTAM-012 validity (00:00Z-23:59Z).\",\n      \"confidence\": 1.0,\n      \"citations\": [\"NOTAM-012\", \"TLE-STARLINK-002\"]\n    }\n  ]\n}",
+    "finish_reason": "stop",
+    "served_model": "deepseek/deepseek-v4-flash",
+    "provider": "DigitalOcean",
+    "usage": {
+      "prompt_tokens": 793,
+      "completion_tokens": 410,
+      "total_tokens": 1203,
+      "cost": 0.000158074,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.000158074,
+        "upstream_inference_prompt_cost": 0.000077714,
+        "upstream_inference_completions_cost": 0.00008036
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 0,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    },
+    "latency_ms": 55238
+  }
+}

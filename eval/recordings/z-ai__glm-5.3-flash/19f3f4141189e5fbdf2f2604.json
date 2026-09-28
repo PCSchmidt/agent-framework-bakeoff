@@ -1,0 +1,45 @@
+{
+  "key": "19f3f4141189e5fbdf2f2604",
+  "prompt_version": "brief-writer-v1",
+  "model": "z-ai/glm-5.3-flash",
+  "params": {
+    "temperature": 0.7,
+    "sample": 1
+  },
+  "meta": {
+    "airport": "KDEN",
+    "date": "2026-08-19",
+    "attempt": 1
+  },
+  "recorded_at": "2026-09-28T19:05:48.744Z",
+  "response": {
+    "content": "{\n  \"airport\": \"KDEN\",\n  \"date\": \"2026-08-19\",\n  \"findings\": [\n    {\n      \"id\": \"F1\",\n      \"summary\": \"Track ADSB-001 (UAL123) at 2026-08-19T19:10:00Z falls within the validity window of NOTAM-001 (18:00-22:00Z, RWY 16L/34R CLSD) at KDEN.\",\n      \"confidence\": 0.95,\n      \"citations\": [\"ADSB-001\", \"NOTAM-001\"]\n    },\n    {\n      \"id\": \"F2\",\n      \"summary\": \"Track ADSB-001 (UAL123) at 2026-08-19T19:10:00Z falls within the validity window of NOTAM-002 (00:00-23:59Z, crane 500FT AGL 1NM NE of airport) at KDEN.\",\n      \"confidence\": 0.95,\n      \"citations\": [\"ADSB-001\", \"NOTAM-002\"]\n    },\n    {\n      \"id\": \"F3\",\n      \"summary\": \"Track ADSB-001 (UAL123) at 2026-08-19T19:10:00Z falls within the validity window of NOTAM-003 (12:00-23:59Z, TWY A BTN A3 AND A7 CLSD) at KDEN.\",\n      \"confidence\": 0.95,\n      \"citations\": [\"ADSB-001\", \"NOTAM-003\"]\n    },\n    {\n      \"id\": \"F4\",\n      \"summary\": \"Track ADSB-002 (SWA456) at 2026-08-19T19:25:00Z falls within the validity window of NOTAM-001 (18:00-22:00Z, RWY 16L/34R CLSD) at KDEN.\",\n      \"confidence\": 0.95,\n      \"citations\": [\"ADSB-002\", \"NOTAM-001\"]\n    },\n    {\n      \"id\": \"F5\",\n      \"summary\": \"Track ADSB-002 (SWA456) at 2026-08-19T19:25:00Z falls within the validity window of NOTAM-002 (00:00-23:59Z, crane 500FT AGL 1NM NE of airport) at KDEN.\",\n      \"confidence\": 0.95,\n      \"citations\": [\"ADSB-002\", \"NOTAM-002\"]\n    },\n    {\n      \"id\": \"F6\",\n      \"summary\": \"Track ADSB-002 (SWA456) at 2026-08-19T19:25:00Z falls within the validity window of NOTAM-003 (12:00-23:59Z, TWY A BTN A3 AND A7 CLSD) at KDEN.\",\n      \"confidence\": 0.95,\n      \"citations\": [\"ADSB-002\", \"NOTAM-003\"]\n    },\n    {\n      \"id\": \"F7\",\n      \"summary\": \"Track ADSB-003 (N17AB) at 2026-08-19T18:40:00Z falls within the validity window of NOTAM-001 (18:00-22:00Z, RWY 16L/34R CLSD) at KDEN.\",\n      \"confidence\": 0.95,\n      \"citations\": [\"ADSB-003\", \"NOTAM-001\"]\n    },\n    {\n      \"id\": \"F8\",\n      \"summary\": \"Track ADSB-003 (N17AB) at 2026-08-19T18:40:00Z falls within the validity window of NOTAM-002 (00:00-23:59Z, crane 500FT AGL 1NM NE of airport) at KDEN.\",\n      \"confidence\": 0.95,\n      \"citations\": [\"ADSB-003\", \"NOTAM-002\"]\n    },\n    {\n      \"id\": \"F9\",\n      \"summary\": \"Track ADSB-003 (N17AB) at 2026-08-19T18:40:00Z falls within the validity window of NOTAM-003 (12:00-23:59Z, TWY A BTN A3 AND A7 CLSD) at KDEN.\",\n      \"confidence\": 0.95,\n      \"citations\": [\"ADSB-003\", \"NOTAM-003\"]\n    },\n    {\n      \"id\": \"F10\",\n      \"summary\": \"Track ADSB-004 (DAL789) at 2026-08-19T21:05:00Z falls within the validity window of NOTAM-001 (18:00-22:00Z, RWY 16L/34R CLSD) at KDEN.\",\n      \"confidence\": 0.95,\n      \"citations\": [\"ADSB-004\", \"NOTAM-001\"]\n    },\n    {\n      \"id\": \"F11\",\n      \"summary\": \"Track ADSB-004 (DAL789) at 2026-08-19T21:05:00Z falls within the validity window of NOTAM-002 (00:00-23:59Z, crane 500FT AGL 1NM NE of airport) at KDEN.\",\n      \"confidence\": 0.95,\n      \"citations\": [\"ADSB-004\", \"NOTAM-002\"]\n    },\n    {\n      \"id\": \"F12\",\n      \"summary\": \"Track ADSB-004 (DAL789) at 2026-08-19T21:05:00Z falls within the validity window of NOTAM-003 (12:00-23:59Z, TWY A BTN A3 AND A7 CLSD) at KDEN.\",\n      \"confidence\": 0.95,\n      \"citations\": [\"ADSB-004\", \"NOTAM-003\"]\n    },\n    {\n      \"id\": \"F13\",\n      \"summary\": \"Track ADSB-005 (FFT321) at 2026-08-19T19:32:00Z falls within the validity window of NOTAM-001 (18:00-22:00Z, RWY 16L/34R CLSD) at KDEN.\",\n      \"confidence\": 0.95,\n      \"citations\": [\"ADSB-005\", \"NOTAM-001\"]\n    },\n    {\n      \"id\": \"F14\",\n      \"summary\": \"Track ADSB-005 (FFT321) at 2026-08-19T19:32:00Z falls within the validity window of NOTAM-002 (00:00-23:59Z, crane 500FT AGL 1NM NE of airport) at KDEN.\",\n      \"confidence\": 0.95,\n      \"citations\": [\"ADSB-005\", \"NOTAM-002\"]\n    },\n    {\n      \"id\": \"F15\",\n      \"summary\": \"Track ADSB-005 (FFT321) at 2026-08-19T19:32:00Z falls within the validity window of NOTAM-003 (12:00-23:59Z, TWY A BTN A3 AND A7 CLSD) at KDEN.\",\n      \"confidence\": 0.95,\n      \"citations\": [\"ADSB-005\", \"NOTAM-003\"]\n    },\n    {\n      \"id\": \"F16\",\n      \"summary\": \"Track ADSB-012 (UAL9) at 2026-08-19T10:05:00Z falls within the validity window of NOTAM-002 (00:00-23:59Z, crane 500FT AGL 1NM NE of airport) at KDEN.\",\n      \"confidence\": 0.95,\n      \"citations\": [\"ADSB-012\", \"NOTAM-002\"]\n    },\n    {\n      \"id\": \"F17\",\n      \"summary\": \"Satellite pass TLE-ISS-001 (ISS (synthetic)) at 2026-08-19T19:30:00Z falls within the validity window of NOTAM-001 (18:00-22:00Z, RWY 16L/34R CLSD) over KDEN.\",\n      \"confidence\": 0.95,\n      \"citations\": [\"TLE-ISS-001\", \"NOTAM-001\"]\n    },\n    {\n      \"id\": \"F18\",\n      \"summary\": \"Satellite pass TLE-ISS-001 (ISS (synthetic)) at 2026-08-19T19:30:00Z falls within the validity window of NOTAM-002 (00:00-23:59Z, crane 500FT AGL 1NM NE of airport) over KDEN.\",\n      \"confidence\": 0.95,\n      \"citations\": [\"TLE-ISS-001\", \"NOTAM-002\"]\n    },\n    {\n      \"id\": \"F19\",\n      \"summary\": \"Satellite pass TLE-ISS-001 (ISS (synthetic)) at 2026-08-19T19:30:00Z falls within the validity window of NOTAM-003 (12:00-23:59Z, TWY A BTN A3 AND A7 CLSD) over KDEN.\",\n      \"confidence\": 0.95,\n      \"citations\": [\"TLE-ISS-001\", \"NOTAM-003\"]\n    },\n    {\n      \"id\": \"F20\",\n      \"summary\": \"Satellite pass TLE-STARLINK-001 (Starlink train (synthetic)) at 2026-08-19T22:30:00Z falls within the validity window of NOTAM-002 (00:00-23:59Z, crane 500FT AGL 1NM NE of airport) over KDEN.\",\n      \"confidence\": 0.95,\n      \"citations\": [\"TLE-STARLINK-001\", \"NOTAM-002\"]\n    },\n    {\n      \"id\": \"F21\",\n      \"summary\": \"Satellite pass TLE-STARLINK-001 (Starlink train (synthetic)) at 2026-08-19T22:30:00Z falls within the validity window of NOTAM-003 (12:00-23:59Z, TWY A BTN A3 AND A7 CLSD) over KDEN.\",\n      \"confidence\": 0.95,\n      \"citations\": [\"TLE-STARLINK-001\", \"NOTAM-003\"]\n    }\n  ]\n}",
+    "finish_reason": "stop",
+    "served_model": "z-ai/glm-5.3-flash",
+    "provider": "Modal",
+    "usage": {
+      "prompt_tokens": 1039,
+      "completion_tokens": 4060,
+      "total_tokens": 5099,
+      "cost": 0.00218585,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.00218585,
+        "upstream_inference_prompt_cost": 0.00015585,
+        "upstream_inference_completions_cost": 0.00203
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 1258,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    },
+    "latency_ms": 41053
+  }
+}

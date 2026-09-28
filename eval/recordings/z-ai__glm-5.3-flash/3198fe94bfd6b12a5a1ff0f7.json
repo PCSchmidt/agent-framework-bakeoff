@@ -1,0 +1,45 @@
+{
+  "key": "3198fe94bfd6b12a5a1ff0f7",
+  "prompt_version": "brief-writer-v1",
+  "model": "z-ai/glm-5.3-flash",
+  "params": {
+    "temperature": 0.7,
+    "sample": 2
+  },
+  "meta": {
+    "airport": "KDEN",
+    "date": "2026-08-19",
+    "attempt": 1
+  },
+  "recorded_at": "2026-09-28T19:06:17.197Z",
+  "response": {
+    "content": "{\n  \"airport\": \"KDEN\",\n  \"date\": \"2026-08-19\",\n  \"findings\": [\n    {\"id\": \"F1\", \"summary\": \"UAL123 track at 19:10Z falls within the RWY 16L/34R closure window.\", \"confidence\": 1.0, \"citations\": [\"ADSB-001\", \"NOTAM-001\"]},\n    {\"id\": \"F2\", \"summary\": \"SWA456 track at 19:25Z falls within the RWY 16L/34R closure window.\", \"confidence\": 1.0, \"citations\": [\"ADSB-002\", \"NOTAM-001\"]},\n    {\"id\": \"F3\", \"summary\": \"N17AB track at 18:40Z falls within the RWY 16L/34R closure window.\", \"confidence\": 1.0, \"citations\": [\"ADSB-003\", \"NOTAM-001\"]},\n    {\"id\": \"F4\", \"summary\": \"DAL789 track at 21:05Z falls within the RWY 16L/34R closure window.\", \"confidence\": 1.0, \"citations\": [\"ADSB-004\", \"NOTAM-001\"]},\n    {\"id\": \"F5\", \"summary\": \"FFT321 track at 19:32Z falls within the RWY 16L/34R closure window.\", \"confidence\": 1.0, \"citations\": [\"ADSB-005\", \"NOTAM-001\"]},\n    {\"id\": \"F6\", \"summary\": \"ISS (synthetic) pass at 19:30Z falls within the RWY 16L/34R closure window.\", \"confidence\": 1.0, \"citations\": [\"TLE-ISS-001\", \"NOTAM-001\"]},\n    {\"id\": \"F7\", \"summary\": \"UAL123 track at 19:10Z falls within the crane NOTAM validity window.\", \"confidence\": 1.0, \"citations\": [\"ADSB-001\", \"NOTAM-002\"]},\n    {\"id\": \"F8\", \"summary\": \"SWA456 track at 19:25Z falls within the crane NOTAM validity window.\", \"confidence\": 1.0, \"citations\": [\"ADSB-002\", \"NOTAM-002\"]},\n    {\"id\": \"F9\", \"summary\": \"N17AB track at 18:40Z falls within the crane NOTAM validity window.\", \"confidence\": 1.0, \"citations\": [\"ADSB-003\", \"NOTAM-002\"]},\n    {\"id\": \"F10\", \"summary\": \"DAL789 track at 21:05Z falls within the crane NOTAM validity window.\", \"confidence\": 1.0, \"citations\": [\"ADSB-004\", \"NOTAM-002\"]},\n    {\"id\": \"F11\", \"summary\": \"FFT321 track at 19:32Z falls within the crane NOTAM validity window.\", \"confidence\": 1.0, \"citations\": [\"ADSB-005\", \"NOTAM-002\"]},\n    {\"id\": \"F12\", \"summary\": \"UAL9 track at 10:05Z falls within the crane NOTAM validity window.\", \"confidence\": 1.0, \"citations\": [\"ADSB-012\", \"NOTAM-002\"]},\n    {\"id\": \"F13\", \"summary\": \"ISS (synthetic) pass at 19:30Z falls within the crane NOTAM validity window.\", \"confidence\": 1.0, \"citations\": [\"TLE-ISS-001\", \"NOTAM-002\"]},\n    {\"id\": \"F14\", \"summary\": \"Starlink train (synthetic) pass at 22:30Z falls within the crane NOTAM validity window.\", \"confidence\": 1.0, \"citations\": [\"TLE-STARLINK-001\", \"NOTAM-002\"]},\n    {\"id\": \"F15\", \"summary\": \"UAL123 track at 19:10Z falls within the TWY A closure window.\", \"confidence\": 1.0, \"citations\": [\"ADSB-001\", \"NOTAM-003\"]},\n    {\"id\": \"F16\", \"summary\": \"SWA456 track at 19:25Z falls within the TWY A closure window.\", \"confidence\": 1.0, \"citations\": [\"ADSB-002\", \"NOTAM-003\"]},\n    {\"id\": \"F17\", \"summary\": \"N17AB track at 18:40Z falls within the TWY A closure window.\", \"confidence\": 1.0, \"citations\": [\"ADSB-003\", \"NOTAM-003\"]},\n    {\"id\": \"F18\", \"summary\": \"DAL789 track at 21:05Z falls within the TWY A closure window.\", \"confidence\": 1.0, \"citations\": [\"ADSB-004\", \"NOTAM-003\"]},\n    {\"id\": \"F19\", \"summary\": \"FFT321 track at 19:32Z falls within the TWY A closure window.\", \"confidence\": 1.0, \"citations\": [\"ADSB-005\", \"NOTAM-003\"]},\n    {\"id\": \"F20\", \"summary\": \"UAL9 track at 10:05Z falls outside the TWY A closure window.\", \"confidence\": 0.0, \"citations\": [\"ADSB-012\", \"NOTAM-003\"]},\n    {\"id\": \"F21\", \"summary\": \"ISS (synthetic) pass at 19:30Z falls within the TWY A closure window.\", \"confidence\": 1.0, \"citations\": [\"TLE-ISS-001\", \"NOTAM-003\"]},\n    {\"id\": \"F22\", \"summary\": \"Starlink train (synthetic) pass at 22:30Z falls within the TWY A closure window.\", \"confidence\": 1.0, \"citations\": [\"TLE-STARLINK-001\", \"NOTAM-003\"]}\n  ]\n}",
+    "finish_reason": "stop",
+    "served_model": "z-ai/glm-5.3-flash",
+    "provider": "Wafer",
+    "usage": {
+      "prompt_tokens": 1039,
+      "completion_tokens": 1456,
+      "total_tokens": 2495,
+      "cost": 0.00076997,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 1024,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.00076997,
+        "upstream_inference_prompt_cost": 0.00004197,
+        "upstream_inference_completions_cost": 0.000728
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 121,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    },
+    "latency_ms": 69146
+  }
+}

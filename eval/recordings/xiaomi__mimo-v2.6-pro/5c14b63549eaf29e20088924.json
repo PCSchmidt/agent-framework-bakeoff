@@ -1,0 +1,45 @@
+{
+  "key": "5c14b63549eaf29e20088924",
+  "prompt_version": "brief-writer-v1",
+  "model": "xiaomi/mimo-v2.6-pro",
+  "params": {
+    "temperature": 0.7,
+    "sample": 1
+  },
+  "meta": {
+    "airport": "KDEN",
+    "date": "2026-08-21",
+    "attempt": 1
+  },
+  "recorded_at": "2026-09-28T19:08:06.852Z",
+  "response": {
+    "content": "{\"airport\": \"KDEN\", \"date\": \"2026-08-21\", \"findings\": [{\"id\": \"F1\", \"summary\": \"Track ADSB-011 (callsign N44QX) observed at 17,500 ft at 2026-08-21T17:00:00Z near KDEN; no NOTAMs were in effect, so no track-NOTAM pairs apply.\", \"confidence\": 0.9, \"citations\": [\"ADSB-011\"]}]}",
+    "finish_reason": "stop",
+    "served_model": "xiaomi/mimo-v2.6-pro",
+    "provider": "Xiaomi",
+    "usage": {
+      "prompt_tokens": 377,
+      "completion_tokens": 148,
+      "total_tokens": 525,
+      "cost": 0.0002375358,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 128,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.0002375358,
+        "upstream_inference_prompt_cost": 0.0001087758,
+        "upstream_inference_completions_cost": 0.00012876
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 18,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    },
+    "latency_ms": 4336
+  }
+}

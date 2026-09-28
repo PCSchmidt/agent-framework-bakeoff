@@ -1,0 +1,45 @@
+{
+  "key": "570576227fb8d0746f011047",
+  "prompt_version": "brief-writer-v1",
+  "model": "z-ai/glm-5.3-flash",
+  "params": {
+    "temperature": 0.7,
+    "sample": 0
+  },
+  "meta": {
+    "airport": "KATL",
+    "date": "2026-08-23",
+    "attempt": 1
+  },
+  "recorded_at": "2026-09-28T19:07:21.177Z",
+  "response": {
+    "content": "{\"airport\":\"KATL\",\"date\":\"2026-08-23\",\"findings\":[{\"id\":\"F1\",\"summary\":\"DAL1 (ADSB-024) tracked at 6000 ft during RWY 8L/26R closure (NOTAM-014).\",\"confidence\":0.9,\"citations\":[\"ADSB-024\",\"NOTAM-014\"]},{\"id\":\"F2\",\"summary\":\"DAL22 (ADSB-025) tracked at 5400 ft during RWY 8L/26R closure (NOTAM-014).\",\"confidence\":0.9,\"citations\":[\"ADSB-025\",\"NOTAM-014\"]},{\"id\":\"F3\",\"summary\":\"ISS (synthetic) pass (TLE-ISS-005) at 07:50Z occurred during RWY 8L/26R closure (NOTAM-014).\",\"confidence\":0.9,\"citations\":[\"TLE-ISS-005\",\"NOTAM-014\"]},{\"id\":\"F4\",\"summary\":\"DAL22 (ADSB-025) tracked at 5400 ft during ILS RWY 9R unserviceability (NOTAM-015).\",\"confidence\":0.9,\"citations\":[\"ADSB-025\",\"NOTAM-015\"]},{\"id\":\"F5\",\"summary\":\"ISS (synthetic) pass (TLE-ISS-005) at 07:50Z occurred during ILS RWY 9R unserviceability (NOTAM-015).\",\"confidence\":0.9,\"citations\":[\"TLE-ISS-005\",\"NOTAM-015\"]},{\"id\":\"F6\",\"summary\":\"SWA3050 (ADSB-026) tracked at 4700 ft during ILS RWY 9R unserviceability (NOTAM-015).\",\"confidence\":0.9,\"citations\":[\"ADSB-026\",\"NOTAM-015\"]},{\"id\":\"F7\",\"summary\":\"DAL404 (ADSB-028) tracked at 8000 ft at 12:30Z, coinciding with the end of laser activity area (NOTAM-016).\",\"confidence\":0.85,\"citations\":[\"ADSB-028\",\"NOTAM-016\"]},{\"id\":\"F8\",\"summary\":\"DAL2600 (ADSB-031) tracked at 5100 ft during TWY L closure (NOTAM-017).\",\"confidence\":0.9,\"citations\":[\"ADSB-031\",\"NOTAM-017\"]}]}",
+    "finish_reason": "stop",
+    "served_model": "z-ai/glm-5.3-flash",
+    "provider": "Wafer",
+    "usage": {
+      "prompt_tokens": 1191,
+      "completion_tokens": 722,
+      "total_tokens": 1913,
+      "cost": 0.00111601,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 192,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.00111601,
+        "upstream_inference_prompt_cost": 0.00075501,
+        "upstream_inference_completions_cost": 0.000361
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 176,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    },
+    "latency_ms": 26932
+  }
+}

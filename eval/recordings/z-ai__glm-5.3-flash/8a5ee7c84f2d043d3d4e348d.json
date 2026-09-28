@@ -1,0 +1,45 @@
+{
+  "key": "8a5ee7c84f2d043d3d4e348d",
+  "prompt_version": "brief-writer-v1",
+  "model": "z-ai/glm-5.3-flash",
+  "params": {
+    "temperature": 0.7,
+    "sample": 4
+  },
+  "meta": {
+    "airport": "KJFK",
+    "date": "2026-08-19",
+    "attempt": 1
+  },
+  "recorded_at": "2026-09-28T19:06:12.045Z",
+  "response": {
+    "content": "{\n  \"airport\": \"KJFK\",\n  \"date\": \"2026-08-19\",\n  \"findings\": [\n    {\n      \"id\": \"F1\",\n      \"summary\": \"JBU88 (ADSB-006) track at 2026-08-19T14:20:00Z falls within the NOTAM-004 validity window (13:00-17:00Z; RWY 04L/22R CLSD).\",\n      \"confidence\": 1.0,\n      \"citations\": [\"ADSB-006\", \"NOTAM-004\"]\n    },\n    {\n      \"id\": \"F2\",\n      \"summary\": \"JBU88 (ADSB-006) track at 2026-08-19T14:20:00Z at 3000 ft falls within the NOTAM-005 validity window (14:00-16:00Z; TFR VIP MOVEMENT SFC-3000FT), at the TFR ceiling.\",\n      \"confidence\": 1.0,\n      \"citations\": [\"ADSB-006\", \"NOTAM-005\"]\n    },\n    {\n      \"id\": \"F3\",\n      \"summary\": \"JBU88 (ADSB-006) track at 2026-08-19T14:20:00Z falls within the NOTAM-008 validity window (00:00-23:59Z; ILS RWY 04L U/S).\",\n      \"confidence\": 1.0,\n      \"citations\": [\"ADSB-006\", \"NOTAM-008\"]\n    },\n    {\n      \"id\": \"F4\",\n      \"summary\": \"AAL100 (ADSB-007) track at 2026-08-19T14:45:00Z falls within the NOTAM-004 validity window (13:00-17:00Z; RWY 04L/22R CLSD).\",\n      \"confidence\": 1.0,\n      \"citations\": [\"ADSB-007\", \"NOTAM-004\"]\n    },\n    {\n      \"id\": \"F5\",\n      \"summary\": \"AAL100 (ADSB-007) track at 2026-08-19T14:45:00Z at 4200 ft falls within the NOTAM-005 validity window (14:00-16:00Z; TFR VIP MOVEMENT SFC-3000FT), above the TFR ceiling.\",\n      \"confidence\": 1.0,\n      \"citations\": [\"ADSB-007\", \"NOTAM-005\"]\n    },\n    {\n      \"id\": \"F6\",\n      \"summary\": \"AAL100 (ADSB-007) track at 2026-08-19T14:45:00Z falls within the NOTAM-008 validity window (00:00-23:59Z; ILS RWY 04L U/S).\",\n      \"confidence\": 1.0,\n      \"citations\": [\"ADSB-007\", \"NOTAM-008\"]\n    },\n    {\n      \"id\": \"F7\",\n      \"summary\": \"N900KS (ADSB-008) track at 2026-08-19T15:10:00Z falls within the NOTAM-004 validity window (13:00-17:00Z; RWY 04L/22R CLSD).\",\n      \"confidence\": 1.0,\n      \"citations\": [\"ADSB-008\", \"NOTAM-004\"]\n    },\n    {\n      \"id\": \"F8\",\n      \"summary\": \"N900KS (ADSB-008) track at 2026-08-19T15:10:00Z at 2500 ft falls within the NOTAM-005 validity window (14:00-16:00Z; TFR VIP MOVEMENT SFC-3000FT), inside the TFR altitude band.\",\n      \"confidence\": 1.0,\n      \"citations\": [\"ADSB-008\", \"NOTAM-005\"]\n    },\n    {\n      \"id\": \"F9\",\n      \"summary\": \"N900KS (ADSB-008) track at 2026-08-19T15:10:00Z falls within the NOTAM-008 validity window (00:00-23:59Z; ILS RWY 04L U/S).\",\n      \"confidence\": 1.0,\n      \"citations\": [\"ADSB-008\", \"NOTAM-008\"]\n    },\n    {\n      \"id\": \"F10\",\n      \"summary\": \"Satellite pass TLE-ISS-002 (ISS) over KJFK at 2026-08-19T14:10:00Z (max elevation 41 deg) falls within the NOTAM-004 validity window (13:00-17:00Z; RWY 04L/22R CLSD).\",\n      \"confidence\": 1.0,\n      \"citations\": [\"TLE-ISS-002\", \"NOTAM-004\"]\n    },\n    {\n      \"id\": \"F11\",\n      \"summary\": \"Satellite pass TLE-ISS-002 (ISS) over KJFK at 2026-08-19T14:10:00Z (max elevation 41 deg) falls within the NOTAM-005 validity window (14:00-16:00Z; TFR VIP MOVEMENT SFC-3000FT).\",\n      \"confidence\": 1.0,\n      \"citations\": [\"TLE-ISS-002\", \"NOTAM-005\"]\n    },\n    {\n      \"id\": \"F12\",\n      \"summary\": \"Satellite pass TLE-ISS-002 (ISS) over KJFK at 2026-08-19T14:10:00Z (max elevation 41 deg) falls within the NOTAM-008 validity window (00:00-23:59Z; ILS RWY 04L U/S).\",\n      \"confidence\": 1.0,\n      \"citations\": [\"TLE-ISS-002\", \"NOTAM-008\"]\n    }\n  ]\n}",
+    "finish_reason": "stop",
+    "served_model": "z-ai/glm-5.3-flash",
+    "provider": "Modal",
+    "usage": {
+      "prompt_tokens": 795,
+      "completion_tokens": 2641,
+      "total_tokens": 3436,
+      "cost": 0.00143975,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.00143975,
+        "upstream_inference_prompt_cost": 0.00011925,
+        "upstream_inference_completions_cost": 0.0013205
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 1010,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    },
+    "latency_ms": 23288
+  }
+}

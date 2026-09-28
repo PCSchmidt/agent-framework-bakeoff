@@ -1,0 +1,45 @@
+{
+  "key": "01a7d15b2e8a81492a217ead",
+  "prompt_version": "brief-writer-v1",
+  "model": "z-ai/glm-5.3-flash",
+  "params": {
+    "temperature": 0.7,
+    "sample": 0
+  },
+  "meta": {
+    "airport": "KSEA",
+    "date": "2026-08-22",
+    "attempt": 1
+  },
+  "recorded_at": "2026-09-28T19:07:00.827Z",
+  "response": {
+    "content": "{\n  \"airport\": \"KSEA\",\n  \"date\": \"2026-08-22\",\n  \"findings\": [\n    {\n      \"id\": \"F1\",\n      \"summary\": \"Track ASA402 (ADSB-020) at 2026-08-22T17:55:00Z at 4100 ft falls within the validity window of NOTAM-012 (crane 320 ft AGL 0.8 NM south of airport, valid 00:00-23:59Z).\",\n      \"confidence\": 1.0,\n      \"citations\": [\"ADSB-020\", \"NOTAM-012\"]\n    },\n    {\n      \"id\": \"F2\",\n      \"summary\": \"Track QXE2104 (ADSB-021) at 2026-08-22T18:30:00Z at 3600 ft falls within the validity window of NOTAM-012 (crane 320 ft AGL 0.8 NM south of airport, valid 00:00-23:59Z).\",\n      \"confidence\": 1.0,\n      \"citations\": [\"ADSB-021\", \"NOTAM-012\"]\n    },\n    {\n      \"id\": \"F3\",\n      \"summary\": \"Track QXE2104 (ADSB-021) at 2026-08-22T18:30:00Z at 3600 ft falls within the validity window of NOTAM-013 (RWY 16R/34L closed, valid 18:00-19:30Z).\",\n      \"confidence\": 1.0,\n      \"citations\": [\"ADSB-021\", \"NOTAM-013\"]\n    },\n    {\n      \"id\": \"F4\",\n      \"summary\": \"Track DAL2231 (ADSB-022) at 2026-08-22T19:31:00Z at 5200 ft falls within the validity window of NOTAM-012 (crane 320 ft AGL 0.8 NM south of airport, valid 00:00-23:59Z).\",\n      \"confidence\": 1.0,\n      \"citations\": [\"ADSB-022\", \"NOTAM-012\"]\n    },\n    {\n      \"id\": \"F5\",\n      \"summary\": \"Track N88SW (ADSB-023) at 2026-08-22T19:30:00Z at 2200 ft falls within the validity window of NOTAM-012 (crane 320 ft AGL 0.8 NM south of airport, valid 00:00-23:59Z).\",\n      \"confidence\": 1.0,\n      \"citations\": [\"ADSB-023\", \"NOTAM-012\"]\n    },\n    {\n      \"id\": \"F6\",\n      \"summary\": \"Track N88SW (ADSB-023) at 2026-08-22T19:30:00Z at 2200 ft falls within the validity window of NOTAM-013 (RWY 16R/34L closed, valid 18:00-19:30Z) at the inclusive end time.\",\n      \"confidence\": 1.0,\n      \"citations\": [\"ADSB-023\", \"NOTAM-013\"]\n    },\n    {\n      \"id\": \"F7\",\n      \"summary\": \"Satellite pass TLE-STARLINK-002 (Starlink train, max elevation 38 deg) over KSEA at 2026-08-22T04:12:00Z falls within the validity window of NOTAM-012 (crane 320 ft AGL 0.8 NM south of airport, valid 00:00-23:59Z).\",\n      \"confidence\": 1.0,\n      \"citations\": [\"TLE-STARLINK-002\", \"NOTAM-012\"]\n    }\n  ]\n}\n",
+    "finish_reason": "stop",
+    "served_model": "z-ai/glm-5.3-flash",
+    "provider": "Novita",
+    "usage": {
+      "prompt_tokens": 835,
+      "completion_tokens": 1996,
+      "total_tokens": 2831,
+      "cost": 0.0008424375,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.0008424375,
+        "upstream_inference_prompt_cost": 0.0000939375,
+        "upstream_inference_completions_cost": 0.0007485
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 1141,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    },
+    "latency_ms": 27820
+  }
+}

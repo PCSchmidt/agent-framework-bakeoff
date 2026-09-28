@@ -1,0 +1,45 @@
+{
+  "key": "d381238a6555f256913aef8f",
+  "prompt_version": "brief-writer-v1",
+  "model": "xiaomi/mimo-v2.6-pro",
+  "params": {
+    "temperature": 0.7,
+    "sample": 1
+  },
+  "meta": {
+    "airport": "KLAX",
+    "date": "2026-08-24",
+    "attempt": 1
+  },
+  "recorded_at": "2026-09-28T19:09:06.298Z",
+  "response": {
+    "content": "{\"airport\":\"KLAX\",\"date\":\"2026-08-24\",\"findings\":[{\"id\":\"F1\",\"summary\":\"TLE-STARLINK-003 satellite pass over KLAX at 04:59Z fell within the NOTAM-019 validity window (03:00Z-05:00Z), during which TWY C CLSD was in effect.\",\"confidence\":0.95,\"citations\":[\"TLE-STARLINK-003\",\"NOTAM-019\"]},{\"id\":\"F2\",\"summary\":\"TLE-ISS-007 satellite pass over KLAX at 16:10Z fell within the NOTAM-020 validity window (16:00Z-16:20Z), during which a TFR VIP MOVEMENT SFC-3000FT was active.\",\"confidence\":0.95,\"citations\":[\"TLE-ISS-007\",\"NOTAM-020\"]}]}",
+    "finish_reason": "stop",
+    "served_model": "xiaomi/mimo-v2.6-pro",
+    "provider": "GMICloud",
+    "usage": {
+      "prompt_tokens": 789,
+      "completion_tokens": 778,
+      "total_tokens": 1567,
+      "cost": 0.000964907,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 128,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.000964907,
+        "upstream_inference_prompt_cost": 0.000288047,
+        "upstream_inference_completions_cost": 0.00067686
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 560,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    },
+    "latency_ms": 18570
+  }
+}

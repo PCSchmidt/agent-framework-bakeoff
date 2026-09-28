@@ -1,0 +1,45 @@
+{
+  "key": "1c9c34cbb50a032a6d346051",
+  "prompt_version": "brief-writer-v1",
+  "model": "xiaomi/mimo-v2.6-pro",
+  "params": {
+    "temperature": 0.7,
+    "sample": 2
+  },
+  "meta": {
+    "airport": "KJFK",
+    "date": "2026-08-19",
+    "attempt": 1
+  },
+  "recorded_at": "2026-09-28T19:08:02.095Z",
+  "response": {
+    "content": "{\"airport\": \"KJFK\", \"date\": \"2026-08-19\", \"findings\": [{\"id\": \"F1\", \"summary\": \"JBU88 (ADSB-006) tracked at 14:20Z, within the 13:00Z-17:00Z closure window for RWY 04L/22R in NOTAM-004.\", \"confidence\": 0.95, \"citations\": [\"ADSB-006\", \"NOTAM-004\"]}, {\"id\": \"F2\", \"summary\": \"AAL100 (ADSB-007) tracked at 14:45Z, within the 13:00Z-17:00Z closure window for RWY 04L/22R in NOTAM-004.\", \"confidence\": 0.95, \"citations\": [\"ADSB-007\", \"NOTAM-004\"]}, {\"id\": \"F3\", \"summary\": \"N900KS (ADSB-008) tracked at 15:10Z, within the 13:00Z-17:00Z closure window for RWY 04L/22R in NOTAM-004.\", \"confidence\": 0.95, \"citations\": [\"ADSB-008\", \"NOTAM-004\"]}, {\"id\": \"F4\", \"summary\": \"TLE-ISS-002 pass at 14:10Z falls within the 13:00Z-17:00Z closure window for RWY 04L/22R in NOTAM-004.\", \"confidence\": 0.95, \"citations\": [\"TLE-ISS-002\", \"NOTAM-004\"]}, {\"id\": \"F5\", \"summary\": \"JBU88 (ADSB-006) tracked at 3000 ft at 14:20Z, within the 14:00Z-16:00Z VIP movement TFR (SFC-3000FT) in NOTAM-005 and at the top of its restricted altitude band.\", \"confidence\": 0.95, \"citations\": [\"ADSB-006\", \"NOTAM-005\"]}, {\"id\": \"F6\", \"summary\": \"AAL100 (ADSB-007) tracked at 4200 ft at 14:45Z, within the 14:00Z-16:00Z validity of the VIP movement TFR in NOTAM-005 but above its SFC-3000FT ceiling.\", \"confidence\": 0.95, \"citations\": [\"ADSB-007\", \"NOTAM-005\"]}, {\"id\": \"F7\", \"summary\": \"N900KS (ADSB-008) tracked at 2500 ft at 15:10Z, inside the SFC-3000FT band of the VIP movement TFR in NOTAM-005 during its 14:00Z-16:00Z validity.\", \"confidence\": 0.95, \"citations\": [\"ADSB-008\", \"NOTAM-005\"]}, {\"id\": \"F8\", \"summary\": \"TLE-ISS-002 pass at 14:10Z falls within the 14:00Z-16:00Z validity of the VIP movement TFR in NOTAM-005.\", \"confidence\": 0.95, \"citations\": [\"TLE-ISS-002\", \"NOTAM-005\"]}, {\"id\": \"F9\", \"summary\": \"JBU88 (ADSB-006) tracked at 14:20Z during the all-day (00:00Z-23:59Z) period when the ILS for RWY 04L is unserviceable per NOTAM-008.\", \"confidence\": 0.95, \"citations\": [\"ADSB-006\", \"NOTAM-008\"]}, {\"id\": \"F10\", \"summary\": \"AAL100 (ADSB-007) tracked at 14:45Z during the all-day (00:00Z-23:59Z) period when the ILS for RWY 04L is unserviceable per NOTAM-008.\", \"confidence\": 0.95, \"citations\": [\"ADSB-007\", \"NOTAM-008\"]}, {\"id\": \"F11\", \"summary\": \"N900KS (ADSB-008) tracked at 15:10Z during the all-day (00:00Z-23:59Z) period when the ILS for RWY 04L is unserviceable per NOTAM-008.\", \"confidence\": 0.95, \"citations\": [\"ADSB-008\", \"NOTAM-008\"]}, {\"id\": \"F12\", \"summary\": \"TLE-ISS-002 pass at 14:10Z falls within the all-day (00:00Z-23:59Z) period when the ILS for RWY 04L is unserviceable per NOTAM-008.\", \"confidence\": 0.95, \"citations\": [\"TLE-ISS-002\", \"NOTAM-008\"]}]}",
+    "finish_reason": "stop",
+    "served_model": "xiaomi/mimo-v2.6-pro",
+    "provider": "Xiaomi",
+    "usage": {
+      "prompt_tokens": 893,
+      "completion_tokens": 1974,
+      "total_tokens": 2867,
+      "cost": 0.002105835,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.002105835,
+        "upstream_inference_prompt_cost": 0.000388455,
+        "upstream_inference_completions_cost": 0.00171738
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 685,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    },
+    "latency_ms": 26704
+  }
+}

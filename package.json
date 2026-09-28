@@ -9,7 +9,8 @@
     "eval": "node eval/run.js",
     "eval:langgraph": "node eval/run-langgraph.js",
     "eval:runtimes": "node eval/run-runtime.js",
-    "eval:table": "node eval/run-score-table.js"
+    "eval:table": "node eval/run-score-table.js",
+    "eval:llm": "node eval/run-llm.js"
   },
   "dependencies": {
     "@langchain/langgraph": "^0.4.10"

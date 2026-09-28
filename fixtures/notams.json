@@ -57,6 +57,90 @@
       "valid_from": "2026-08-19T00:00:00Z",
       "valid_to": "2026-08-19T23:59:00Z",
       "text": "ILS RWY 04L U/S"
+    },
+    {
+      "id": "NOTAM-009",
+      "location": "KORD",
+      "valid_from": "2026-08-22T14:00:00Z",
+      "valid_to": "2026-08-22T16:00:00Z",
+      "text": "RWY 10L/28R CLSD"
+    },
+    {
+      "id": "NOTAM-010",
+      "location": "KORD",
+      "valid_from": "2026-08-22T15:30:00Z",
+      "valid_to": "2026-08-22T15:45:00Z",
+      "text": "TFR VIP MOVEMENT SFC-3000FT"
+    },
+    {
+      "id": "NOTAM-011",
+      "location": "KORD",
+      "valid_from": "2026-08-22T20:00:00Z",
+      "valid_to": "2026-08-22T23:59:00Z",
+      "text": "TWY B BTN B4 AND B9 CLSD"
+    },
+    {
+      "id": "NOTAM-012",
+      "location": "KSEA",
+      "valid_from": "2026-08-22T00:00:00Z",
+      "valid_to": "2026-08-22T23:59:00Z",
+      "text": "CRANE 320FT AGL 0.8NM S OF ARPT"
+    },
+    {
+      "id": "NOTAM-013",
+      "location": "KSEA",
+      "valid_from": "2026-08-22T18:00:00Z",
+      "valid_to": "2026-08-22T19:30:00Z",
+      "text": "RWY 16R/34L CLSD"
+    },
+    {
+      "id": "NOTAM-014",
+      "location": "KATL",
+      "valid_from": "2026-08-23T06:00:00Z",
+      "valid_to": "2026-08-23T08:00:00Z",
+      "text": "RWY 8L/26R CLSD"
+    },
+    {
+      "id": "NOTAM-015",
+      "location": "KATL",
+      "valid_from": "2026-08-23T07:30:00Z",
+      "valid_to": "2026-08-23T09:00:00Z",
+      "text": "ILS RWY 9R U/S"
+    },
+    {
+      "id": "NOTAM-016",
+      "location": "KATL",
+      "valid_from": "2026-08-23T12:00:00Z",
+      "valid_to": "2026-08-23T12:30:00Z",
+      "text": "LASER ACT 2NM W OF ARPT SFC-5000FT"
+    },
+    {
+      "id": "NOTAM-017",
+      "location": "KATL",
+      "valid_from": "2026-08-23T22:00:00Z",
+      "valid_to": "2026-08-23T23:59:00Z",
+      "text": "TWY L CLSD"
+    },
+    {
+      "id": "NOTAM-018",
+      "location": "KBOS",
+      "valid_from": "2026-08-23T10:00:00Z",
+      "valid_to": "2026-08-23T11:00:00Z",
+      "text": "RWY 4R/22L CLSD"
+    },
+    {
+      "id": "NOTAM-019",
+      "location": "KLAX",
+      "valid_from": "2026-08-24T03:00:00Z",
+      "valid_to": "2026-08-24T05:00:00Z",
+      "text": "TWY C CLSD"
+    },
+    {
+      "id": "NOTAM-020",
+      "location": "KLAX",
+      "valid_from": "2026-08-24T16:00:00Z",
+      "valid_to": "2026-08-24T16:20:00Z",
+      "text": "TFR VIP MOVEMENT SFC-3000FT"
     }
   ]
 }

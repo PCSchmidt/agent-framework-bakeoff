@@ -1,0 +1,45 @@
+{
+  "key": "53d5914dd56c176f09f5d53d",
+  "prompt_version": "brief-writer-v1",
+  "model": "z-ai/glm-5.3-flash",
+  "params": {
+    "temperature": 0.7,
+    "sample": 3
+  },
+  "meta": {
+    "airport": "KORD",
+    "date": "2026-08-22",
+    "attempt": 1
+  },
+  "recorded_at": "2026-09-28T19:06:54.888Z",
+  "response": {
+    "content": "{\n  \"airport\": \"KORD\",\n  \"date\": \"2026-08-22\",\n  \"findings\": [\n    {\n      \"id\": \"F1\",\n      \"summary\": \"UAL1502 track at 2026-08-22T14:00:00Z (4800 ft) coincides with the start of the NOTAM-009 validity window (RWY 10L/28R closed).\",\n      \"confidence\": 0.9,\n      \"citations\": [\"ADSB-014\", \"NOTAM-009\"]\n    },\n    {\n      \"id\": \"F2\",\n      \"summary\": \"SKW5521 track at 2026-08-22T15:40:00Z (6100 ft) falls within the NOTAM-009 validity window (RWY 10L/28R closed).\",\n      \"confidence\": 0.95,\n      \"citations\": [\"ADSB-015\", \"NOTAM-009\"]\n    },\n    {\n      \"id\": \"F3\",\n      \"summary\": \"SKW5521 track at 2026-08-22T15:40:00Z falls within the NOTAM-010 TFR window (SFC-3000FT); the track altitude of 6100 ft is above the TFR ceiling.\",\n      \"confidence\": 0.95,\n      \"citations\": [\"ADSB-015\", \"NOTAM-010\"]\n    },\n    {\n      \"id\": \"F4\",\n      \"summary\": \"N512CR track at 2026-08-22T16:00:00Z (2600 ft) coincides with the end of the NOTAM-009 validity window (RWY 10L/28R closed).\",\n      \"confidence\": 0.9,\n      \"citations\": [\"ADSB-017\", \"NOTAM-009\"]\n    },\n    {\n      \"id\": \"F5\",\n      \"summary\": \"Satellite pass TLE-ISS-004 over KORD at 2026-08-22T15:44:00Z (max elevation 47 deg) falls within the NOTAM-009 validity window (RWY 10L/28R closed).\",\n      \"confidence\": 0.95,\n      \"citations\": [\"TLE-ISS-004\", \"NOTAM-009\"]\n    },\n    {\n      \"id\": \"F6\",\n      \"summary\": \"Satellite pass TLE-ISS-004 over KORD at 2026-08-22T15:44:00Z falls within the NOTAM-010 TFR window (SFC-3000FT).\",\n      \"confidence\": 0.95,\n      \"citations\": [\"TLE-ISS-004\", \"NOTAM-010\"]\n    },\n    {\n      \"id\": \"F7\",\n      \"summary\": \"UAL77 track at 2026-08-22T21:15:00Z (5500 ft) falls within the NOTAM-011 validity window (TWY B BTN B4 AND B9 closed).\",\n      \"confidence\": 0.95,\n      \"citations\": [\"ADSB-019\", \"NOTAM-011\"]\n    }\n  ]\n}",
+    "finish_reason": "stop",
+    "served_model": "z-ai/glm-5.3-flash",
+    "provider": "Modal",
+    "usage": {
+      "prompt_tokens": 1040,
+      "completion_tokens": 3000,
+      "total_tokens": 4040,
+      "cost": 0.001656,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.001656,
+        "upstream_inference_prompt_cost": 0.000156,
+        "upstream_inference_completions_cost": 0.0015
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 1614,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    },
+    "latency_ms": 26420
+  }
+}

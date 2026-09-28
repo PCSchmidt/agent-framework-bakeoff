@@ -1,0 +1,45 @@
+{
+  "key": "e28bf22fd3c507cec5370ed4",
+  "prompt_version": "brief-writer-v1",
+  "model": "z-ai/glm-5.3-flash",
+  "params": {
+    "temperature": 0.7,
+    "sample": 1
+  },
+  "meta": {
+    "airport": "KORD",
+    "date": "2026-08-22",
+    "attempt": 1
+  },
+  "recorded_at": "2026-09-28T19:06:56.824Z",
+  "response": {
+    "content": "{\"airport\":\"KORD\",\"date\":\"2026-08-22\",\"findings\":[\n{\"id\":\"F1\",\"summary\":\"UAL1502 track at 14:00Z falls within NOTAM-009 validity window (RWY 10L/28R CLSD, 14:00Z-16:00Z).\",\"confidence\":0.95,\"citations\":[\"ADSB-014\",\"NOTAM-009\"]},\n{\"id\":\"F2\",\"summary\":\"SKW5521 track at 15:40Z falls within NOTAM-009 validity window (RWY 10L/28R CLSD, 14:00Z-16:00Z).\",\"confidence\":0.95,\"citations\":[\"ADSB-015\",\"NOTAM-009\"]},\n{\"id\":\"F3\",\"summary\":\"SKW5521 track at 15:40Z falls within NOTAM-010 validity window (TFR VIP MOVEMENT SFC-3000FT, 15:30Z-15:45Z); track altitude 6100 ft is above the TFR ceiling.\",\"confidence\":0.9,\"citations\":[\"ADSB-015\",\"NOTAM-010\"]},\n{\"id\":\"F4\",\"summary\":\"N512CR track at 16:00Z falls within NOTAM-009 validity window (RWY 10L/28R CLSD, 14:00Z-16:00Z) inclusive of the end time.\",\"confidence\":0.9,\"citations\":[\"ADSB-017\",\"NOTAM-009\"]},\n{\"id\":\"F5\",\"summary\":\"ISS (synthetic) pass over KORD at 15:44Z falls within NOTAM-009 validity window (RWY 10L/28R CLSD, 14:00Z-16:00Z).\",\"confidence\":0.9,\"citations\":[\"TLE-ISS-004\",\"NOTAM-009\"]},\n{\"id\":\"F6\",\"summary\":\"ISS (synthetic) pass over KORD at 15:44Z falls within NOTAM-010 validity window (TFR VIP MOVEMENT SFC-3000FT, 15:30Z-15:45Z).\",\"confidence\":0.9,\"citations\":[\"TLE-ISS-004\",\"NOTAM-010\"]},\n{\"id\":\"F7\",\"summary\":\"UAL77 track at 21:15Z falls within NOTAM-011 validity window (TWY B BTN B4 AND B9 CLSD, 20:00Z-23:59Z).\",\"confidence\":0.95,\"citations\":[\"ADSB-019\",\"NOTAM-011\"]}\n]}",
+    "finish_reason": "stop",
+    "served_model": "z-ai/glm-5.3-flash",
+    "provider": "Wafer",
+    "usage": {
+      "prompt_tokens": 1040,
+      "completion_tokens": 702,
+      "total_tokens": 1742,
+      "cost": 0.00039372,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 1024,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.00039372,
+        "upstream_inference_prompt_cost": 0.00004272,
+        "upstream_inference_completions_cost": 0.000351
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 137,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    },
+    "latency_ms": 31127
+  }
+}

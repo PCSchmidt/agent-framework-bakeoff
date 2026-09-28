@@ -1,0 +1,45 @@
+{
+  "key": "59c4b5bb283dea04533fc2d7",
+  "prompt_version": "brief-writer-v1",
+  "model": "xiaomi/mimo-v2.6-pro",
+  "params": {
+    "temperature": 0.7,
+    "sample": 4
+  },
+  "meta": {
+    "airport": "KORD",
+    "date": "2026-08-22",
+    "attempt": 1
+  },
+  "recorded_at": "2026-09-28T19:08:46.033Z",
+  "response": {
+    "content": "{\"airport\":\"KORD\",\"date\":\"2026-08-22\",\"findings\":[{\"id\":\"F1\",\"summary\":\"AAL311 (ADSB-014) at 14:00Z falls within the NOTAM-009 validity window (14:00Z–16:00Z, runway closure), coinciding with the start of the restriction.\",\"confidence\":0.95,\"citations\":[\"ADSB-014\",\"NOTAM-009\"]},{\"id\":\"F2\",\"summary\":\"SKW5521 (ADSB-015) at 15:40Z falls within the NOTAM-009 validity window (14:00Z–16:00Z, runway closure).\",\"confidence\":0.95,\"citations\":[\"ADSB-015\",\"NOTAM-009\"]},{\"id\":\"F3\",\"summary\":\"SKW5521 (ADSB-015) at 15:40Z falls within the NOTAM-010 validity window (15:30Z–15:45Z, VIP movement TFR from surface to 3000 ft); the track altitude was 6100 ft.\",\"confidence\":0.95,\"citations\":[\"ADSB-015\",\"NOTAM-010\"]},{\"id\":\"F4\",\"summary\":\"N512CR (ADSB-017) at 16:00Z falls within the NOTAM-009 validity window (14:00Z–16:00Z, runway closure) at the inclusive end of the restriction.\",\"confidence\":0.95,\"citations\":[\"ADSB-017\",\"NOTAM-009\"]},{\"id\":\"F5\",\"summary\":\"UAL77 (ADSB-019) at 21:15Z falls within the NOTAM-011 validity window (20:00Z–23:59Z, taxiway closure).\",\"confidence\":0.95,\"citations\":[\"ADSB-019\",\"NOTAM-011\"]},{\"id\":\"F6\",\"summary\":\"Satellite pass TLE-ISS-004 at 15:44Z falls within the NOTAM-009 validity window (14:00Z–16:00Z, runway closure).\",\"confidence\":0.95,\"citations\":[\"TLE-ISS-004\",\"NOTAM-009\"]},{\"id\":\"F7\",\"summary\":\"Satellite pass TLE-ISS-004 at 15:44Z falls within the NOTAM-010 validity window (15:30Z–15:45Z, VIP movement TFR from surface to 3000 ft).\",\"confidence\":0.95,\"citations\":[\"TLE-ISS-004\",\"NOTAM-010\"]},{\"id\":\"F8\",\"summary\":\"AAL311 (ADSB-013) at 13:59Z did not fall within any NOTAM validity window on this date; recorded altitude was 5200 ft.\",\"confidence\":0.9,\"citations\":[\"ADSB-013\"]},{\"id\":\"F9\",\"summary\":\"ENY3310 (ADSB-016) at 16:01Z did not fall within any NOTAM validity window on this date; recorded altitude was 3900 ft.\",\"confidence\":0.9,\"citations\":[\"ADSB-016\"]},{\"id\":\"F10\",\"summary\":\"DAL1990 (ADSB-018) at 19:59Z did not fall within any NOTAM validity window on this date; recorded altitude was 7000 ft.\",\"confidence\":0.9,\"citations\":[\"ADSB-018\"]}]}",
+    "finish_reason": "stop",
+    "served_model": "xiaomi/mimo-v2.6-pro",
+    "provider": "Xiaomi",
+    "usage": {
+      "prompt_tokens": 1179,
+      "completion_tokens": 1962,
+      "total_tokens": 3141,
+      "cost": 0.0017228322,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 1152,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.0017228322,
+        "upstream_inference_prompt_cost": 0.0000158922,
+        "upstream_inference_completions_cost": 0.00170694
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 1103,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    },
+    "latency_ms": 34464
+  }
+}

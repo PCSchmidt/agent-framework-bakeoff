@@ -18,3 +18,4 @@ jobs:
       - run: npm run eval
       - run: npm run eval:runtimes
       - run: npm run eval:table
+      - run: npm run eval:llm -- --no-write

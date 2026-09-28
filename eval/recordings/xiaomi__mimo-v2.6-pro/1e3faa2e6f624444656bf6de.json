@@ -1,0 +1,45 @@
+{
+  "key": "1e3faa2e6f624444656bf6de",
+  "prompt_version": "brief-writer-v1",
+  "model": "xiaomi/mimo-v2.6-pro",
+  "params": {
+    "temperature": 0.7,
+    "sample": 1
+  },
+  "meta": {
+    "airport": "KDEN",
+    "date": "2026-08-19",
+    "attempt": 1
+  },
+  "recorded_at": "2026-09-28T19:07:53.939Z",
+  "response": {
+    "content": "{\"airport\":\"KDEN\",\"date\":\"2026-08-19\",\"findings\":[{\"id\":\"F1\",\"summary\":\"NOTAM-001 (RWY 16L/34R CLSD, 18:00-22:00Z) is active during ADSB-001 (UAL123 at 7200 ft, 19:10Z).\",\"confidence\":0.95,\"citations\":[\"NOTAM-001\",\"ADSB-001\"]},{\"id\":\"F2\",\"summary\":\"NOTAM-001 (RWY 16L/34R CLSD, 18:00-22:00Z) is active during ADSB-002 (SWA456 at 8100 ft, 19:25Z).\",\"confidence\":0.95,\"citations\":[\"NOTAM-001\",\"ADSB-002\"]},{\"id\":\"F3\",\"summary\":\"NOTAM-001 (RWY 16L/34R CLSD, 18:00-22:00Z) is active during ADSB-003 (N17AB at 6500 ft, 18:40Z).\",\"confidence\":0.95,\"citations\":[\"NOTAM-001\",\"ADSB-003\"]},{\"id\":\"F4\",\"summary\":\"NOTAM-001 (RWY 16L/34R CLSD, 18:00-22:00Z) is active during ADSB-004 (DAL789 at 9000 ft, 21:05Z).\",\"confidence\":0.95,\"citations\":[\"NOTAM-001\",\"ADSB-004\"]},{\"id\":\"F5\",\"summary\":\"NOTAM-001 (RWY 16L/34R CLSD, 18:00-22:00Z) is active during ADSB-005 (FFT321 at 7400 ft, 19:32Z).\",\"confidence\":0.95,\"citations\":[\"NOTAM-001\",\"ADSB-005\"]},{\"id\":\"F6\",\"summary\":\"NOTAM-001 (RWY 16L/34R CLSD, 18:00-22:00Z) is active during TLE-ISS-001 overflight (19:30Z, max elevation 62 deg).\",\"confidence\":0.95,\"citations\":[\"NOTAM-001\",\"TLE-ISS-001\"]},{\"id\":\"F7\",\"summary\":\"NOTAM-002 (CRANE 500FT AGL 1NM NE OF ARPT, all day) is active during ADSB-001 (UAL123 at 7200 ft, 19:10Z).\",\"confidence\":0.95,\"citations\":[\"NOTAM-002\",\"ADSB-001\"]},{\"id\":\"F8\",\"summary\":\"NOTAM-002 (CRANE 500FT AGL 1NM NE OF ARPT, all day) is active during ADSB-002 (SWA456 at 8100 ft, 19:25Z).\",\"confidence\":0.95,\"citations\":[\"NOTAM-002\",\"ADSB-002\"]},{\"id\":\"F9\",\"summary\":\"NOTAM-002 (CRANE 500FT AGL 1NM NE OF ARPT, all day) is active during ADSB-003 (N17AB at 6500 ft, 18:40Z).\",\"confidence\":0.95,\"citations\":[\"NOTAM-002\",\"ADSB-003\"]},{\"id\":\"F10\",\"summary\":\"NOTAM-002 (CRANE 500FT AGL 1NM NE OF ARPT, all day) is active during ADSB-004 (DAL789 at 9000 ft, 21:05Z).\",\"confidence\":0.95,\"citations\":[\"NOTAM-002\",\"ADSB-004\"]},{\"id\":\"F11\",\"summary\":\"NOTAM-002 (CRANE 500FT AGL 1NM NE OF ARPT, all day) is active during ADSB-005 (FFT321 at 7400 ft, 19:32Z).\",\"confidence\":0.95,\"citations\":[\"NOTAM-002\",\"ADSB-005\"]},{\"id\":\"F12\",\"summary\":\"NOTAM-002 (CRANE 500FT AGL 1NM NE OF ARPT, all day) is active during ADSB-012 (UAL9 at 6000 ft, 10:05Z).\",\"confidence\":0.95,\"citations\":[\"NOTAM-002\",\"ADSB-012\"]},{\"id\":\"F13\",\"summary\":\"NOTAM-002 (CRANE 500FT AGL 1NM NE OF ARPT, all day) is active during TLE-ISS-001 overflight (19:30Z, max elevation 62 deg).\",\"confidence\":0.95,\"citations\":[\"NOTAM-002\",\"TLE-ISS-001\"]},{\"id\":\"F14\",\"summary\":\"NOTAM-002 (CRANE 500FT AGL 1NM NE OF ARPT, all day) is active during TLE-STARLINK-001 overflight (22:30Z, max elevation 55 deg).\",\"confidence\":0.95,\"citations\":[\"NOTAM-002\",\"TLE-STARLINK-001\"]},{\"id\":\"F15\",\"summary\":\"NOTAM-003 (TWY A BTN A3 AND A7 CLSD, 12:00-23:59Z) is active during ADSB-001 (UAL123 at 7200 ft, 19:10Z).\",\"confidence\":0.95,\"citations\":[\"NOTAM-003\",\"ADSB-001\"]},{\"id\":\"F16\",\"summary\":\"NOTAM-003 (TWY A BTN A3 AND A7 CLSD, 12:00-23:59Z) is active during ADSB-002 (SWA456 at 8100 ft, 19:25Z).\",\"confidence\":0.95,\"citations\":[\"NOTAM-003\",\"ADSB-002\"]},{\"id\":\"F17\",\"summary\":\"NOTAM-003 (TWY A BTN A3 AND A7 CLSD, 12:00-23:59Z) is active during ADSB-003 (N17AB at 6500 ft, 18:40Z).\",\"confidence\":0.95,\"citations\":[\"NOTAM-003\",\"ADSB-003\"]},{\"id\":\"F18\",\"summary\":\"NOTAM-003 (TWY A BTN A3 AND A7 CLSD, 12:00-23:59Z) is active during ADSB-004 (DAL789 at 9000 ft, 21:05Z).\",\"confidence\":0.95,\"citations\":[\"NOTAM-003\",\"ADSB-004\"]},{\"id\":\"F19\",\"summary\":\"NOTAM-003 (TWY A BTN A3 AND A7 CLSD, 12:00-23:59Z) is active during ADSB-005 (FFT321 at 7400 ft, 19:32Z).\",\"confidence\":0.95,\"citations\":[\"NOTAM-003\",\"ADSB-005\"]},{\"id\":\"F20\",\"summary\":\"NOTAM-003 (TWY A BTN A3 AND A7 CLSD, 12:00-23:59Z) is active during TLE-ISS-001 overflight (19:30Z, max elevation 62 deg).\",\"confidence\":0.95,\"citations\":[\"NOTAM-003\",\"TLE-ISS-001\"]},{\"id\":\"F21\",\"summary\":\"NOTAM-003 (TWY A BTN A3 AND A7 CLSD, 12:00-23:59Z) is active during TLE-STARLINK-001 overflight (22:30Z, max elevation 55 deg).\",\"confidence\":0.95,\"citations\":[\"NOTAM-003\",\"TLE-STARLINK-001\"]}]}",
+    "finish_reason": "stop",
+    "served_model": "xiaomi/mimo-v2.6-pro",
+    "provider": "GMICloud",
+    "usage": {
+      "prompt_tokens": 1178,
+      "completion_tokens": 2385,
+      "total_tokens": 3563,
+      "cost": 0.002090868,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 1152,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.002090868,
+        "upstream_inference_prompt_cost": 0.000015918,
+        "upstream_inference_completions_cost": 0.00207495
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 370,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    },
+    "latency_ms": 25376
+  }
+}

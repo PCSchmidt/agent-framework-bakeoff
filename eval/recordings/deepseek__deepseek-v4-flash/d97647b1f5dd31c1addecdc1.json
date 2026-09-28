@@ -1,0 +1,45 @@
+{
+  "key": "d97647b1f5dd31c1addecdc1",
+  "prompt_version": "brief-writer-v1",
+  "model": "deepseek/deepseek-v4-flash",
+  "params": {
+    "temperature": 0.7,
+    "sample": 2
+  },
+  "meta": {
+    "airport": "KSEA",
+    "date": "2026-08-22",
+    "attempt": 1
+  },
+  "recorded_at": "2026-09-28T19:04:57.170Z",
+  "response": {
+    "content": "{\n  \"airport\": \"KSEA\",\n  \"date\": \"2026-08-22\",\n  \"findings\": [\n    {\n      \"id\": \"F1\",\n      \"summary\": \"Aircraft ASA402 (ADSB-020) at 2026-08-22T17:55Z is inside NOTAM-012 (crane 320ft AGL 0.8NM S of ARPT) validity window.\",\n      \"confidence\": 1.0,\n      \"citations\": [\"ADSB-020\", \"NOTAM-012\"]\n    },\n    {\n      \"id\": \"F2\",\n      \"summary\": \"Aircraft QXE2104 (ADSB-021) at 2026-08-22T18:30Z is inside NOTAM-012 validity window.\",\n      \"confidence\": 1.0,\n      \"citations\": [\"ADSB-021\", \"NOTAM-012\"]\n    },\n    {\n      \"id\": \"F3\",\n      \"summary\": \"Aircraft DAL2231 (ADSB-022) at 2026-08-22T19:31Z is inside NOTAM-012 validity window.\",\n      \"confidence\": 1.0,\n      \"citations\": [\"ADSB-022\", \"NOTAM-012\"]\n    },\n    {\n      \"id\": \"F4\",\n      \"summary\": \"Aircraft N88SW (ADSB-023) at 2026-08-22T19:30Z is inside NOTAM-012 validity window.\",\n      \"confidence\": 1.0,\n      \"citations\": [\"ADSB-023\", \"NOTAM-012\"]\n    },\n    {\n      \"id\": \"F5\",\n      \"summary\": \"Satellite pass TLE-STARLINK-002 (Starlink train) at 2026-08-22T04:12Z is inside NOTAM-012 validity window.\",\n      \"confidence\": 1.0,\n      \"citations\": [\"TLE-STARLINK-002\", \"NOTAM-012\"]\n    },\n    {\n      \"id\": \"F6\",\n      \"summary\": \"Aircraft QXE2104 (ADSB-021) at 2026-08-22T18:30Z is inside NOTAM-013 (RWY 16R/34L CLSD) validity window.\",\n      \"confidence\": 1.0,\n      \"citations\": [\"ADSB-021\", \"NOTAM-013\"]\n    },\n    {\n      \"id\": \"F7\",\n      \"summary\": \"Aircraft N88SW (ADSB-023) at 2026-08-22T19:30Z is inside NOTAM-013 validity window.\",\n      \"confidence\": 1.0,\n      \"citations\": [\"ADSB-023\", \"NOTAM-013\"]\n    }\n  ]\n}",
+    "finish_reason": "stop",
+    "served_model": "deepseek/deepseek-v4-flash",
+    "provider": "StreamLake",
+    "usage": {
+      "prompt_tokens": 793,
+      "completion_tokens": 1834,
+      "total_tokens": 2627,
+      "cost": 0.0002716749,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.0002716749,
+        "upstream_inference_prompt_cost": 0.0000482937,
+        "upstream_inference_completions_cost": 0.0002233812
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 1227,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    },
+    "latency_ms": 63357
+  }
+}

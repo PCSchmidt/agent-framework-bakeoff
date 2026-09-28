@@ -1,0 +1,45 @@
+{
+  "key": "07ea12fc5af819a70d683524",
+  "prompt_version": "brief-writer-v1",
+  "model": "deepseek/deepseek-v4-flash",
+  "params": {
+    "temperature": 0.7,
+    "sample": 2
+  },
+  "meta": {
+    "airport": "KDEN",
+    "date": "2026-08-20",
+    "attempt": 1
+  },
+  "recorded_at": "2026-09-28T19:03:36.015Z",
+  "response": {
+    "content": "{\"airport\":\"KDEN\",\"date\":\"2026-08-20\",\"findings\":[{\"id\":\"F1\",\"summary\":\"ADSB-009 UAL200 at 2026-08-20T16:00:00Z is inside NOTAM-006 validity window 2026-08-20T14:00:00Z to 2026-08-20T20:00:00Z.\",\"confidence\":1,\"citations\":[\"ADSB-009\",\"NOTAM-006\"]},{\"id\":\"F2\",\"summary\":\"ADSB-009 UAL200 at 2026-08-20T16:00:00Z is inside NOTAM-007 validity window 2026-08-20T00:00:00Z to 2026-08-20T23:59:00Z.\",\"confidence\":1,\"citations\":[\"ADSB-009\",\"NOTAM-007\"]},{\"id\":\"F3\",\"summary\":\"ADSB-010 SWA12 at 2026-08-20T16:30:00Z is inside NOTAM-006 validity window 2026-08-20T14:00:00Z to 2026-08-20T20:00:00Z.\",\"confidence\":1,\"citations\":[\"ADSB-010\",\"NOTAM-006\"]},{\"id\":\"F4\",\"summary\":\"ADSB-010 SWA12 at 2026-08-20T16:30:00Z is inside NOTAM-007 validity window 2026-08-20T00:00:00Z to 2026-08-20T23:59:00Z.\",\"confidence\":1,\"citations\":[\"ADSB-010\",\"NOTAM-007\"]},{\"id\":\"F5\",\"summary\":\"TLE-ISS-003 at 2026-08-20T18:00:00Z is inside NOTAM-006 validity window 2026-08-20T14:00:00Z to 2026-08-20T20:00:00Z.\",\"confidence\":1,\"citations\":[\"TLE-ISS-003\",\"NOTAM-006\"]},{\"id\":\"F6\",\"summary\":\"TLE-ISS-003 at 2026-08-20T18:00:00Z is inside NOTAM-007 validity window 2026-08-20T00:00:00Z to 2026-08-20T23:59:00Z.\",\"confidence\":1,\"citations\":[\"TLE-ISS-003\",\"NOTAM-007\"]}]}",
+    "finish_reason": "stop",
+    "served_model": "deepseek/deepseek-v4-flash",
+    "provider": "GMICloud",
+    "usage": {
+      "prompt_tokens": 753,
+      "completion_tokens": 1195,
+      "total_tokens": 1948,
+      "cost": 0.0002378194,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 662,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.0002378194,
+        "upstream_inference_prompt_cost": 0.0000203294,
+        "upstream_inference_completions_cost": 0.00021749
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 648,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    },
+    "latency_ms": 7756
+  }
+}

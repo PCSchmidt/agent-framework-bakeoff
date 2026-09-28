@@ -1,0 +1,45 @@
+{
+  "key": "eef3385602d94b8e93658962",
+  "prompt_version": "brief-writer-v1",
+  "model": "z-ai/glm-5.3-flash",
+  "params": {
+    "temperature": 0.7,
+    "sample": 2
+  },
+  "meta": {
+    "airport": "KSEA",
+    "date": "2026-08-22",
+    "attempt": 1
+  },
+  "recorded_at": "2026-09-28T19:07:01.932Z",
+  "response": {
+    "content": "{\n  \"airport\": \"KSEA\",\n  \"date\": \"2026-08-22\",\n  \"findings\": [\n    {\n      \"id\": \"F1\",\n      \"summary\": \"ASA402 (ADSB-020) track at 17:55Z falls inside the validity window of NOTAM-012 (00:00Z-23:59Z, crane 320FT AGL 0.8NM S of airport).\",\n      \"confidence\": 1.0,\n      \"citations\": [\"ADSB-020\", \"NOTAM-012\"]\n    },\n    {\n      \"id\": \"F2\",\n      \"summary\": \"QXE2104 (ADSB-021) track at 18:30Z falls inside the validity window of NOTAM-012 (00:00Z-23:59Z, crane 320FT AGL 0.8NM S of airport).\",\n      \"confidence\": 1.0,\n      \"citations\": [\"ADSB-021\", \"NOTAM-012\"]\n    },\n    {\n      \"id\": \"F3\",\n      \"summary\": \"QXE2104 (ADSB-021) track at 18:30Z falls inside the validity window of NOTAM-013 (18:00Z-19:30Z, RWY 16R/34L closed).\",\n      \"confidence\": 1.0,\n      \"citations\": [\"ADSB-021\", \"NOTAM-013\"]\n    },\n    {\n      \"id\": \"F4\",\n      \"summary\": \"DAL2231 (ADSB-022) track at 19:31Z falls inside the validity window of NOTAM-012 (00:00Z-23:59Z, crane 320FT AGL 0.8NM S of airport).\",\n      \"confidence\": 1.0,\n      \"citations\": [\"ADSB-022\", \"NOTAM-012\"]\n    },\n    {\n      \"id\": \"F5\",\n      \"summary\": \"N88SW (ADSB-023) track at 19:30Z falls inside the validity window of NOTAM-012 (00:00Z-23:59Z, crane 320FT AGL 0.8NM S of airport).\",\n      \"confidence\": 1.0,\n      \"citations\": [\"ADSB-023\", \"NOTAM-012\"]\n    },\n    {\n      \"id\": \"F6\",\n      \"summary\": \"N88SW (ADSB-023) track at 19:30Z falls inside the validity window of NOTAM-013 (18:00Z-19:30Z, RWY 16R/34L closed), inclusive of the end time.\",\n      \"confidence\": 1.0,\n      \"citations\": [\"ADSB-023\", \"NOTAM-013\"]\n    },\n    {\n      \"id\": \"F7\",\n      \"summary\": \"Starlink train pass (TLE-STARLINK-002) over KSEA at 04:12Z falls inside the validity window of NOTAM-012 (00:00Z-23:59Z, crane 320FT AGL 0.8NM S of airport).\",\n      \"confidence\": 1.0,\n      \"citations\": [\"TLE-STARLINK-002\", \"NOTAM-012\"]\n    }\n  ]\n}\n",
+    "finish_reason": "stop",
+    "served_model": "z-ai/glm-5.3-flash",
+    "provider": "Novita",
+    "usage": {
+      "prompt_tokens": 835,
+      "completion_tokens": 1686,
+      "total_tokens": 2521,
+      "cost": 0.0007261875,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.0007261875,
+        "upstream_inference_prompt_cost": 0.0000939375,
+        "upstream_inference_completions_cost": 0.00063225
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 945,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    },
+    "latency_ms": 24777
+  }
+}

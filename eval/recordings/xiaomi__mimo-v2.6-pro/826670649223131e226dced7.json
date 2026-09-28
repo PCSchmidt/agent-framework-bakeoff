@@ -1,0 +1,45 @@
+{
+  "key": "826670649223131e226dced7",
+  "prompt_version": "brief-writer-v1",
+  "model": "xiaomi/mimo-v2.6-pro",
+  "params": {
+    "temperature": 0.7,
+    "sample": 1
+  },
+  "meta": {
+    "airport": "KATL",
+    "date": "2026-08-23",
+    "attempt": 1
+  },
+  "recorded_at": "2026-09-28T19:08:48.283Z",
+  "response": {
+    "content": "{\"airport\":\"KATL\",\"date\":\"2026-08-23\",\"findings\":[{\"id\":\"F1\",\"summary\":\"ADSB-024 (DAL1) track at 06:15Z, 6000 ft, falls within the NOTAM-014 validity window (06:00–08:00Z) during which RWY 8L/26R is closed.\",\"confidence\":0.95,\"citations\":[\"ADSB-024\",\"NOTAM-014\"]},{\"id\":\"F2\",\"summary\":\"ADSB-025 (DAL22) track at 07:45Z, 5400 ft, falls within the NOTAM-014 validity window (06:00–08:00Z) during which RWY 8L/26R is closed.\",\"confidence\":0.95,\"citations\":[\"ADSB-025\",\"NOTAM-014\"]},{\"id\":\"F3\",\"summary\":\"TLE-ISS-005 satellite pass over KATL at 07:50Z (max elevation 53 deg) falls within the NOTAM-014 validity window (06:00–08:00Z) during which RWY 8L/26R is closed.\",\"confidence\":0.9,\"citations\":[\"TLE-ISS-005\",\"NOTAM-014\"]},{\"id\":\"F4\",\"summary\":\"ADSB-025 (DAL22) track at 07:45Z, 5400 ft, falls within the NOTAM-015 validity window (07:30–09:00Z) during which ILS RWY 9R is unserviceable.\",\"confidence\":0.95,\"citations\":[\"ADSB-025\",\"NOTAM-015\"]},{\"id\":\"F5\",\"summary\":\"TLE-ISS-005 satellite pass over KATL at 07:50Z (max elevation 53 deg) falls within the NOTAM-015 validity window (07:30–09:00Z) during which ILS RWY 9R is unserviceable.\",\"confidence\":0.9,\"citations\":[\"TLE-ISS-005\",\"NOTAM-015\"]},{\"id\":\"F6\",\"summary\":\"ADSB-026 (SWA3050) track at 08:59Z, 4700 ft, falls within the NOTAM-015 validity window (07:30–09:00Z) during which ILS RWY 9R is unserviceable.\",\"confidence\":0.95,\"citations\":[\"ADSB-026\",\"NOTAM-015\"]},{\"id\":\"F7\",\"summary\":\"ADSB-028 (DAL404) track at 12:30Z, 8000 ft, falls within the NOTAM-016 validity window (12:00–12:30Z) for laser activity 2NM west of the airport, surface to 5000 ft.\",\"confidence\":0.95,\"citations\":[\"ADSB-028\",\"NOTAM-016\"]},{\"id\":\"F8\",\"summary\":\"ADSB-031 (DAL2600) track at 22:10Z, 5100 ft, falls within the NOTAM-017 validity window (22:00–23:59Z) during which TWY L is closed.\",\"confidence\":0.95,\"citations\":[\"ADSB-031\",\"NOTAM-017\"]}]}",
+    "finish_reason": "stop",
+    "served_model": "xiaomi/mimo-v2.6-pro",
+    "provider": "Xiaomi",
+    "usage": {
+      "prompt_tokens": 1350,
+      "completion_tokens": 1455,
+      "total_tokens": 2805,
+      "cost": 0.001300908,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 1280,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.001300908,
+        "upstream_inference_prompt_cost": 0.000035058,
+        "upstream_inference_completions_cost": 0.00126585
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 626,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    },
+    "latency_ms": 19964
+  }
+}

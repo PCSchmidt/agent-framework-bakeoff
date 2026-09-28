@@ -1,0 +1,45 @@
+{
+  "key": "4175282e7759269b58c1f335",
+  "prompt_version": "brief-writer-v1",
+  "model": "xiaomi/mimo-v2.6-pro",
+  "params": {
+    "temperature": 0.7,
+    "sample": 4
+  },
+  "meta": {
+    "airport": "KJFK",
+    "date": "2026-08-19",
+    "attempt": 1
+  },
+  "recorded_at": "2026-09-28T19:08:21.198Z",
+  "response": {
+    "content": "{\"airport\":\"KJFK\",\"date\":\"2026-08-19\",\"findings\":[{\"id\":\"F1\",\"summary\":\"Aircraft JBU88 (track NOTAM window overlap: ADSB-006) was observed at 14:20Z at 3000 ft, inside the 13:00Z-17:00Z validity window of NOTAM-004 (runway closure), so the closure may affect this traffic.\",\"confidence\":0.95,\"citations\":[\"ADSB-006\",\"NOTAM-004\"]},{\"id\":\"F2\",\"summary\":\"Aircraft AAL100 (ADSB-007) was observed at 14:45Z at 4200 ft, inside the 13:00Z-17:00Z validity window of NOTAM-004 (runway closure).\",\"confidence\":0.95,\"citations\":[\"ADSB-007\",\"NOTAM-004\"]},{\"id\":\"F3\",\"summary\":\"Aircraft N900KS (ADSB-008) was observed at 15:10Z at 2500 ft, inside the 13:00Z-17:00Z validity window of NOTAM-004 (runway closure).\",\"confidence\":0.95,\"citations\":[\"ADSB-008\",\"NOTAM-004\"]},{\"id\":\"F4\",\"summary\":\"Satellite pass TLE-ISS-002 over KJFK at 14:10Z falls inside the 13:00Z-17:00Z validity window of NOTAM-004 (runway closure).\",\"confidence\":0.95,\"citations\":[\"TLE-ISS-002\",\"NOTAM-004\"]},{\"id\":\"F5\",\"summary\":\"Aircraft JBU88 (ADSB-006) was observed at 14:20Z at 3000 ft, inside the 14:00Z-16:00Z validity window of NOTAM-005 (temporary flight restriction, surface to 3000 ft), placing the aircraft at the top of the restricted altitude band during the restriction.\",\"confidence\":0.95,\"citations\":[\"ADSB-006\",\"NOTAM-005\"]},{\"id\":\"F6\",\"summary\":\"Aircraft AAL100 (ADSB-007) was observed at 14:45Z at 4200 ft, inside the 14:00Z-16:00Z validity window of NOTAM-005 (temporary flight restriction, surface to 3000 ft); the observed altitude is above the restricted band.\",\"confidence\":0.95,\"citations\":[\"ADSB-007\",\"NOTAM-005\"]},{\"id\":\"F7\",\"summary\":\"Aircraft N900KS (ADSB-008) was observed at 15:10Z at 2500 ft, inside the 14:00Z-16:00Z validity window of NOTAM-005 (temporary flight restriction, surface to 3000 ft), placing the aircraft within the restricted altitude band.\",\"confidence\":0.95,\"citations\":[\"ADSB-008\",\"NOTAM-005\"]},{\"id\":\"F8\",\"summary\":\"Satellite pass TLE-ISS-002 over KJFK at 14:10Z falls inside the 14:00Z-16:00Z validity window of NOTAM-005 (temporary flight restriction, surface to 3000 ft).\",\"confidence\":0.95,\"citations\":[\"TLE-ISS-002\",\"NOTAM-005\"]},{\"id\":\"F9\",\"summary\":\"Aircraft JBU88 (ADSB-006) was observed at 14:20Z at 3000 ft, inside the 00:00Z-23:59Z validity window of NOTAM-008 (instrument landing system unserviceable), so recovery to the affected approach may rely on non-precision or visual procedures.\",\"confidence\":0.95,\"citations\":[\"ADSB-006\",\"NOTAM-008\"]},{\"id\":\"F10\",\"summary\":\"Aircraft AAL100 (ADSB-007) was observed at 14:45Z at 4200 ft, inside the 00:00Z-23:59Z validity window of NOTAM-008 (instrument landing system unserviceable).\",\"confidence\":0.95,\"citations\":[\"ADSB-007\",\"NOTAM-008\"]},{\"id\":\"F11\",\"summary\":\"Aircraft N900KS (ADSB-008) was observed at 15:10Z at 2500 ft, inside the 00:00Z-23:59Z validity window of NOTAM-008 (instrument landing system unserviceable).\",\"confidence\":0.95,\"citations\":[\"ADSB-008\",\"NOTAM-008\"]},{\"id\":\"F12\",\"summary\":\"Satellite pass TLE-ISS-002 over KJFK at 14:10Z falls inside the 00:00Z-23:59Z validity window of NOTAM-008 (instrument landing system unserviceable).\",\"confidence\":0.95,\"citations\":[\"TLE-ISS-002\",\"NOTAM-008\"]}]}",
+    "finish_reason": "stop",
+    "served_model": "xiaomi/mimo-v2.6-pro",
+    "provider": "GMICloud",
+    "usage": {
+      "prompt_tokens": 893,
+      "completion_tokens": 1990,
+      "total_tokens": 2883,
+      "cost": 0.001788747,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 768,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.001788747,
+        "upstream_inference_prompt_cost": 0.000057447,
+        "upstream_inference_completions_cost": 0.0017313
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 728,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    },
+    "latency_ms": 28597
+  }
+}

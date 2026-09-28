@@ -1,0 +1,45 @@
+{
+  "key": "8bdc7426673c619b8c505f5f",
+  "prompt_version": "brief-writer-v1",
+  "model": "deepseek/deepseek-v4-flash",
+  "params": {
+    "temperature": 0.7,
+    "sample": 1
+  },
+  "meta": {
+    "airport": "KDEN",
+    "date": "2026-08-20",
+    "attempt": 1
+  },
+  "recorded_at": "2026-09-28T19:03:38.436Z",
+  "response": {
+    "content": "{\n  \"airport\": \"KDEN\",\n  \"date\": \"2026-08-20\",\n  \"findings\": [\n    {\n      \"id\": \"F1\",\n      \"summary\": \"Aircraft UAL200 (ADSB-009) at 10000 ft over KDEN at 16:00Z occurs during NOTAM-006 validity (grass mowing adjacent RWY 17R).\",\n      \"confidence\": 1,\n      \"citations\": [\"ADSB-009\", \"NOTAM-006\"]\n    },\n    {\n      \"id\": \"F2\",\n      \"summary\": \"Aircraft UAL200 (ADSB-009) at 10000 ft over KDEN at 16:00Z occurs during NOTAM-007 validity (bird activity).\",\n      \"confidence\": 1,\n      \"citations\": [\"ADSB-009\", \"NOTAM-007\"]\n    },\n    {\n      \"id\": \"F3\",\n      \"summary\": \"Aircraft SWA12 (ADSB-010) at 11000 ft over KDEN at 16:30Z occurs during NOTAM-006 validity (grass mowing adjacent RWY 17R).\",\n      \"confidence\": 1,\n      \"citations\": [\"ADSB-010\", \"NOTAM-006\"]\n    },\n    {\n      \"id\": \"F4\",\n      \"summary\": \"Aircraft SWA12 (ADSB-010) at 11000 ft over KDEN at 16:30Z occurs during NOTAM-007 validity (bird activity).\",\n      \"confidence\": 1,\n      \"citations\": [\"ADSB-010\", \"NOTAM-007\"]\n    },\n    {\n      \"id\": \"F5\",\n      \"summary\": \"Satellite ISS (TLE-ISS-003) pass over KDEN at 18:00Z (max elev 28°) occurs during NOTAM-006 validity (grass mowing adjacent RWY 17R).\",\n      \"confidence\": 1,\n      \"citations\": [\"TLE-ISS-003\", \"NOTAM-006\"]\n    },\n    {\n      \"id\": \"F6\",\n      \"summary\": \"Satellite ISS (TLE-ISS-003) pass over KDEN at 18:00Z (max elev 28°) occurs during NOTAM-007 validity (bird activity).\",\n      \"confidence\": 1,\n      \"citations\": [\"TLE-ISS-003\", \"NOTAM-007\"]\n    }\n  ]\n}",
+    "finish_reason": "stop",
+    "served_model": "deepseek/deepseek-v4-flash",
+    "provider": "Relace",
+    "usage": {
+      "prompt_tokens": 730,
+      "completion_tokens": 2691,
+      "total_tokens": 3421,
+      "cost": 0.00346638,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.00346638,
+        "upstream_inference_prompt_cost": 0.0000219,
+        "upstream_inference_completions_cost": 0.00344448
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 1874,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    },
+    "latency_ms": 15270
+  }
+}

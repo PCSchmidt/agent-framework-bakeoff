@@ -2,9 +2,13 @@
 
 Implements the **same** agent team four ways on one public, defense-shaped task and scores them with one eval harness.
 
-**Status:** Phase 4 — unified score table
+**Status:** Phase 5 — LLM-written briefs, recorded and replayable
 
-Built on Meridian’s gate + independent Evaluator contracts. The point is trade-off literacy, not a framework tutorial. Four fixture-tool ports emit the same brief JSON; [eval/SCORE_TABLE.md](eval/SCORE_TABLE.md) is the published comparison (no LLM).
+Built on Meridian’s gate + independent Evaluator contracts. The point is trade-off literacy, not a framework tutorial. Four ports emit the same brief JSON. [eval/SCORE_TABLE.md](eval/SCORE_TABLE.md) is the deterministic Phase 4 comparison; [eval/LLM_SCORE_TABLE.md](eval/LLM_SCORE_TABLE.md) and [eval/LLM_FINDINGS.md](eval/LLM_FINDINGS.md) are the Phase 5 results with a real model writing the brief.
+
+## Phase 5 result in one paragraph
+
+Three OpenRouter models (DeepSeek v4 Flash, GLM 5.3 Flash, MiMo v2.6 Pro) wrote 135 briefs. Ungated runtimes shipped a judge-failing brief 7–16% of the time; Meridian shipped none, fixing every rejected draft on its first revision for 1–11% extra cost. A manual audit shows only 2 of the 16 failures were factual errors (both genuinely corrected); the rest were accurate statements that broke the citation rules. The gate does **not** check completeness, and Meridian delivered 4 briefs that omitted true overlaps. Details and caveats: [eval/LLM_FINDINGS.md](eval/LLM_FINDINGS.md).
 
 ## Relation to Meridian
 
@@ -42,9 +46,10 @@ npm test
 npm run eval
 npm run eval:runtimes
 npm run eval:table
+npm run eval:llm      # Phase 5: replays eval/recordings/, no network, no key
 ```
 
-Requires Node.js 20+. All runtimes use checked-in fixtures only — no network, no API keys.
+Requires Node.js 20+. Everything above runs offline on checked-in fixtures and recordings. To record new model responses, copy [.env.example](.env.example) to `.env`, add an OpenRouter key, and run `npm run eval:llm -- --mode record`. Models and samples are set in [eval/llm.config.json](eval/llm.config.json).
 
 ## Golden set
 
@@ -60,9 +65,10 @@ Honest result: D1/D2/D4/D5 match because all ports share [src/tools.js](src/tool
 1. CONTRACT.md, SPEC.md, golden set of 30–50 cases
 2. LangGraph baseline
 3. CrewAI, AG2/MAF, Meridian-gated ports
-4. Unified runner + score tables *(this increment)*
-5. Optional AutoGen → Microsoft Agent Framework postmortem as a **write-up**, not a fifth runtime
-5. Failure-mode write-up + AutoGen → Microsoft Agent Framework postmortem
+4. Unified runner + score tables
+5. LLM brief writer on OpenRouter, recorded replay, Meridian revise-then-block loop *(this increment)*
+6. Near-miss citation shape + completeness gate (see [eval/LLM_FINDINGS.md](eval/LLM_FINDINGS.md))
+7. Optional AutoGen → Microsoft Agent Framework postmortem as a **write-up**, not a fifth runtime
 
 ## Public / unclassified data only
 
@@ -80,7 +86,13 @@ eval/score-table.js
 eval/SCORE_TABLE.md
 eval/run.js
 eval/run-runtime.js
+eval/run-llm.js
+eval/llm.config.json
+eval/recordings/
+eval/LLM_SCORE_TABLE.md
+eval/LLM_FINDINGS.md
 src/tools.js
+src/llm-writer.js
 src/runtimes/langgraph.js
 src/runtimes/crewai.js
 src/runtimes/ag2.js

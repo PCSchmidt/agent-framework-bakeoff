@@ -1,0 +1,45 @@
+{
+  "key": "12faf104edbbafe9f4c91440",
+  "prompt_version": "brief-writer-v1",
+  "model": "z-ai/glm-5.3-flash",
+  "params": {
+    "temperature": 0.7,
+    "sample": 1
+  },
+  "meta": {
+    "airport": "KJFK",
+    "date": "2026-08-19",
+    "attempt": 1
+  },
+  "recorded_at": "2026-09-28T19:06:13.378Z",
+  "response": {
+    "content": "{\n  \"airport\": \"KJFK\",\n  \"date\": \"2026-08-19\",\n  \"findings\": [\n    {\"id\": \"F1\", \"summary\": \"JBU8000 (ADSB-006) at 14:20Z fell within the RWY 04L/22R closure window (NOTAM-004).\", \"confidence\": 0.95, \"citations\": [\"ADSB-006\", \"NOTAM-004\"]},\n    {\"id\": \"F2\", \"summary\": \"AAL100 (ADSB-007) at 14:45Z fell within the RWY 04L/22R closure window (NOTAM-004).\", \"confidence\": 0.95, \"citations\": [\"ADSB-007\", \"NOTAM-004\"]},\n    {\"id\": \"F3\", \"summary\": \"N900KS (ADSB-008) at 15:10Z fell within the RWY 04L/22R closure window (NOTAM-004).\", \"confidence\": 0.95, \"citations\": [\"ADSB-008\", \"NOTAM-004\"]},\n    {\"id\": \"F4\", \"summary\": \"ISS pass (TLE-ISS-002) at 14:10Z fell within the RWY 04L/22R closure window (NOTAM-004).\", \"confidence\": 0.95, \"citations\": [\"TLE-ISS-002\", \"NOTAM-004\"]},\n    {\"id\": \"F5\", \"summary\": \"JBU8000 (ADSB-006) at 14:20Z and 3000 ft fell within the VIP movement TFR window (NOTAM-005).\", \"confidence\": 0.9, \"citations\": [\"ADSB-006\", \"NOTAM-005\"]},\n    {\"id\": \"F6\", \"summary\": \"AAL100 (ADSB-007) at 14:45Z and 4200 ft fell within the VIP movement TFR time window (NOTAM-005).\", \"confidence\": 0.9, \"citations\": [\"ADSB-007\", \"NOTAM-005\"]},\n    {\"id\": \"F7\", \"summary\": \"N900KS (ADSB-008) at 15:10Z and 2500 ft fell within the VIP movement TFR window (NOTAM-005).\", \"confidence\": 0.95, \"citations\": [\"ADSB-008\", \"NOTAM-005\"]},\n    {\"id\": \"F8\", \"summary\": \"ISS pass (TLE-ISS-002) at 14:10Z fell within the VIP movement TFR window (NOTAM-005).\", \"confidence\": 0.95, \"citations\": [\"TLE-ISS-002\", \"NOTAM-005\"]},\n    {\"id\": \"F9\", \"summary\": \"JBU8000 (ADSB-006) at 14:20Z fell within the all-day ILS RWY 04L outage window (NOTAM-008).\", \"confidence\": 0.95, \"citations\": [\"ADSB-006\", \"NOTAM-008\"]},\n    {\"id\": \"F10\", \"summary\": \"AAL100 (ADSB-007) at 14:45Z fell within the all-day ILS RWY 04L outage window (NOTAM-008).\", \"confidence\": 0.95, \"citations\": [\"ADSB-007\", \"NOTAM-008\"]},\n    {\"id\": \"F11\", \"summary\": \"N900KS (ADSB-008) at 15:10Z fell within the all-day ILS RWY 04L outage window (NOTAM-008).\", \"confidence\": 0.95, \"citations\": [\"ADSB-008\", \"NOTAM-008\"]},\n    {\"id\": \"F12\", \"summary\": \"ISS pass (TLE-ISS-002) at 14:10Z fell within the all-day ILS RWY 04L outage window (NOTAM-008).\", \"confidence\": 0.95, \"citations\": [\"TLE-ISS-002\", \"NOTAM-008\"]}\n  ]\n}",
+    "finish_reason": "stop",
+    "served_model": "z-ai/glm-5.3-flash",
+    "provider": "Wafer",
+    "usage": {
+      "prompt_tokens": 795,
+      "completion_tokens": 1041,
+      "total_tokens": 1836,
+      "cost": 0.00097851,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 192,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.00097851,
+        "upstream_inference_prompt_cost": 0.00045801,
+        "upstream_inference_completions_cost": 0.0005205
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 98,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    },
+    "latency_ms": 49257
+  }
+}

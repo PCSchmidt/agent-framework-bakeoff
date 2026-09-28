@@ -1,0 +1,45 @@
+{
+  "key": "7b89e5853da36f6047e8cccf",
+  "prompt_version": "brief-writer-v1",
+  "model": "deepseek/deepseek-v4-flash",
+  "params": {
+    "temperature": 0.7,
+    "sample": 1
+  },
+  "meta": {
+    "airport": "KATL",
+    "date": "2026-08-23",
+    "attempt": 1
+  },
+  "recorded_at": "2026-09-28T19:05:27.299Z",
+  "response": {
+    "content": "{\"airport\": \"KATL\", \"date\": \"2026-08-23\", \"findings\": [{\"id\": \"F1\", \"summary\": \"Aircraft track ADSB-024 (callsign DAL1) at 06:15Z falls within NOTAM-014 valid window (RWY 8L/26R CLSD).\", \"confidence\": 0.95, \"citations\": [\"ADSB-024\", \"NOTAM-014\"]}, {\"id\": \"F2\", \"summary\": \"Aircraft track ADSB-025 (callsign DAL22) at 07:45Z falls within NOTAM-014 valid window.\", \"confidence\": 0.95, \"citations\": [\"ADSB-025\", \"NOTAM-014\"]}, {\"id\": \"F3\", \"summary\": \"Aircraft track ADSB-025 (callsign DAL22) at 07:45Z falls within NOTAM-015 valid window (ILS RWY 9R U/S).\", \"confidence\": 0.95, \"citations\": [\"ADSB-025\", \"NOTAM-015\"]}, {\"id\": \"F4\", \"summary\": \"Aircraft track ADSB-026 (callsign SWA3050) at 08:59Z falls within NOTAM-015 valid window.\", \"confidence\": 0.95, \"citations\": [\"ADSB-026\", \"NOTAM-015\"]}, {\"id\": \"F5\", \"summary\": \"Aircraft track ADSB-028 (callsign DAL404) at 12:30Z falls within NOTAM-016 valid window (LASER ACT 2NM W OF ARPT).\", \"confidence\": 0.95, \"citations\": [\"ADSB-028\", \"NOTAM-016\"]}, {\"id\": \"F6\", \"summary\": \"Aircraft track ADSB-031 (callsign DAL2600) at 22:10Z falls within NOTAM-017 valid window (TWY L CLSD).\", \"confidence\": 0.95, \"citations\": [\"ADSB-031\", \"NOTAM-017\"]}, {\"id\": \"F7\", \"summary\": \"Satellite pass TLE-ISS-005 (ISS) at 07:50Z falls within NOTAM-014 valid window.\", \"confidence\": 0.95, \"citations\": [\"TLE-ISS-005\", \"NOTAM-014\"]}, {\"id\": \"F8\", \"summary\": \"Satellite pass TLE-ISS-005 (ISS) at 07:50Z falls within NOTAM-015 valid window.\", \"confidence\": 0.95, \"citations\": [\"TLE-ISS-005\", \"NOTAM-015\"]}]}",
+    "finish_reason": "stop",
+    "served_model": "deepseek/deepseek-v4-flash",
+    "provider": "Venice",
+    "usage": {
+      "prompt_tokens": 1198,
+      "completion_tokens": 2372,
+      "total_tokens": 3570,
+      "cost": 0.0005723368,
+      "is_byok": false,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0,
+        "audio_tokens": 0,
+        "video_tokens": 0
+      },
+      "cost_details": {
+        "upstream_inference_cost": 0.0005723368,
+        "upstream_inference_prompt_cost": 0.0001157268,
+        "upstream_inference_completions_cost": 0.00045661
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 1338,
+        "image_tokens": 0,
+        "audio_tokens": 0
+      }
+    },
+    "latency_ms": 60873
+  }
+}
